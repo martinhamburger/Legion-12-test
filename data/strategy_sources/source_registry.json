@@ -1,0 +1,42 @@
+[
+  {
+    "source_id": "official_rules_and_flow_s1",
+    "title": "第一季构建卡组、战斗流程、胜利条件与判定规则",
+    "source_type": "official_rules",
+    "url": "https://www.bilibili.com/opus/1001533236100202516",
+    "status": "needs_version_verification",
+    "use": "规则真值与引擎测试用例，不直接作为强策略证据"
+  },
+  {
+    "source_id": "official_faction_overview_s1",
+    "title": "第一季四阵营士气效果与玩法介绍",
+    "source_type": "official_mechanics",
+    "url": "https://www.bilibili.com/opus/1001181104651108359",
+    "status": "partially_structured",
+    "use": "初始化阵营特征、策略标签和搜索空间"
+  },
+  {
+    "source_id": "replay_amaterasu_vs_mengpo_2025_05_22",
+    "title": "天照大神 vs 孟婆对战视频",
+    "source_type": "expert_replay_candidate",
+    "url": "https://www.bilibili.com/video/BV1EyJJzXEsE/",
+    "status": "unextracted",
+    "use": "提取换牌、士气支出、行动顺序、关键转折和可能的构筑线索"
+  },
+  {
+    "source_id": "replay_isis_vs_mengpo_2025_03_04",
+    "title": "太阳城伊西斯 vs 天廷孟婆设计者解说",
+    "source_type": "designer_replay_candidate",
+    "url": "https://www.bilibili.com/video/BV1mY9EYrEoV/",
+    "status": "unextracted",
+    "use": "提取特殊胜利、陵墓资源和天廷应对逻辑"
+  },
+  {
+    "source_id": "second_season_full_card_preview_2026_02_23",
+    "title": "第二季基础包全卡预览",
+    "source_type": "card_inventory_candidate",
+    "url": "https://www.bilibili.com/video/BV11XfiBfE4e/",
+    "status": "unextracted",
+    "use": "建立卡牌清单；卡文必须由用户持有版本复核"
+  }
+]

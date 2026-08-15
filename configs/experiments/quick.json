@@ -1,0 +1,29 @@
+{
+  "name": "quick_local_screen",
+  "seed": 20260815,
+  "backend": "local",
+  "workers": 4,
+  "candidate_generation": {
+    "mode": "expert_neighbourhood",
+    "population": 48,
+    "locked_core": true,
+    "mutate_flex_slots_only": true,
+    "max_card_changes_from_seed": 6,
+    "preserve_synergy_packages": true
+  },
+  "successive_halving": [
+    {"survivors": 16, "games_per_matchup": 200},
+    {"survivors": 6, "games_per_matchup": 1000},
+    {"survivors": 2, "games_per_matchup": 5000}
+  ],
+  "evaluation": {
+    "swap_start_player": true,
+    "common_random_numbers": true,
+    "report_95pct_interval": true,
+    "track_morale_waste": true,
+    "track_dead_hand_rate": true,
+    "track_disaster_robustness": true,
+    "early_stop_minimum_games": 200,
+    "required_margin": 0.02
+  }
+}

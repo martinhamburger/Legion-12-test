@@ -1,0 +1,38 @@
+{
+  "name": "overnight_local_search",
+  "seed": 20260815,
+  "backend": "local",
+  "workers": 6,
+  "checkpoint_every_candidates": 25,
+  "candidate_generation": {
+    "mode": "expert_neighbourhood_plus_packages",
+    "population": 256,
+    "locked_core": true,
+    "max_card_changes_from_seed": 10,
+    "preserve_synergy_packages": true,
+    "allow_deck_size_range": [40, 50]
+  },
+  "successive_halving": [
+    {"survivors": 64, "games_per_matchup": 250},
+    {"survivors": 16, "games_per_matchup": 1500},
+    {"survivors": 4, "games_per_matchup": 8000},
+    {"survivors": 2, "games_per_matchup": 30000}
+  ],
+  "opponent_population": {
+    "include_human_seeds": true,
+    "include_historical_best_responses": true,
+    "minimum_distinct_policies": 4
+  },
+  "evaluation": {
+    "swap_start_player": true,
+    "common_random_numbers": true,
+    "report_95pct_interval": true,
+    "holdout_random_seeds": true,
+    "track_morale_waste": true,
+    "track_dead_hand_rate": true,
+    "track_core_access_by_turn": true,
+    "track_disaster_robustness": true,
+    "track_worst_decile": true,
+    "required_margin": 0.02
+  }
+}
