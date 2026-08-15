@@ -4,9 +4,9 @@ from __future__ import annotations
 
 import argparse
 import json
+from collections.abc import Sequence
 from dataclasses import asdict
 from pathlib import Path
-from typing import Sequence
 
 from .deck.probability import expected_copies, probability_at_least_k
 from .strategy.fusion import fuse_strategy, load_strategy_sources

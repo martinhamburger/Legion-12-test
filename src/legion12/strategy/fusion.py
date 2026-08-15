@@ -4,9 +4,9 @@ from __future__ import annotations
 
 import json
 from collections import defaultdict
+from collections.abc import Iterable
 from math import exp, log1p
 from pathlib import Path
-from typing import Iterable
 
 from .models import FusedStrategy, StrategySource
 

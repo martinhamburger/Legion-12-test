@@ -35,7 +35,7 @@ class StrategySource:
             raise ValueError("feature weights must be within [-10, 10]")
 
     @classmethod
-    def from_dict(cls, payload: dict[str, Any]) -> "StrategySource":
+    def from_dict(cls, payload: dict[str, Any]) -> StrategySource:
         return cls(
             source_id=str(payload["source_id"]),
             name=str(payload["name"]),
