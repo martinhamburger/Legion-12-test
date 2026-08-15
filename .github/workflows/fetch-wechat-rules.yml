@@ -1,0 +1,139 @@
+name: Fetch WeChat rules source
+
+on:
+  push:
+    branches:
+      - agent/olympus-vs-otherworld
+    paths:
+      - .github/workflows/fetch-wechat-rules.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install tooling
+        run: python -m pip install --upgrade requests beautifulsoup4 Pillow
+
+      - name: Fetch article and images
+        run: |
+          mkdir -p /tmp/wechat-rules/images
+          python - <<'PY'
+          from __future__ import annotations
+
+          import json
+          import re
+          from pathlib import Path
+          from urllib.parse import urljoin
+
+          import requests
+          from bs4 import BeautifulSoup
+
+          article_url = 'https://mp.weixin.qq.com/s/agcu_Fc0BEA2qcMHMzFH2w'
+          out = Path('/tmp/wechat-rules')
+          headers = {
+              'User-Agent': (
+                  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+                  'AppleWebKit/537.36 (KHTML, like Gecko) '
+                  'Chrome/150.0.0.0 Safari/537.36'
+              ),
+              'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
+              'Referer': 'https://mp.weixin.qq.com/',
+          }
+          session = requests.Session()
+          response = session.get(article_url, headers=headers, timeout=30)
+          (out / 'status.json').write_text(
+              json.dumps(
+                  {
+                      'status_code': response.status_code,
+                      'final_url': response.url,
+                      'content_type': response.headers.get('content-type'),
+                      'content_length': len(response.content),
+                  },
+                  ensure_ascii=False,
+                  indent=2,
+              ),
+              encoding='utf-8',
+          )
+          response.raise_for_status()
+          (out / 'article.html').write_bytes(response.content)
+
+          soup = BeautifulSoup(response.text, 'html.parser')
+          content = soup.select_one('#js_content') or soup
+          (out / 'article.txt').write_text(
+              content.get_text('\n', strip=True), encoding='utf-8'
+          )
+
+          urls: list[str] = []
+          for tag in content.find_all(True):
+              for attr in ('data-src', 'src', 'data-original'):
+                  value = tag.get(attr)
+                  if value and isinstance(value, str):
+                      urls.append(urljoin(article_url, value.strip()))
+              style = tag.get('style')
+              if style:
+                  urls.extend(
+                      urljoin(article_url, match)
+                      for match in re.findall(r'url\(["\']?([^"\')]+)', style)
+                  )
+
+          seen: set[str] = set()
+          ordered: list[str] = []
+          for url in urls:
+              if not url.startswith('http') or url in seen:
+                  continue
+              seen.add(url)
+              ordered.append(url)
+
+          manifest = []
+          for index, image_url in enumerate(ordered, start=1):
+              try:
+                  image_response = session.get(
+                      image_url,
+                      headers={**headers, 'Referer': article_url},
+                      timeout=30,
+                  )
+                  image_response.raise_for_status()
+                  content_type = image_response.headers.get('content-type', '')
+                  if not content_type.startswith('image/'):
+                      continue
+                  extension = {
+                      'image/jpeg': '.jpg',
+                      'image/png': '.png',
+                      'image/gif': '.gif',
+                      'image/webp': '.webp',
+                  }.get(content_type.split(';')[0], '.img')
+                  path = out / 'images' / f'{index:03d}{extension}'
+                  path.write_bytes(image_response.content)
+                  manifest.append(
+                      {
+                          'index': index,
+                          'url': image_url,
+                          'content_type': content_type,
+                          'bytes': len(image_response.content),
+                          'file': str(path.relative_to(out)),
+                      }
+                  )
+              except Exception as exc:
+                  manifest.append({'index': index, 'url': image_url, 'error': repr(exc)})
+
+          (out / 'images.json').write_text(
+              json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8'
+          )
+          print(f'article_bytes={len(response.content)} image_candidates={len(ordered)}')
+          print(f'images_downloaded={sum("file" in item for item in manifest)}')
+          PY
+
+      - name: Upload article extraction
+        uses: actions/upload-artifact@v4
+        with:
+          name: wechat-rules-source
+          path: /tmp/wechat-rules
+          if-no-files-found: error
+          retention-days: 7
