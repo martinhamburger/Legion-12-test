@@ -1,0 +1,162 @@
+[
+  {
+    "source_id": "global_tactical_safety_v1",
+    "name": "通用战术安全基线",
+    "faction": "*",
+    "archetype": "general",
+    "evidence_type": "hypothesis",
+    "reliability": 0.9,
+    "sample_size": 0,
+    "game_version": "unverified",
+    "feature_weights": {
+      "immediate_win": 10.0,
+      "prevent_immediate_loss": 9.5,
+      "resource_efficiency": 1.0,
+      "morale_waste": -1.2,
+      "card_advantage": 0.7,
+      "board_control": 0.8,
+      "tempo": 0.8,
+      "combo_progress": 0.6,
+      "disaster_resilience": 0.6,
+      "overextension_risk": -0.9,
+      "information_gain": 0.3
+    },
+    "rules": [
+      "take_immediate_win",
+      "prevent_forced_loss_before_greedy_value",
+      "do_not_play_illegal_actions",
+      "prefer_lower_morale_waste_when_value_is_similar"
+    ],
+    "notes": "工程安全先验，不代表实证最优；后续应由实战与搜索校准。"
+  },
+  {
+    "source_id": "official_s1_tianting_ramp_control",
+    "name": "第一季官方阵营说明：天廷跳费/观星/天灾控制",
+    "faction": "tianting",
+    "archetype": "ramp_control",
+    "evidence_type": "official_mechanic",
+    "reliability": 0.95,
+    "sample_size": 0,
+    "game_version": "S1",
+    "source_url": "https://www.bilibili.com/opus/1001181104651108359",
+    "feature_weights": {
+      "morale_acceleration": 2.3,
+      "topdeck_control": 1.9,
+      "disaster_control": 1.6,
+      "future_value": 1.3,
+      "morale_waste": -1.5,
+      "tempo": 0.5,
+      "overextension_risk": -0.8
+    },
+    "rules": [
+      "plan_morale_spend_before_committing_actions",
+      "preserve_high_value_information_from_topdeck_control",
+      "value_disaster_control_by_matchup_not_in_isolation"
+    ],
+    "notes": "只编码官方公开的机制方向，不把机制描述当作胜率证明。"
+  },
+  {
+    "source_id": "official_s1_takamagahara_aggro",
+    "name": "第一季官方阵营说明：高天原骑兵快攻",
+    "faction": "takamagahara",
+    "archetype": "aggro_mobility",
+    "evidence_type": "official_mechanic",
+    "reliability": 0.95,
+    "sample_size": 0,
+    "game_version": "S1",
+    "source_url": "https://www.bilibili.com/opus/1001181104651108359",
+    "feature_weights": {
+      "tempo": 2.1,
+      "mobility": 1.8,
+      "face_pressure": 1.8,
+      "board_control": 0.9,
+      "card_advantage": 0.6,
+      "overextension_risk": -1.1,
+      "morale_waste": -1.2
+    },
+    "rules": [
+      "use_mobility_to_create_attack_not_cosmetic_movement",
+      "count_opponent_counterattack_before_overextending",
+      "convert_tempo_advantage_before_late_game"
+    ],
+    "notes": "快攻与位移方向的结构化先验。"
+  },
+  {
+    "source_id": "official_s1_takamagahara_control",
+    "name": "第一季官方阵营说明：高天原解场战术",
+    "faction": "takamagahara",
+    "archetype": "tactical_control",
+    "evidence_type": "official_mechanic",
+    "reliability": 0.95,
+    "sample_size": 0,
+    "game_version": "S1",
+    "source_url": "https://www.bilibili.com/opus/1001181104651108359",
+    "feature_weights": {
+      "removal_efficiency": 2.1,
+      "board_control": 1.8,
+      "mobility": 1.1,
+      "card_advantage": 1.0,
+      "tempo": 0.8,
+      "face_pressure": 0.3,
+      "future_value": 0.8
+    },
+    "rules": [
+      "do_not_spend_premium_removal_on_low_threat_targets",
+      "use_positioning_to_improve_removal_exchange",
+      "track_opponent_high_cost_threats"
+    ],
+    "notes": "解场与位移方向的结构化先验。"
+  },
+  {
+    "source_id": "official_s1_asgard_graveyard",
+    "name": "第一季官方阵营说明：阿斯加德爆血/墓地资源",
+    "faction": "asgard",
+    "archetype": "graveyard_burst",
+    "evidence_type": "official_mechanic",
+    "reliability": 0.95,
+    "sample_size": 0,
+    "game_version": "S1",
+    "source_url": "https://www.bilibili.com/opus/1001181104651108359",
+    "feature_weights": {
+      "graveyard_value": 2.2,
+      "controlled_self_damage": 1.6,
+      "late_burst": 2.1,
+      "survival_threshold": 1.7,
+      "future_value": 1.4,
+      "tempo": 0.4,
+      "overextension_risk": -0.8
+    },
+    "rules": [
+      "self_damage_requires_a_concrete_payoff",
+      "do_not_cross_lethal_threshold_without_protection",
+      "treat_graveyard_as_a_planned_resource"
+    ],
+    "notes": "爆血和墓地资源方向的结构化先验。"
+  },
+  {
+    "source_id": "official_s1_heliopolis_tomb_guard",
+    "name": "第一季官方阵营说明：太阳城陵墓守卫/特殊胜利",
+    "faction": "heliopolis",
+    "archetype": "tomb_guard_engine",
+    "evidence_type": "official_mechanic",
+    "reliability": 0.95,
+    "sample_size": 0,
+    "game_version": "S1",
+    "source_url": "https://www.bilibili.com/opus/1001181104651108359",
+    "feature_weights": {
+      "tomb_guard_value": 2.4,
+      "hand_threshold_value": 1.5,
+      "sacrifice_value": 1.7,
+      "special_win_progress": 2.1,
+      "resource_efficiency": 1.3,
+      "morale_waste": -1.3,
+      "future_value": 1.2
+    },
+    "rules": [
+      "do_not_consume_tomb_guards_without_comparing_future_lines",
+      "track_hand_threshold_before_draw_or_discard",
+      "compare_normal_win_and_special_win_each_turn"
+    ],
+    "notes": "陵墓守卫与特殊胜利方向的结构化先验。"
+  }
+]

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legion12-lab"
+version = "0.1.0"
+description = "Expert-seeded deck and policy optimization for Legion 12"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Legion 12 Strategy Lab" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3",
+  "ruff>=0.9",
+]
+rl = [
+  "torch>=2.4",
+]
+
+[project.scripts]
+legion12 = "legion12.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
