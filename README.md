@@ -87,6 +87,21 @@ open build/review-site/index.html
 临时生成 WebP 预览，供 GitHub Pages 或本地浏览器审校。正式数据、原图
 来源和训练门禁说明见 [`data/card_pools/s01/README.md`](data/card_pools/s01/README.md)。
 
+### Kimi 视觉预填
+
+将 `.env.kimi.example` 复制为 `.env.kimi` 并在本机填入 Kimi key 后，先用
+小样本确认输出，再运行全量预填：
+
+```bash
+cp .env.kimi.example .env.kimi
+python tools/build_review_site.py
+python tools/enrich_card_catalog_kimi.py --limit 3
+python tools/enrich_card_catalog_kimi.py
+```
+
+该工具只初填候选字段，并始终保留 `needs_review`；它不会上传 key、不会提交
+`.env.kimi`，也不会把模型输出直接视为可训练规则。
+
 ## 版权与数据
 
 仓库默认只保存结构化卡牌字段、统计结果和用户有权使用的素材。公开部署前需要单独确认卡图、完整卡文和视频内容的使用权限。

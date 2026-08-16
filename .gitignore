@@ -11,4 +11,5 @@ dist/
 results/
 checkpoints/
 *.log
+.env.kimi
 build/review-site/
