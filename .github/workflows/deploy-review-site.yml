@@ -30,6 +30,8 @@ jobs:
         with:
           lfs: true
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Install PDF preview tooling
         run: sudo apt-get update && sudo apt-get install -y poppler-utils webp imagemagick
       - name: Build review site
