@@ -73,6 +73,20 @@ web/                     后续加入 GitHub Pages 报告站
 6. 在强构筑附近做受约束卡组搜索，而不是随机生成卡组。
 7. 通过 GitHub Pages 输出卡表、费用曲线、胜率、士气浪费和操作建议。
 
+## 卡池审校站
+
+`规则与卡池/` 的截图式 PDF 可导入为“待复核”卡池：
+
+```bash
+python tools/build_card_catalog.py
+python tools/build_review_site.py
+open build/review-site/index.html
+```
+
+首条命令只生成候选数据，不会把 OCR 当作可训练规则；第二条从原 PDF
+临时生成 WebP 预览，供 GitHub Pages 或本地浏览器审校。正式数据、原图
+来源和训练门禁说明见 [`data/card_pools/s01/README.md`](data/card_pools/s01/README.md)。
+
 ## 版权与数据
 
 仓库默认只保存结构化卡牌字段、统计结果和用户有权使用的素材。公开部署前需要单独确认卡图、完整卡文和视频内容的使用权限。

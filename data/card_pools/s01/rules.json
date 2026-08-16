@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "ruleset_id": "rules-2.0-source-pdf",
+  "generated_at": "2026-08-16T05:39:41+00:00",
+  "source": {
+    "pdf_path": "规则与卡池/规则手册2.0.pdf",
+    "pdf_sha256": "07bd65e336799a5d6253d91ea93afeba95a3958bbdb9ffce0bb5035f9c3dfe4d",
+    "pages": 7
+  },
+  "rules": [
+    {
+      "rule_id": "candidate-rules-2.0-page-001",
+      "title": null,
+      "text": null,
+      "implementation_status": "not_started",
+      "ocr": {
+        "engine": "tesseract chi_sim+eng psm12",
+        "raw_text": "2026/8/15 14:51\n\n规则手册2.0\n\n规则手册2.0\n\n十二军\n\n“fA\n\n习\n\n5\n\nEFA!\n\n.\n\n一场灾难毫无预兆地席卷了整个宇宙…\n\n各个时空中原本毫无关联的文明 ，被汇昧在\n\n了一起。神检们被这带领自己的文明卷入这\n\n场纷争\n\n他们为了生存，争夺领地和资源\n\n开启了永无止填的战争，但他们不会知晓\n\n所有这一切，都在一场巨大的阴谋之中……\n\n游戏概览与胜利条件\n\n在《十二车团 》 中，玩家将化身为神明\n\n成为一个\n\n主宰者，构建军团、调整战\n\nA, HABE, BSR, CRGL SHH\n\n决战到底-\n\n'在战火四起的同时，天灾也可\n\n能会随时降临\n\n“ 对方主宰的血生降至0时，你获得胜利\n\n对方牌库为空，且需要从牌库抽牌/弃牌时\n\n你获得胜利\n\nWE\n\nI Tak\n\nil eth 局\n\n游戏概览与胜利条件\n\n01\n\nBR...\n\n02\n\n2\n\na\n\n$+ Ht $$ + Grnem\n\n03\n\n卡牌详解.…………\n\n04\n\n核心概念\n\n08\n\n阵营专属\n\n10\n\natid   前排\n\n放置区\n\n对局准备\n\nER\n\n库\n\n本\n\n回合流程\n\n11\n\nMe\n\nA\n\n*\n\n主要阶段范例\n\n12\n\n—\n\ndime\n\n主要阶段行动详解\n\n14\n\n#\n\n=\n\na\n\n习\n\n进攻时序\n\n16\n\nSRAM ee:\n\nB\n\n17\n\n阵营机制.….\n\n19\n\n圣物区\n\n战场 后排\n\n主宰者\n\n牌库\n\n牌库构筑\n\n20\n\n预构筑推荐.…\n\n20\n\n&\n\n>\n\n>\n\nwf\n\n词条一览\n\n22\n\n|\n\nMRFAQ.\n\n23\n\n区\n\n[2\n\nEy\n\n变体规则\n\n24\n\n-\n\n<\n\n士气牌库\n\n墓地\n\n&\n\nUl\n\n准备流程\n\n流程详解\n\n1 双方同时展示主字并放寺在主宣区\n\n设置主字库吕\n\n牌库构筑 P.20\n\n2. HONDAS ROR HERD RR REE\n\nERM, QAMRERE\n\nFERBIE P10\n\n3. GRRE\n\n%\n\n5\n\nBase P.\n\nSs\n\nhttps://mp.weixin.qq.com/s/agcu_FcOBEA2qc¢MHMzFH2w\n\n1/7"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": []
+      },
+      "source": {
+        "pdf_path": "规则与卡池/规则手册2.0.pdf",
+        "pdf_sha256": "07bd65e336799a5d6253d91ea93afeba95a3958bbdb9ffce0bb5035f9c3dfe4d",
+        "page": 1
+      }
+    },
+    {
+      "rule_id": "candidate-rules-2.0-page-002",
+      "title": null,
+      "text": null,
+      "implementation_status": "not_started",
+      "ocr": {
+        "engine": "tesseract chi_sim+eng psm12",
+        "raw_text": "2026/8/15 14:51\n\n规则手册2.0\n\nhttps://mp.weixin.qq.com/s/agcu_FcOBEA2qcMHMzFH2w\n\n2/7"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": []
+      },
+      "source": {
+        "pdf_path": "规则与卡池/规则手册2.0.pdf",
+        "pdf_sha256": "07bd65e336799a5d6253d91ea93afeba95a3958bbdb9ffce0bb5035f9c3dfe4d",
+        "page": 2
+      }
+    },
+    {
+      "rule_id": "candidate-rules-2.0-page-003",
+      "title": null,
+      "text": null,
+      "implementation_status": "not_started",
+      "ocr": {
+        "engine": "tesseract chi_sim+eng psm12",
+        "raw_text": "2026/8/15 14:51\n\n规则手册2.0\n\nhttps://mp.weixin.qq.com/s/agcu_FcOBEA2qcMHMzFH2w\n\n3/7"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": []
+      },
+      "source": {
+        "pdf_path": "规则与卡池/规则手册2.0.pdf",
+        "pdf_sha256": "07bd65e336799a5d6253d91ea93afeba95a3958bbdb9ffce0bb5035f9c3dfe4d",
+        "page": 3
+      }
+    },
+    {
+      "rule_id": "candidate-rules-2.0-page-004",
+      "title": null,
+      "text": null,
+      "implementation_status": "not_started",
+      "ocr": {
+        "engine": "tesseract chi_sim+eng psm12",
+        "raw_text": "2026/8/15 14:51\n\n规则手册2.0\n\nhttps://mp.weixin.qq.com/s/agcu_FcOBEA2qcMHMzFH2w\n\n417"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": []
+      },
+      "source": {
+        "pdf_path": "规则与卡池/规则手册2.0.pdf",
+        "pdf_sha256": "07bd65e336799a5d6253d91ea93afeba95a3958bbdb9ffce0bb5035f9c3dfe4d",
+        "page": 4
+      }
+    },
+    {
+      "rule_id": "candidate-rules-2.0-page-005",
+      "title": null,
+      "text": null,
+      "implementation_status": "not_started",
+      "ocr": {
+        "engine": "tesseract chi_sim+eng psm12",
+        "raw_text": "2026/8/15 14:51\n\n规则手册2.0\n\nhttps://mp.weixin.qq.com/s/agcu_FcOBEA2qcMHMzFH2w\n\nS/7"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": []
+      },
+      "source": {
+        "pdf_path": "规则与卡池/规则手册2.0.pdf",
+        "pdf_sha256": "07bd65e336799a5d6253d91ea93afeba95a3958bbdb9ffce0bb5035f9c3dfe4d",
+        "page": 5
+      }
+    },
+    {
+      "rule_id": "candidate-rules-2.0-page-006",
+      "title": null,
+      "text": null,
+      "implementation_status": "not_started",
+      "ocr": {
+        "engine": "tesseract chi_sim+eng psm12",
+        "raw_text": "2026/8/15 14:51\n\n规则手册2.0\n\nhttps://mp.weixin.qq.com/s/agcu_FcOBEA2qcMHMzFH2w\n\n6/7"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": []
+      },
+      "source": {
+        "pdf_path": "规则与卡池/规则手册2.0.pdf",
+        "pdf_sha256": "07bd65e336799a5d6253d91ea93afeba95a3958bbdb9ffce0bb5035f9c3dfe4d",
+        "page": 6
+      }
+    },
+    {
+      "rule_id": "candidate-rules-2.0-page-007",
+      "title": null,
+      "text": null,
+      "implementation_status": "not_started",
+      "ocr": {
+        "engine": "tesseract chi_sim+eng psm12",
+        "raw_text": "2026/8/15 14:51\n\n规则手册2.0\n\nhttps://mp.weixin.qq.com/s/agcu_FcOBEA2qcMHMzFH2w\n\nTT"
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": []
+      },
+      "source": {
+        "pdf_path": "规则与卡池/规则手册2.0.pdf",
+        "pdf_sha256": "07bd65e336799a5d6253d91ea93afeba95a3958bbdb9ffce0bb5035f9c3dfe4d",
+        "page": 7
+      }
+    }
+  ],
+  "review": {
+    "status": "needs_review",
+    "notes": "Rule extraction awaits page-by-page human review."
+  }
+}

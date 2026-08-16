@@ -1,0 +1,41 @@
+name: Deploy card-pool review site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/card_pools/**"
+      - "规则与卡池/**"
+      - "tools/build_review_site.py"
+      - ".github/workflows/deploy-review-site.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/configure-pages@v5
+      - name: Install PDF preview tooling
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils webp imagemagick
+      - name: Build review site
+        run: python tools/build_review_site.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/review-site
+      - id: deployment
+        uses: actions/deploy-pages@v4
