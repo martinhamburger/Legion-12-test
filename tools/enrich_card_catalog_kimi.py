@@ -114,7 +114,11 @@ def call_kimi(config: dict[str, str], image: Path, card_id: str) -> tuple[dict[s
     endpoint = f"{config['KIMI_BASE_URL'].rstrip('/')}/chat/completions"
     body = {
         "model": config["KIMI_MODEL"],
-        "temperature": 0,
+        # In Kimi's non-thinking mode this model accepts only temperature=0.6.
+        "temperature": 0.6,
+        # Card transcription does not need chain-of-thought and is much faster
+        # when Kimi's optional thinking mode is disabled.
+        "thinking": {"type": "disabled"},
         "response_format": {"type": "json_object"},
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
@@ -212,10 +216,10 @@ def main() -> int:
                 _, candidate, raw = future.result()
                 apply_candidate(card, candidate, raw, config["KIMI_MODEL"])
                 args.catalog.write_text(json.dumps(pool, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-                print(f"[{index}/{len(pending)}] ok {card['card_id']}")
+                print(f"[{index}/{len(pending)}] ok {card['card_id']}", flush=True)
             except KimiRequestError as exc:
                 failures.append(f"{card['card_id']}: {exc}")
-                print(f"[{index}/{len(pending)}] failed {failures[-1]}", file=sys.stderr)
+                print(f"[{index}/{len(pending)}] failed {failures[-1]}", file=sys.stderr, flush=True)
     if failures:
         print("failed cards:\n" + "\n".join(failures), file=sys.stderr)
         return 1
