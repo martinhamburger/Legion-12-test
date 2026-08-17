@@ -4,8 +4,8 @@
   "disclaimer": "近似规则实验：仅用于学习节奏、资源交换与出牌逻辑，不代表正式规则胜率。",
   "config": {
     "seed": 20260817,
-    "training_episodes": 100000,
-    "evaluation_games": 5000,
+    "training_episodes": 500000,
+    "evaluation_games": 20000,
     "max_turns": 10
   },
   "coverage": {
@@ -1543,178 +1543,178 @@
   },
   "training_curve": [
     {
-      "episode": 5000,
-      "epsilon": 0.287,
-      "mean_reward": -0.268,
-      "win_rate": 0.366,
-      "mean_turns": 9.993,
-      "mean_q": -0.0692
-    },
-    {
-      "episode": 10000,
-      "epsilon": 0.274,
-      "mean_reward": -0.2904,
-      "win_rate": 0.3548,
-      "mean_turns": 9.98,
-      "mean_q": -0.0921
-    },
-    {
-      "episode": 15000,
-      "epsilon": 0.261,
-      "mean_reward": -0.2228,
-      "win_rate": 0.3886,
-      "mean_turns": 9.975,
-      "mean_q": -0.1074
-    },
-    {
-      "episode": 20000,
-      "epsilon": 0.248,
-      "mean_reward": -0.278,
-      "win_rate": 0.361,
-      "mean_turns": 9.969,
-      "mean_q": -0.1224
-    },
-    {
       "episode": 25000,
-      "epsilon": 0.235,
-      "mean_reward": -0.2608,
-      "win_rate": 0.3696,
-      "mean_turns": 9.981,
-      "mean_q": -0.1327
-    },
-    {
-      "episode": 30000,
-      "epsilon": 0.222,
-      "mean_reward": -0.266,
-      "win_rate": 0.367,
-      "mean_turns": 9.973,
-      "mean_q": -0.1427
-    },
-    {
-      "episode": 35000,
-      "epsilon": 0.209,
-      "mean_reward": -0.2516,
-      "win_rate": 0.3742,
-      "mean_turns": 9.982,
-      "mean_q": -0.1526
-    },
-    {
-      "episode": 40000,
-      "epsilon": 0.196,
-      "mean_reward": -0.2656,
-      "win_rate": 0.3672,
-      "mean_turns": 9.988,
-      "mean_q": -0.1597
-    },
-    {
-      "episode": 45000,
-      "epsilon": 0.183,
-      "mean_reward": -0.2236,
-      "win_rate": 0.3882,
-      "mean_turns": 9.979,
-      "mean_q": -0.1656
+      "epsilon": 0.287,
+      "mean_reward": -0.2622,
+      "win_rate": 0.3689,
+      "mean_turns": 9.98,
+      "mean_q": -0.1284
     },
     {
       "episode": 50000,
-      "epsilon": 0.17,
-      "mean_reward": -0.228,
-      "win_rate": 0.386,
-      "mean_turns": 9.982,
-      "mean_q": -0.1704
-    },
-    {
-      "episode": 55000,
-      "epsilon": 0.157,
-      "mean_reward": -0.2256,
-      "win_rate": 0.3872,
-      "mean_turns": 9.977,
-      "mean_q": -0.1764
-    },
-    {
-      "episode": 60000,
-      "epsilon": 0.144,
-      "mean_reward": -0.2256,
-      "win_rate": 0.3872,
-      "mean_turns": 9.981,
-      "mean_q": -0.1825
-    },
-    {
-      "episode": 65000,
-      "epsilon": 0.131,
-      "mean_reward": -0.2584,
-      "win_rate": 0.3708,
-      "mean_turns": 9.967,
-      "mean_q": -0.1887
-    },
-    {
-      "episode": 70000,
-      "epsilon": 0.118,
-      "mean_reward": -0.1936,
-      "win_rate": 0.4032,
-      "mean_turns": 9.978,
-      "mean_q": -0.1938
+      "epsilon": 0.274,
+      "mean_reward": -0.2238,
+      "win_rate": 0.3881,
+      "mean_turns": 9.98,
+      "mean_q": -0.1569
     },
     {
       "episode": 75000,
-      "epsilon": 0.105,
-      "mean_reward": -0.1932,
-      "win_rate": 0.4034,
-      "mean_turns": 9.989,
-      "mean_q": -0.1989
-    },
-    {
-      "episode": 80000,
-      "epsilon": 0.092,
-      "mean_reward": -0.2688,
-      "win_rate": 0.3656,
-      "mean_turns": 9.989,
-      "mean_q": -0.2038
-    },
-    {
-      "episode": 85000,
-      "epsilon": 0.079,
-      "mean_reward": -0.2432,
-      "win_rate": 0.3784,
-      "mean_turns": 9.992,
-      "mean_q": -0.2084
-    },
-    {
-      "episode": 90000,
-      "epsilon": 0.066,
-      "mean_reward": -0.2516,
-      "win_rate": 0.3742,
-      "mean_turns": 9.988,
-      "mean_q": -0.2135
-    },
-    {
-      "episode": 95000,
-      "epsilon": 0.053,
-      "mean_reward": -0.2656,
-      "win_rate": 0.3672,
-      "mean_turns": 9.994,
-      "mean_q": -0.2178
+      "epsilon": 0.261,
+      "mean_reward": -0.2159,
+      "win_rate": 0.392,
+      "mean_turns": 9.977,
+      "mean_q": -0.175
     },
     {
       "episode": 100000,
+      "epsilon": 0.248,
+      "mean_reward": -0.2045,
+      "win_rate": 0.3978,
+      "mean_turns": 9.979,
+      "mean_q": -0.1883
+    },
+    {
+      "episode": 125000,
+      "epsilon": 0.235,
+      "mean_reward": -0.1895,
+      "win_rate": 0.4052,
+      "mean_turns": 9.981,
+      "mean_q": -0.1985
+    },
+    {
+      "episode": 150000,
+      "epsilon": 0.222,
+      "mean_reward": -0.1919,
+      "win_rate": 0.404,
+      "mean_turns": 9.986,
+      "mean_q": -0.2067
+    },
+    {
+      "episode": 175000,
+      "epsilon": 0.209,
+      "mean_reward": -0.1898,
+      "win_rate": 0.4051,
+      "mean_turns": 9.982,
+      "mean_q": -0.2131
+    },
+    {
+      "episode": 200000,
+      "epsilon": 0.196,
+      "mean_reward": -0.216,
+      "win_rate": 0.392,
+      "mean_turns": 9.985,
+      "mean_q": -0.2195
+    },
+    {
+      "episode": 225000,
+      "epsilon": 0.183,
+      "mean_reward": -0.1974,
+      "win_rate": 0.4013,
+      "mean_turns": 9.99,
+      "mean_q": -0.2245
+    },
+    {
+      "episode": 250000,
+      "epsilon": 0.17,
+      "mean_reward": -0.2046,
+      "win_rate": 0.3977,
+      "mean_turns": 9.988,
+      "mean_q": -0.2295
+    },
+    {
+      "episode": 275000,
+      "epsilon": 0.157,
+      "mean_reward": -0.2142,
+      "win_rate": 0.3929,
+      "mean_turns": 9.98,
+      "mean_q": -0.2354
+    },
+    {
+      "episode": 300000,
+      "epsilon": 0.144,
+      "mean_reward": -0.2158,
+      "win_rate": 0.3921,
+      "mean_turns": 9.982,
+      "mean_q": -0.2399
+    },
+    {
+      "episode": 325000,
+      "epsilon": 0.131,
+      "mean_reward": -0.2057,
+      "win_rate": 0.3972,
+      "mean_turns": 9.988,
+      "mean_q": -0.2448
+    },
+    {
+      "episode": 350000,
+      "epsilon": 0.118,
+      "mean_reward": -0.1988,
+      "win_rate": 0.4006,
+      "mean_turns": 9.982,
+      "mean_q": -0.2485
+    },
+    {
+      "episode": 375000,
+      "epsilon": 0.105,
+      "mean_reward": -0.2267,
+      "win_rate": 0.3866,
+      "mean_turns": 9.984,
+      "mean_q": -0.2533
+    },
+    {
+      "episode": 400000,
+      "epsilon": 0.092,
+      "mean_reward": -0.2094,
+      "win_rate": 0.3953,
+      "mean_turns": 9.983,
+      "mean_q": -0.2557
+    },
+    {
+      "episode": 425000,
+      "epsilon": 0.079,
+      "mean_reward": -0.2237,
+      "win_rate": 0.3882,
+      "mean_turns": 9.986,
+      "mean_q": -0.2591
+    },
+    {
+      "episode": 450000,
+      "epsilon": 0.066,
+      "mean_reward": -0.2132,
+      "win_rate": 0.3934,
+      "mean_turns": 9.987,
+      "mean_q": -0.2609
+    },
+    {
+      "episode": 475000,
+      "epsilon": 0.053,
+      "mean_reward": -0.1986,
+      "win_rate": 0.4007,
+      "mean_turns": 9.987,
+      "mean_q": -0.2638
+    },
+    {
+      "episode": 500000,
       "epsilon": 0.04,
-      "mean_reward": -0.2812,
-      "win_rate": 0.3594,
-      "mean_turns": 9.992,
-      "mean_q": -0.2217
+      "mean_reward": -0.2152,
+      "win_rate": 0.3924,
+      "mean_turns": 9.987,
+      "mean_q": -0.2671
     }
   ],
   "evaluation": {
-    "games": 5000,
-    "learned_wins": 1926,
-    "baseline_wins": 3074,
-    "learned_score": 0.3852,
+    "games": 20000,
+    "learned_wins": 7852,
+    "baseline_wins": 12148,
+    "learned_score": 0.3926,
     "confidence_95": [
-      0.3718,
-      0.3988
+      0.3859,
+      0.3994
     ],
     "by_faction": {
-      "tianting": 4426,
-      "takamagahara": 574
+      "tianting": 17852,
+      "takamagahara": 2148
     }
   },
   "deck_insights": {
@@ -1729,7 +1729,7 @@
       "7": 3,
       "8": 6
     },
-    "morale_waste_per_turn": 2.935,
+    "morale_waste_per_turn": 2.948,
     "metric_note": "卡牌条件胜率与打出率均为近似对局相关性，不是因果或强度结论。"
   },
   "card_insights": [
@@ -1737,10 +1737,10 @@
       "card_id": "S01-0002",
       "name": "佣兵部队",
       "cost": 4,
-      "play_count": 784,
-      "play_rate": 0.1568,
+      "play_count": 2728,
+      "play_rate": 0.1364,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.7169,
+      "conditional_win_rate": 0.7496,
       "review_status": "needs_review",
       "features": {
         "tempo": 0.5,
@@ -1767,10 +1767,10 @@
       "card_id": "S01-0012",
       "name": "全军出击",
       "cost": 1,
-      "play_count": 1118,
-      "play_rate": 0.2236,
+      "play_count": 5519,
+      "play_rate": 0.2759,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.8731,
+      "conditional_win_rate": 0.8803,
       "review_status": "verified",
       "features": {
         "tempo": 0.12,
@@ -1797,10 +1797,10 @@
       "card_id": "S01-0015",
       "name": "议和谈判",
       "cost": 0,
-      "play_count": 564,
-      "play_rate": 0.1128,
+      "play_count": 2276,
+      "play_rate": 0.1138,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.2082,
+      "conditional_win_rate": 0.1677,
       "review_status": "verified",
       "features": {
         "tempo": 0.0,
@@ -1827,10 +1827,10 @@
       "card_id": "S01-0016",
       "name": "绝对防御",
       "cost": 2,
-      "play_count": 267,
-      "play_rate": 0.0534,
+      "play_count": 1536,
+      "play_rate": 0.0768,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.1992,
+      "conditional_win_rate": 0.4025,
       "review_status": "verified",
       "features": {
         "tempo": 0.25,
@@ -1857,10 +1857,10 @@
       "card_id": "S01-0018",
       "name": "落穴陷阱",
       "cost": 2,
-      "play_count": 115,
-      "play_rate": 0.023,
+      "play_count": 310,
+      "play_rate": 0.0155,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.4554,
+      "conditional_win_rate": 0.6052,
       "review_status": "verified",
       "features": {
         "tempo": 0.25,
@@ -1887,10 +1887,10 @@
       "card_id": "S01-0101",
       "name": "吕布",
       "cost": 8,
-      "play_count": 818,
-      "play_rate": 0.1636,
+      "play_count": 3413,
+      "play_rate": 0.1706,
       "mulligan_retention_rate": 0.0,
-      "conditional_win_rate": 0.9384,
+      "conditional_win_rate": 0.9493,
       "review_status": "verified",
       "features": {
         "tempo": 1.0,
@@ -1919,10 +1919,10 @@
       "card_id": "S01-0102",
       "name": "武则天",
       "cost": 7,
-      "play_count": 607,
-      "play_rate": 0.1214,
+      "play_count": 2707,
+      "play_rate": 0.1353,
       "mulligan_retention_rate": 0.0,
-      "conditional_win_rate": 0.8259,
+      "conditional_win_rate": 0.853,
       "review_status": "verified",
       "features": {
         "tempo": 0.88,
@@ -1950,10 +1950,10 @@
       "card_id": "S01-0103",
       "name": "李靖",
       "cost": 6,
-      "play_count": 1617,
-      "play_rate": 0.3234,
+      "play_count": 6385,
+      "play_rate": 0.3192,
       "mulligan_retention_rate": 0.0,
-      "conditional_win_rate": 0.9474,
+      "conditional_win_rate": 0.9373,
       "review_status": "verified",
       "features": {
         "tempo": 0.75,
@@ -1981,10 +1981,10 @@
       "card_id": "S01-0104",
       "name": "韩信",
       "cost": 5,
-      "play_count": 997,
-      "play_rate": 0.1994,
+      "play_count": 3436,
+      "play_rate": 0.1718,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.8545,
+      "conditional_win_rate": 0.8414,
       "review_status": "verified",
       "features": {
         "tempo": 0.62,
@@ -2012,10 +2012,10 @@
       "card_id": "S01-0105",
       "name": "刘备",
       "cost": 5,
-      "play_count": 2106,
-      "play_rate": 0.4212,
+      "play_count": 8243,
+      "play_rate": 0.4122,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.9317,
+      "conditional_win_rate": 0.9459,
       "review_status": "verified",
       "features": {
         "tempo": 0.62,
@@ -2044,10 +2044,10 @@
       "card_id": "S01-0106",
       "name": "关羽",
       "cost": 5,
-      "play_count": 1181,
-      "play_rate": 0.2362,
+      "play_count": 5369,
+      "play_rate": 0.2685,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.84,
+      "conditional_win_rate": 0.8366,
       "review_status": "verified",
       "features": {
         "tempo": 0.62,
@@ -2076,10 +2076,10 @@
       "card_id": "S01-0107",
       "name": "张飞",
       "cost": 5,
-      "play_count": 342,
-      "play_rate": 0.0684,
+      "play_count": 1609,
+      "play_rate": 0.0804,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.6317,
+      "conditional_win_rate": 0.5873,
       "review_status": "verified",
       "features": {
         "tempo": 0.62,
@@ -2107,10 +2107,10 @@
       "card_id": "S01-0108",
       "name": "花木兰",
       "cost": 4,
-      "play_count": 769,
-      "play_rate": 0.1538,
+      "play_count": 3181,
+      "play_rate": 0.159,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.8823,
+      "conditional_win_rate": 0.8571,
       "review_status": "verified",
       "features": {
         "tempo": 0.5,
@@ -2138,10 +2138,10 @@
       "card_id": "S01-0109",
       "name": "白起",
       "cost": 3,
-      "play_count": 3110,
-      "play_rate": 0.622,
+      "play_count": 10682,
+      "play_rate": 0.5341,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.8886,
+      "conditional_win_rate": 0.912,
       "review_status": "verified",
       "features": {
         "tempo": 0.38,
@@ -2168,10 +2168,10 @@
       "card_id": "S01-0117",
       "name": "山河社稷图",
       "cost": 3,
-      "play_count": 2830,
-      "play_rate": 0.566,
+      "play_count": 12356,
+      "play_rate": 0.6178,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.9626,
+      "conditional_win_rate": 0.9509,
       "review_status": "verified",
       "features": {
         "tempo": 0.38,
@@ -2200,10 +2200,10 @@
       "card_id": "S01-0118",
       "name": "神妙行军",
       "cost": 3,
-      "play_count": 1634,
-      "play_rate": 0.3268,
+      "play_count": 5999,
+      "play_rate": 0.2999,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.9143,
+      "conditional_win_rate": 0.9365,
       "review_status": "verified",
       "features": {
         "tempo": 0.38,
@@ -2232,10 +2232,10 @@
       "card_id": "S01-0119",
       "name": "观星",
       "cost": 1,
-      "play_count": 2625,
-      "play_rate": 0.525,
+      "play_count": 10111,
+      "play_rate": 0.5056,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.9199,
+      "conditional_win_rate": 0.9254,
       "review_status": "verified",
       "features": {
         "tempo": 0.12,
@@ -2262,10 +2262,10 @@
       "card_id": "S01-0401",
       "name": "本多忠胜",
       "cost": 8,
-      "play_count": 1121,
-      "play_rate": 0.2242,
+      "play_count": 4478,
+      "play_rate": 0.2239,
       "mulligan_retention_rate": 0.0,
-      "conditional_win_rate": 0.3859,
+      "conditional_win_rate": 0.3588,
       "review_status": "verified",
       "features": {
         "tempo": 1.0,
@@ -2293,10 +2293,10 @@
       "card_id": "S01-0404",
       "name": "真田幸村",
       "cost": 5,
-      "play_count": 1643,
-      "play_rate": 0.3286,
+      "play_count": 6530,
+      "play_rate": 0.3265,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.1548,
+      "conditional_win_rate": 0.1451,
       "review_status": "verified",
       "features": {
         "tempo": 0.62,
@@ -2323,10 +2323,10 @@
       "card_id": "S01-0405",
       "name": "宫本武藏",
       "cost": 5,
-      "play_count": 2144,
-      "play_rate": 0.4288,
+      "play_count": 8585,
+      "play_rate": 0.4293,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.2198,
+      "conditional_win_rate": 0.2019,
       "review_status": "verified",
       "features": {
         "tempo": 0.62,
@@ -2354,10 +2354,10 @@
       "card_id": "S01-0409",
       "name": "源义经",
       "cost": 4,
-      "play_count": 406,
-      "play_rate": 0.0812,
+      "play_count": 1586,
+      "play_rate": 0.0793,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.1717,
+      "conditional_win_rate": 0.1643,
       "review_status": "verified",
       "features": {
         "tempo": 0.5,
@@ -2384,10 +2384,10 @@
       "card_id": "S01-0410",
       "name": "巴御前",
       "cost": 3,
-      "play_count": 825,
-      "play_rate": 0.165,
+      "play_count": 3293,
+      "play_rate": 0.1646,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.1597,
+      "conditional_win_rate": 0.1523,
       "review_status": "verified",
       "features": {
         "tempo": 0.38,
@@ -2414,10 +2414,10 @@
       "card_id": "S01-0413",
       "name": "源博雅",
       "cost": 3,
-      "play_count": 99,
-      "play_rate": 0.0198,
+      "play_count": 398,
+      "play_rate": 0.0199,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.1684,
+      "conditional_win_rate": 0.1429,
       "review_status": "verified",
       "features": {
         "tempo": 0.38,
@@ -2444,10 +2444,10 @@
       "card_id": "S01-0414",
       "name": "桂小五郎",
       "cost": 3,
-      "play_count": 2,
-      "play_rate": 0.0004,
+      "play_count": 3,
+      "play_rate": 0.0001,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.5,
+      "conditional_win_rate": 0.6667,
       "review_status": "verified",
       "features": {
         "tempo": 0.38,
@@ -2474,10 +2474,10 @@
       "card_id": "S01-0415",
       "name": "服部半藏",
       "cost": 2,
-      "play_count": 131,
-      "play_rate": 0.0262,
+      "play_count": 479,
+      "play_rate": 0.0239,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.3817,
+      "conditional_win_rate": 0.3904,
       "review_status": "verified",
       "features": {
         "tempo": 0.25,
@@ -2504,10 +2504,10 @@
       "card_id": "S01-0416",
       "name": "稻姬本多小松",
       "cost": 1,
-      "play_count": 502,
-      "play_rate": 0.1004,
+      "play_count": 1876,
+      "play_rate": 0.0938,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.2869,
+      "conditional_win_rate": 0.3257,
       "review_status": "verified",
       "features": {
         "tempo": 0.12,
@@ -2534,10 +2534,10 @@
       "card_id": "S01-0417",
       "name": "草薙剑",
       "cost": 3,
-      "play_count": 2225,
-      "play_rate": 0.445,
+      "play_count": 8977,
+      "play_rate": 0.4489,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.2767,
+      "conditional_win_rate": 0.2565,
       "review_status": "verified",
       "features": {
         "tempo": 0.38,
@@ -2565,10 +2565,10 @@
       "card_id": "S01-0418",
       "name": "天诛",
       "cost": 4,
-      "play_count": 1427,
-      "play_rate": 0.2854,
+      "play_count": 5683,
+      "play_rate": 0.2842,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.1912,
+      "conditional_win_rate": 0.1789,
       "review_status": "verified",
       "features": {
         "tempo": 0.5,
@@ -2595,10 +2595,10 @@
       "card_id": "S01-0419",
       "name": "花魁的馈赠",
       "cost": 1,
-      "play_count": 987,
-      "play_rate": 0.1974,
+      "play_count": 4116,
+      "play_rate": 0.2058,
       "mulligan_retention_rate": 1.0,
-      "conditional_win_rate": 0.1926,
+      "conditional_win_rate": 0.1804,
       "review_status": "verified",
       "features": {
         "tempo": 0.12,
@@ -2630,22 +2630,22 @@
       "records": [
         [
           "tianting|1|10|9|1|6|0|0",
-          "hold"
+          "play:S01-0012"
         ],
         [
           "takamagahara|2|9|10|2|7|0|0",
           "play:S01-0419"
         ],
         [
-          "tianting|3|10|9|3|7|0|0",
-          "play:S01-0012"
+          "tianting|3|10|9|3|6|0|0",
+          "play:S01-0117"
         ],
         [
           "takamagahara|4|9|10|4|8|0|0",
           "play:S01-0417"
         ],
         [
-          "tianting|5|10|9|5|7|0|0",
+          "tianting|5|10|9|6|7|0|0",
           "play:S01-0106"
         ],
         [
@@ -2653,15 +2653,15 @@
           "play:S01-0405"
         ],
         [
-          "tianting|7|10|9|7|7|1|0",
-          "play:S01-0108"
+          "tianting|7|10|9|8|7|1|0",
+          "play:S01-0101"
         ],
         [
-          "takamagahara|8|6|10|8|8|0|2",
+          "takamagahara|8|7|10|8|8|0|2",
           "play:S01-0410"
         ],
         [
-          "tianting|9|10|6|8|7|2|0",
+          "tianting|9|10|7|8|7|2|0",
           "hold"
         ],
         [
@@ -2678,20 +2678,19 @@
             "山河社稷图",
             "花木兰",
             "刘备",
-            "张飞",
-            "全军出击"
+            "张飞"
           ],
-          "active_morale": 1,
-          "rested_morale": 0,
+          "active_morale": 0,
+          "rested_morale": 1,
           "board": [],
           "opponent_health": 9,
           "legal_actions": [
             "hold",
             "play:S01-0012"
           ],
-          "chosen_action": "hold",
+          "chosen_action": "play:S01-0012",
           "reason": "Q-learning 估值最高",
-          "resolution": "保留手牌；没有可结算的进攻",
+          "resolution": "打出 全军出击；没有可结算的进攻",
           "damage": 0
         },
         {
@@ -2725,24 +2724,23 @@
           "player": "tianting",
           "hand": [
             "关羽",
-            "山河社稷图",
             "花木兰",
             "刘备",
             "张飞",
-            "关羽"
+            "关羽",
+            "佣兵部队"
           ],
-          "active_morale": 2,
-          "rested_morale": 1,
+          "active_morale": 1,
+          "rested_morale": 3,
           "board": [],
           "opponent_health": 9,
           "legal_actions": [
             "hold",
-            "play:S01-0012",
             "play:S01-0117"
           ],
-          "chosen_action": "play:S01-0012",
+          "chosen_action": "play:S01-0117",
           "reason": "Q-learning 估值最高",
-          "resolution": "打出 全军出击；没有可结算的进攻",
+          "resolution": "打出 山河社稷图；没有可结算的进攻",
           "damage": 0
         },
         {
@@ -2779,14 +2777,14 @@
           "turn": 5,
           "player": "tianting",
           "hand": [
-            "山河社稷图",
             "花木兰",
             "刘备",
             "张飞",
             "关羽",
-            "佣兵部队"
+            "佣兵部队",
+            "绝对防御"
           ],
-          "active_morale": 0,
+          "active_morale": 1,
           "rested_morale": 5,
           "board": [
             "关羽"
@@ -2795,11 +2793,11 @@
           "legal_actions": [
             "hold",
             "play:S01-0002",
+            "play:S01-0016",
             "play:S01-0105",
             "play:S01-0106",
             "play:S01-0107",
-            "play:S01-0108",
-            "play:S01-0117"
+            "play:S01-0108"
           ],
           "chosen_action": "play:S01-0106",
           "reason": "Q-learning 估值最高",
@@ -2840,34 +2838,34 @@
           "turn": 7,
           "player": "tianting",
           "hand": [
-            "山河社稷图",
+            "花木兰",
             "刘备",
             "张飞",
             "关羽",
             "佣兵部队",
             "绝对防御"
           ],
-          "active_morale": 3,
-          "rested_morale": 4,
+          "active_morale": 0,
+          "rested_morale": 8,
           "board": [
             "关羽",
-            "花木兰"
+            "吕布"
           ],
-          "opponent_health": 6,
+          "opponent_health": 7,
           "legal_actions": [
             "hold",
             "play:S01-0002",
             "play:S01-0016",
+            "play:S01-0101",
             "play:S01-0105",
             "play:S01-0106",
             "play:S01-0107",
-            "play:S01-0108",
-            "play:S01-0117"
+            "play:S01-0108"
           ],
-          "chosen_action": "play:S01-0108",
+          "chosen_action": "play:S01-0101",
           "reason": "Q-learning 估值最高",
-          "resolution": "打出 花木兰；S01-0106 对主宰造成 2 点伤害；S01-0108 对主宰造成 1 点伤害",
-          "damage": 3
+          "resolution": "打出 吕布；S01-0106 对主宰造成 2 点伤害",
+          "damage": 2
         },
         {
           "turn": 8,
@@ -2902,35 +2900,35 @@
           "turn": 9,
           "player": "tianting",
           "hand": [
-            "山河社稷图",
+            "花木兰",
             "刘备",
             "张飞",
             "关羽",
             "佣兵部队",
             "绝对防御",
-            "吕布"
+            "白起"
           ],
           "active_morale": 8,
           "rested_morale": 0,
           "board": [
             "关羽",
-            "花木兰"
+            "吕布"
           ],
           "opponent_health": 3,
           "legal_actions": [
             "hold",
             "play:S01-0002",
             "play:S01-0016",
-            "play:S01-0101",
             "play:S01-0105",
             "play:S01-0106",
             "play:S01-0107",
-            "play:S01-0117"
+            "play:S01-0108",
+            "play:S01-0109"
           ],
           "chosen_action": "hold",
           "reason": "Q-learning 估值最高",
-          "resolution": "保留手牌；S01-0106 对主宰造成 2 点伤害；S01-0108 对主宰造成 1 点伤害",
-          "damage": 3
+          "resolution": "保留手牌；S01-0106 对主宰造成 2 点伤害；S01-0101 对主宰造成 2 点伤害",
+          "damage": 4
         },
         {
           "turn": 10,
@@ -3408,34 +3406,34 @@
         ],
         [
           "tianting|3|10|9|3|7|0|0",
-          "play:S01-0109"
-        ],
-        [
-          "takamagahara|4|9|10|4|8|0|1",
-          "play:S01-0410"
-        ],
-        [
-          "tianting|5|10|9|5|7|1|0",
-          "play:S01-0106"
-        ],
-        [
-          "takamagahara|6|8|10|6|8|0|2",
-          "play:S01-0405"
-        ],
-        [
-          "tianting|7|10|8|7|7|1|1",
-          "play:S01-0118"
-        ],
-        [
-          "takamagahara|8|6|10|8|8|0|1",
-          "play:S01-0405"
-        ],
-        [
-          "tianting|9|10|6|8|7|1|0",
           "hold"
         ],
         [
-          "takamagahara|10|4|10|8|8|0|1",
+          "takamagahara|4|9|10|4|8|0|0",
+          "play:S01-0410"
+        ],
+        [
+          "tianting|5|9|9|5|8|0|1",
+          "play:S01-0107"
+        ],
+        [
+          "takamagahara|6|9|9|6|8|1|1",
+          "play:S01-0405"
+        ],
+        [
+          "tianting|7|9|9|7|8|0|1",
+          "play:S01-0103"
+        ],
+        [
+          "takamagahara|8|9|9|8|8|1|1",
+          "play:S01-0405"
+        ],
+        [
+          "tianting|9|9|9|8|8|1|0",
+          "hold"
+        ],
+        [
+          "takamagahara|10|7|9|8|8|0|1",
           "play:S01-0404"
         ]
       ],
@@ -3496,24 +3494,23 @@
             "张飞",
             "神妙行军",
             "佣兵部队",
+            "白起",
             "关羽",
             "李靖",
             "武则天"
           ],
-          "active_morale": 0,
-          "rested_morale": 3,
-          "board": [
-            "白起"
-          ],
+          "active_morale": 3,
+          "rested_morale": 0,
+          "board": [],
           "opponent_health": 9,
           "legal_actions": [
             "hold",
             "play:S01-0109",
             "play:S01-0118"
           ],
-          "chosen_action": "play:S01-0109",
+          "chosen_action": "hold",
           "reason": "Q-learning 估值最高",
-          "resolution": "打出 白起；没有可结算的进攻",
+          "resolution": "保留手牌；没有可结算的进攻",
           "damage": 0
         },
         {
@@ -3530,8 +3527,10 @@
           ],
           "active_morale": 1,
           "rested_morale": 3,
-          "board": [],
-          "opponent_health": 10,
+          "board": [
+            "巴御前"
+          ],
+          "opponent_health": 9,
           "legal_actions": [
             "hold",
             "play:S01-0015",
@@ -3541,16 +3540,17 @@
           ],
           "chosen_action": "play:S01-0410",
           "reason": "策略先验评分最高",
-          "resolution": "打出 巴御前；没有可结算的进攻",
-          "damage": 0
+          "resolution": "打出 巴御前；S01-0410 对主宰造成 1 点伤害",
+          "damage": 1
         },
         {
           "turn": 5,
           "player": "tianting",
           "hand": [
-            "张飞",
             "神妙行军",
             "佣兵部队",
+            "白起",
+            "关羽",
             "李靖",
             "武则天",
             "山河社稷图"
@@ -3558,22 +3558,22 @@
           "active_morale": 0,
           "rested_morale": 5,
           "board": [
-            "白起",
-            "关羽"
+            "张飞"
           ],
-          "opponent_health": 8,
+          "opponent_health": 9,
           "legal_actions": [
             "hold",
             "play:S01-0002",
             "play:S01-0106",
             "play:S01-0107",
+            "play:S01-0109",
             "play:S01-0117",
             "play:S01-0118"
           ],
-          "chosen_action": "play:S01-0106",
+          "chosen_action": "play:S01-0107",
           "reason": "Q-learning 估值最高",
-          "resolution": "打出 关羽；S01-0109 对主宰造成 1 点伤害",
-          "damage": 1
+          "resolution": "打出 张飞；没有可结算的进攻",
+          "damage": 0
         },
         {
           "turn": 6,
@@ -3592,7 +3592,7 @@
           "board": [
             "宫本武藏"
           ],
-          "opponent_health": 10,
+          "opponent_health": 9,
           "legal_actions": [
             "hold",
             "play:S01-0015",
@@ -3604,39 +3604,41 @@
           ],
           "chosen_action": "play:S01-0405",
           "reason": "策略先验评分最高",
-          "resolution": "打出 宫本武藏；S01-0405 击破 S01-0109",
+          "resolution": "打出 宫本武藏；S01-0405 击破 S01-0107",
           "damage": 0
         },
         {
           "turn": 7,
           "player": "tianting",
           "hand": [
-            "张飞",
+            "神妙行军",
             "佣兵部队",
-            "李靖",
+            "白起",
+            "关羽",
             "武则天",
             "山河社稷图",
             "山河社稷图"
           ],
-          "active_morale": 4,
-          "rested_morale": 3,
+          "active_morale": 1,
+          "rested_morale": 6,
           "board": [
-            "关羽"
+            "李靖"
           ],
-          "opponent_health": 6,
+          "opponent_health": 9,
           "legal_actions": [
             "hold",
             "play:S01-0002",
             "play:S01-0102",
             "play:S01-0103",
-            "play:S01-0107",
+            "play:S01-0106",
+            "play:S01-0109",
             "play:S01-0117",
             "play:S01-0118"
           ],
-          "chosen_action": "play:S01-0118",
+          "chosen_action": "play:S01-0103",
           "reason": "Q-learning 估值最高",
-          "resolution": "打出 神妙行军；S01-0106 对主宰造成 2 点伤害",
-          "damage": 2
+          "resolution": "打出 李靖；没有可结算的进攻",
+          "damage": 0
         },
         {
           "turn": 8,
@@ -3653,7 +3655,7 @@
           "active_morale": 3,
           "rested_morale": 5,
           "board": [],
-          "opponent_health": 10,
+          "opponent_health": 9,
           "legal_actions": [
             "hold",
             "play:S01-0015",
@@ -3673,9 +3675,10 @@
           "turn": 9,
           "player": "tianting",
           "hand": [
-            "张飞",
+            "神妙行军",
             "佣兵部队",
-            "李靖",
+            "白起",
+            "关羽",
             "武则天",
             "山河社稷图",
             "山河社稷图",
@@ -3684,21 +3687,22 @@
           "active_morale": 8,
           "rested_morale": 0,
           "board": [
-            "关羽"
+            "李靖"
           ],
-          "opponent_health": 4,
+          "opponent_health": 7,
           "legal_actions": [
             "hold",
             "play:S01-0002",
             "play:S01-0102",
-            "play:S01-0103",
             "play:S01-0104",
-            "play:S01-0107",
-            "play:S01-0117"
+            "play:S01-0106",
+            "play:S01-0109",
+            "play:S01-0117",
+            "play:S01-0118"
           ],
           "chosen_action": "hold",
           "reason": "Q-learning 估值最高",
-          "resolution": "保留手牌；S01-0106 对主宰造成 2 点伤害",
+          "resolution": "保留手牌；S01-0103 对主宰造成 2 点伤害",
           "damage": 2
         },
         {
@@ -3716,7 +3720,7 @@
           "active_morale": 3,
           "rested_morale": 5,
           "board": [],
-          "opponent_health": 10,
+          "opponent_health": 9,
           "legal_actions": [
             "hold",
             "play:S01-0015",
@@ -4185,14 +4189,14 @@
         ],
         [
           "tianting|3|10|9|4|6|0|0",
-          "hold"
+          "play:S01-0018"
         ],
         [
           "takamagahara|4|9|10|4|8|0|0",
           "play:S01-0418"
         ],
         [
-          "tianting|5|10|9|6|7|0|0",
+          "tianting|5|10|9|6|6|0|0",
           "play:S01-0105"
         ],
         [
@@ -4200,7 +4204,7 @@
           "play:S01-0418"
         ],
         [
-          "tianting|7|10|9|8|7|0|0",
+          "tianting|7|10|9|8|6|0|0",
           "play:S01-0102"
         ],
         [
@@ -4208,7 +4212,7 @@
           "play:S01-0405"
         ],
         [
-          "tianting|9|10|9|8|7|1|0",
+          "tianting|9|10|9|8|6|1|0",
           "hold"
         ],
         [
@@ -4270,15 +4274,14 @@
           "turn": 3,
           "player": "tianting",
           "hand": [
-            "落穴陷阱",
             "白起",
             "观星",
             "刘备",
             "武则天",
             "神妙行军"
           ],
-          "active_morale": 4,
-          "rested_morale": 0,
+          "active_morale": 2,
+          "rested_morale": 2,
           "board": [],
           "opponent_health": 9,
           "legal_actions": [
@@ -4288,9 +4291,9 @@
             "play:S01-0118",
             "play:S01-0119"
           ],
-          "chosen_action": "hold",
+          "chosen_action": "play:S01-0018",
           "reason": "Q-learning 估值最高",
-          "resolution": "保留手牌；没有可结算的进攻",
+          "resolution": "打出 落穴陷阱；没有可结算的进攻",
           "damage": 0
         },
         {
@@ -4328,7 +4331,6 @@
           "turn": 5,
           "player": "tianting",
           "hand": [
-            "落穴陷阱",
             "白起",
             "观星",
             "武则天",
@@ -4343,7 +4345,6 @@
           "opponent_health": 9,
           "legal_actions": [
             "hold",
-            "play:S01-0018",
             "play:S01-0105",
             "play:S01-0108",
             "play:S01-0109",
@@ -4390,7 +4391,6 @@
           "turn": 7,
           "player": "tianting",
           "hand": [
-            "落穴陷阱",
             "白起",
             "观星",
             "神妙行军",
@@ -4406,7 +4406,6 @@
           "legal_actions": [
             "hold",
             "play:S01-0012",
-            "play:S01-0018",
             "play:S01-0102",
             "play:S01-0108",
             "play:S01-0109",
@@ -4453,7 +4452,6 @@
           "turn": 9,
           "player": "tianting",
           "hand": [
-            "落穴陷阱",
             "白起",
             "观星",
             "神妙行军",
@@ -4470,7 +4468,6 @@
           "legal_actions": [
             "hold",
             "play:S01-0012",
-            "play:S01-0018",
             "play:S01-0107",
             "play:S01-0108",
             "play:S01-0109",

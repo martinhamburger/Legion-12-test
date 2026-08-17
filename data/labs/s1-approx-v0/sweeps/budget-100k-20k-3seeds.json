@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "lab_id": "s1-approx-v0",
+  "disclaimer": "近似规则实验：多 seed 稳定性测试，不代表正式规则胜率。",
+  "config": {
+    "seeds": [
+      20261001,
+      20261002,
+      20261003
+    ],
+    "training_episodes": 100000,
+    "evaluation_games_per_seed": 20000,
+    "max_turns": 10
+  },
+  "runs": [
+    {
+      "seed": 20261001,
+      "score": 0.3921,
+      "wins": 7841,
+      "games": 20000,
+      "confidence_95": [
+        0.3853,
+        0.3988
+      ],
+      "by_faction": {
+        "tianting": 17841,
+        "takamagahara": 2159
+      }
+    },
+    {
+      "seed": 20261002,
+      "score": 0.3883,
+      "wins": 7766,
+      "games": 20000,
+      "confidence_95": [
+        0.3816,
+        0.3951
+      ],
+      "by_faction": {
+        "tianting": 17766,
+        "takamagahara": 2234
+      }
+    },
+    {
+      "seed": 20261003,
+      "score": 0.3899,
+      "wins": 7798,
+      "games": 20000,
+      "confidence_95": [
+        0.3832,
+        0.3967
+      ],
+      "by_faction": {
+        "tianting": 17798,
+        "takamagahara": 2202
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_score": 0.3901,
+    "score_standard_deviation": 0.0016,
+    "minimum_score": 0.3883,
+    "maximum_score": 0.3921,
+    "pooled_wins": 23405,
+    "pooled_games": 60000,
+    "pooled_score": 0.3901
+  }
+}

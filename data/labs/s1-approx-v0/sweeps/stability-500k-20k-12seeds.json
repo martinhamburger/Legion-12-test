@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "lab_id": "s1-approx-v0",
+  "disclaimer": "近似规则实验：多 seed 稳定性测试，不代表正式规则胜率。",
+  "config": {
+    "seeds": [
+      20260901,
+      20260902,
+      20260903,
+      20260904,
+      20260905,
+      20260906,
+      20260907,
+      20260908,
+      20260909,
+      20260910,
+      20260911,
+      20260912
+    ],
+    "training_episodes": 500000,
+    "evaluation_games_per_seed": 20000,
+    "max_turns": 10
+  },
+  "runs": [
+    {
+      "seed": 20260901,
+      "score": 0.4059,
+      "wins": 8118,
+      "games": 20000,
+      "confidence_95": [
+        0.3991,
+        0.4127
+      ],
+      "by_faction": {
+        "tianting": 18118,
+        "takamagahara": 1882
+      }
+    },
+    {
+      "seed": 20260902,
+      "score": 0.4039,
+      "wins": 8078,
+      "games": 20000,
+      "confidence_95": [
+        0.3971,
+        0.4107
+      ],
+      "by_faction": {
+        "tianting": 18078,
+        "takamagahara": 1922
+      }
+    },
+    {
+      "seed": 20260903,
+      "score": 0.3983,
+      "wins": 7967,
+      "games": 20000,
+      "confidence_95": [
+        0.3916,
+        0.4052
+      ],
+      "by_faction": {
+        "tianting": 17967,
+        "takamagahara": 2033
+      }
+    },
+    {
+      "seed": 20260904,
+      "score": 0.4061,
+      "wins": 8121,
+      "games": 20000,
+      "confidence_95": [
+        0.3993,
+        0.4129
+      ],
+      "by_faction": {
+        "takamagahara": 1879,
+        "tianting": 18121
+      }
+    },
+    {
+      "seed": 20260905,
+      "score": 0.3929,
+      "wins": 7858,
+      "games": 20000,
+      "confidence_95": [
+        0.3862,
+        0.3997
+      ],
+      "by_faction": {
+        "takamagahara": 2142,
+        "tianting": 17858
+      }
+    },
+    {
+      "seed": 20260906,
+      "score": 0.3947,
+      "wins": 7895,
+      "games": 20000,
+      "confidence_95": [
+        0.388,
+        0.4015
+      ],
+      "by_faction": {
+        "tianting": 17895,
+        "takamagahara": 2105
+      }
+    },
+    {
+      "seed": 20260907,
+      "score": 0.41,
+      "wins": 8200,
+      "games": 20000,
+      "confidence_95": [
+        0.4032,
+        0.4168
+      ],
+      "by_faction": {
+        "tianting": 18200,
+        "takamagahara": 1800
+      }
+    },
+    {
+      "seed": 20260908,
+      "score": 0.4052,
+      "wins": 8104,
+      "games": 20000,
+      "confidence_95": [
+        0.3984,
+        0.412
+      ],
+      "by_faction": {
+        "tianting": 18104,
+        "takamagahara": 1896
+      }
+    },
+    {
+      "seed": 20260909,
+      "score": 0.4041,
+      "wins": 8082,
+      "games": 20000,
+      "confidence_95": [
+        0.3973,
+        0.4109
+      ],
+      "by_faction": {
+        "takamagahara": 1918,
+        "tianting": 18082
+      }
+    },
+    {
+      "seed": 20260910,
+      "score": 0.3966,
+      "wins": 7931,
+      "games": 20000,
+      "confidence_95": [
+        0.3898,
+        0.4033
+      ],
+      "by_faction": {
+        "tianting": 17931,
+        "takamagahara": 2069
+      }
+    },
+    {
+      "seed": 20260911,
+      "score": 0.3944,
+      "wins": 7888,
+      "games": 20000,
+      "confidence_95": [
+        0.3876,
+        0.4012
+      ],
+      "by_faction": {
+        "tianting": 17888,
+        "takamagahara": 2112
+      }
+    },
+    {
+      "seed": 20260912,
+      "score": 0.4029,
+      "wins": 8058,
+      "games": 20000,
+      "confidence_95": [
+        0.3961,
+        0.4097
+      ],
+      "by_faction": {
+        "takamagahara": 1942,
+        "tianting": 18058
+      }
+    }
+  ],
+  "aggregate": {
+    "mean_score": 0.4012,
+    "score_standard_deviation": 0.0054,
+    "minimum_score": 0.3929,
+    "maximum_score": 0.41,
+    "pooled_wins": 96300,
+    "pooled_games": 240000,
+    "pooled_score": 0.4012
+  }
+}

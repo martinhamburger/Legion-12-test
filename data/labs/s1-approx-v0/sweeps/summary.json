@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "lab_id": "s1-approx-v0",
+  "disclaimer": "近似规则实验的稳定性与训练预算测试，不代表正式规则胜率或平衡结论。",
+  "evaluation_protocol": "每个 seed 固定 20,000 局评估；学习策略与规则基线交换先后手。",
+  "budget_comparison": [
+    {
+      "training_episodes": 25000,
+      "seeds": 3,
+      "pooled_games": 60000,
+      "mean_score": 0.3583,
+      "score_standard_deviation": 0.0021
+    },
+    {
+      "training_episodes": 100000,
+      "seeds": 3,
+      "pooled_games": 60000,
+      "mean_score": 0.3901,
+      "score_standard_deviation": 0.0016
+    },
+    {
+      "training_episodes": 500000,
+      "seeds": 12,
+      "pooled_games": 240000,
+      "mean_score": 0.4012,
+      "score_standard_deviation": 0.0054
+    },
+    {
+      "training_episodes": 1000000,
+      "seeds": 12,
+      "pooled_games": 240000,
+      "mean_score": 0.398,
+      "score_standard_deviation": 0.0037
+    }
+  ],
+  "stability": {
+    "recommended_training_episodes": 500000,
+    "reason": "500k 在 12 个 seed 的平均值略高于 1,000k；在当前近似状态与表格 Q-learning 下，继续加局数未显示稳定边际收益。",
+    "total_evaluation_games": 600000,
+    "notes": [
+      "25k 到 100k 的提升明显。",
+      "100k 到 500k 仍有提升。",
+      "500k 到 1,000k 未观察到稳定提升，应优先改进状态、动作或规则近似，而非单纯加局数。"
+    ]
+  },
+  "source_files": [
+    "budget-25k-20k-3seeds.json",
+    "budget-100k-20k-3seeds.json",
+    "stability-500k-20k-12seeds.json",
+    "budget-1000k-20k-3seeds.json",
+    "stability-1000k-20k-9seeds.json"
+  ]
+}
