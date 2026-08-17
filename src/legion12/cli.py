@@ -9,6 +9,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 from .deck.probability import expected_copies, probability_at_least_k
+from .lab import LabConfig, run_experiment
 from .strategy.fusion import fuse_strategy, load_strategy_sources
 
 
@@ -44,6 +45,19 @@ def _fuse_command(args: argparse.Namespace) -> int:
     return 0
 
 
+def _lab_command(args: argparse.Namespace) -> int:
+    """Run the isolated approximate lab; this is never a strict simulation."""
+
+    config = LabConfig(args.seed, args.episodes, args.games, args.max_turns)
+    result = run_experiment(Path.cwd(), config)
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    args.output.write_text(
+        json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    print(json.dumps(result["evaluation"], ensure_ascii=False, indent=2))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="legion12",
@@ -64,6 +78,14 @@ def build_parser() -> argparse.ArgumentParser:
     fuse.add_argument("--archetype", required=True)
     fuse.add_argument("--matchup")
     fuse.set_defaults(handler=_fuse_command)
+
+    lab = subparsers.add_parser("lab", help="run the isolated S1 approximate learning lab")
+    lab.add_argument("--seed", type=int, default=20260817)
+    lab.add_argument("--episodes", type=int, default=20_000)
+    lab.add_argument("--games", type=int, default=1_000)
+    lab.add_argument("--max-turns", type=int, default=10)
+    lab.add_argument("--output", type=Path, default=Path("data/labs/s1-approx-v0/latest.json"))
+    lab.set_defaults(handler=_lab_command)
 
     return parser
 

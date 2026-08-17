@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0",
+  "set_id": "s01-disaster-catalogue",
+  "game_version": "S1",
+  "source": {
+    "asset_path": "规则与卡池/天灾图鉴.pdf",
+    "asset_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+    "kind": "pdf_page",
+    "pdf_path": "规则与卡池/天灾图鉴.pdf",
+    "pdf_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+    "page": null,
+    "pages": 9
+  },
+  "cards": [
+    {
+      "disaster_id": "S01-DS01",
+      "official_card_id": "S01-DS01",
+      "name": "黯陨晨星",
+      "subtitle": "光明与黑暗的分界",
+      "source_card_type_raw": "天灾",
+      "engine_card_type": "disaster",
+      "timing": "ongoing",
+      "text": "主要阶段开始时，回合玩家掷骰。双数：将我方1张活跃士气转为休整。单数：选择以下一项在本回合中生效：打出《主动战术》无需消耗费用；【术师】位于后排时可攻击对方主宰。",
+      "is_final": false,
+      "effect": {
+        "dsl_version": "0.1",
+        "implementation_status": "not_started",
+        "operations": []
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Vision transcription from official disaster catalogue; review before simulation."
+      },
+      "source": {
+        "asset_path": "规则与卡池/天灾图鉴.pdf",
+        "asset_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/天灾图鉴.pdf",
+        "pdf_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "page": 1,
+        "crop": {
+          "x": 0.12,
+          "y": 0.06,
+          "width": 0.76,
+          "height": 0.39
+        }
+      }
+    },
+    {
+      "disaster_id": "S01-DS02",
+      "official_card_id": "S01-DS02",
+      "name": "百鬼夜行",
+      "subtitle": "妖魔横行 灾厄降临",
+      "source_card_type_raw": "天灾",
+      "engine_card_type": "disaster",
+      "timing": "trigger_and_ongoing",
+      "text": "触发：对所有主宰造成1点非致命伤害。持续：带有天灾等级的军团进攻主宰时，造成的伤害+1。回合结束时，回合玩家将手牌返回牌库底部，直至手牌数量不高于5。",
+      "is_final": false,
+      "effect": {
+        "dsl_version": "0.1",
+        "implementation_status": "not_started",
+        "operations": []
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Vision transcription from official disaster catalogue; review before simulation."
+      },
+      "source": {
+        "asset_path": "规则与卡池/天灾图鉴.pdf",
+        "asset_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/天灾图鉴.pdf",
+        "pdf_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "page": 1,
+        "crop": {
+          "x": 0.12,
+          "y": 0.49,
+          "width": 0.76,
+          "height": 0.39
+        }
+      }
+    },
+    {
+      "disaster_id": "S01-DS03",
+      "official_card_id": "S01-DS03",
+      "name": "腐移大地",
+      "subtitle": "腐蚀生命的黑暗",
+      "source_card_type_raw": "天灾",
+      "engine_card_type": "disaster",
+      "timing": "trigger_and_ongoing",
+      "text": "触发：将所有后排军团置入所有者墓地。持续：后排无法放置军团；打出《反击战术》无需消耗费用。",
+      "is_final": false,
+      "effect": {
+        "dsl_version": "0.1",
+        "implementation_status": "not_started",
+        "operations": []
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Vision transcription from official disaster catalogue; review before simulation."
+      },
+      "source": {
+        "asset_path": "规则与卡池/天灾图鉴.pdf",
+        "asset_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/天灾图鉴.pdf",
+        "pdf_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "page": 2,
+        "crop": {
+          "x": 0.12,
+          "y": 0.06,
+          "width": 0.76,
+          "height": 0.39
+        }
+      }
+    },
+    {
+      "disaster_id": "S01-DS04",
+      "official_card_id": "S01-DS04",
+      "name": "雷霆天怒",
+      "subtitle": "吾乃撕裂星辰之雷霆",
+      "source_card_type_raw": "天灾",
+      "engine_card_type": "disaster",
+      "timing": "trigger_and_ongoing",
+      "text": "触发：所有玩家掷骰，数字最小的玩家选择其1张军团返回所有者手牌。持续：兵力高于2000的军团进攻时需掷骰；1~2：此军团转为休整并结束进攻。",
+      "is_final": false,
+      "effect": {
+        "dsl_version": "0.1",
+        "implementation_status": "not_started",
+        "operations": []
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Vision transcription from official disaster catalogue; review before simulation."
+      },
+      "source": {
+        "asset_path": "规则与卡池/天灾图鉴.pdf",
+        "asset_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/天灾图鉴.pdf",
+        "pdf_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "page": 2,
+        "crop": {
+          "x": 0.12,
+          "y": 0.49,
+          "width": 0.76,
+          "height": 0.39
+        }
+      }
+    },
+    {
+      "disaster_id": "S01-DS05",
+      "official_card_id": "S01-DS05",
+      "name": "魔龙降世",
+      "subtitle": "咆哮天际的咆哮",
+      "source_card_type_raw": "天灾",
+      "engine_card_type": "disaster",
+      "timing": "trigger",
+      "text": "触发：回合玩家掷骰。1~2：将其最左侧一列双方战场上的卡牌全部置入墓地；3~4：将其最右侧一列双方战场上的卡牌全部置入墓地；5~6：将中间一列双方战场上的卡牌全部置入墓地。随后所有玩家各将墓地4张卡牌自选顺序返回其牌库底部。",
+      "is_final": false,
+      "effect": {
+        "dsl_version": "0.1",
+        "implementation_status": "not_started",
+        "operations": []
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Vision transcription from official disaster catalogue; review before simulation."
+      },
+      "source": {
+        "asset_path": "规则与卡池/天灾图鉴.pdf",
+        "asset_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/天灾图鉴.pdf",
+        "pdf_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "page": 3,
+        "crop": {
+          "x": 0.12,
+          "y": 0.06,
+          "width": 0.76,
+          "height": 0.39
+        }
+      }
+    },
+    {
+      "disaster_id": "S01-DS06",
+      "official_card_id": "S01-DS06",
+      "name": "神之天平",
+      "subtitle": "冥界 生与死的审判",
+      "source_card_type_raw": "天灾",
+      "engine_card_type": "disaster",
+      "timing": "trigger",
+      "text": "触发：所有主宰的血量降至与血量最低主宰相等，血量产生变动的玩家抽取2张牌；若没有主宰血量产生变化，则所有玩家抽取1张牌。随后所有玩家弃置1张手牌并抽取1张牌。",
+      "is_final": false,
+      "effect": {
+        "dsl_version": "0.1",
+        "implementation_status": "not_started",
+        "operations": []
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Vision transcription from official disaster catalogue; review before simulation."
+      },
+      "source": {
+        "asset_path": "规则与卡池/天灾图鉴.pdf",
+        "asset_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/天灾图鉴.pdf",
+        "pdf_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "page": 3,
+        "crop": {
+          "x": 0.12,
+          "y": 0.49,
+          "width": 0.76,
+          "height": 0.39
+        }
+      }
+    },
+    {
+      "disaster_id": "S01-DS07",
+      "official_card_id": "S01-DS07",
+      "name": "天启默示录",
+      "subtitle": "瘟疫 战争 饥饿与死亡",
+      "source_card_type_raw": "天灾",
+      "engine_card_type": "disaster",
+      "timing": "trigger",
+      "text": "触发：所有玩家将其战场上的军团置入所有者墓地，直至不高于2张。随后所有玩家将手牌自选顺序返回牌库底部，并抽取4张牌。",
+      "is_final": false,
+      "effect": {
+        "dsl_version": "0.1",
+        "implementation_status": "not_started",
+        "operations": []
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Vision transcription from official disaster catalogue; review before simulation."
+      },
+      "source": {
+        "asset_path": "规则与卡池/天灾图鉴.pdf",
+        "asset_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/天灾图鉴.pdf",
+        "pdf_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "page": 4,
+        "crop": {
+          "x": 0.12,
+          "y": 0.06,
+          "width": 0.76,
+          "height": 0.39
+        }
+      }
+    },
+    {
+      "disaster_id": "S01-DS08",
+      "official_card_id": "S01-DS08",
+      "name": "虚构的圣杯",
+      "subtitle": "来自深渊的低语",
+      "source_card_type_raw": "天灾",
+      "engine_card_type": "disaster",
+      "timing": "ongoing",
+      "text": "持续：当玩家使用《圣物效果》时，对其主宰造成1点非致命伤害。",
+      "is_final": false,
+      "effect": {
+        "dsl_version": "0.1",
+        "implementation_status": "not_started",
+        "operations": []
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Vision transcription from official disaster catalogue; review before simulation."
+      },
+      "source": {
+        "asset_path": "规则与卡池/天灾图鉴.pdf",
+        "asset_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/天灾图鉴.pdf",
+        "pdf_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "page": 4,
+        "crop": {
+          "x": 0.12,
+          "y": 0.49,
+          "width": 0.76,
+          "height": 0.39
+        }
+      }
+    },
+    {
+      "disaster_id": "S01-DS09",
+      "official_card_id": "S01-DS09",
+      "name": "诸神黄昏",
+      "subtitle": "无法逃避的世界终焉",
+      "source_card_type_raw": "天灾",
+      "engine_card_type": "disaster",
+      "timing": "trigger",
+      "text": "触发：将所有军团置入所有者墓地。若为开场触发：所有玩家各抽取2张牌；若为主动触发：其余玩家各抽取2张牌，随后立刻结束当前回合，并为回合玩家追加1个新的回合。",
+      "is_final": false,
+      "effect": {
+        "dsl_version": "0.1",
+        "implementation_status": "not_started",
+        "operations": []
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Vision transcription from official disaster catalogue; review before simulation."
+      },
+      "source": {
+        "asset_path": "规则与卡池/天灾图鉴.pdf",
+        "asset_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/天灾图鉴.pdf",
+        "pdf_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "page": 5,
+        "crop": {
+          "x": 0.12,
+          "y": 0.06,
+          "width": 0.76,
+          "height": 0.39
+        }
+      }
+    },
+    {
+      "disaster_id": "S01-DS10",
+      "official_card_id": "S01-DS10",
+      "name": "湮灭",
+      "subtitle": "最终天灾",
+      "source_card_type_raw": "天灾",
+      "engine_card_type": "disaster",
+      "timing": "ongoing",
+      "text": "持续：回合开始时，对所有主宰造成1点非致命伤害。",
+      "is_final": true,
+      "effect": {
+        "dsl_version": "0.1",
+        "implementation_status": "not_started",
+        "operations": []
+      },
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Vision transcription from official disaster catalogue; review before simulation."
+      },
+      "source": {
+        "asset_path": "规则与卡池/天灾图鉴.pdf",
+        "asset_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/天灾图鉴.pdf",
+        "pdf_sha256": "cff232e1988e69e50e5b991184ce7a8ecb72b2b0c7382a96ee279c3e8013b9d2",
+        "page": 5,
+        "crop": {
+          "x": 0.12,
+          "y": 0.49,
+          "width": 0.76,
+          "height": 0.39
+        }
+      }
+    }
+  ],
+  "scope": "S01 only; S02 disasters remain source-only."
+}

@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths:
       - "data/card_pools/**"
+      - "data/rulesets/**"
+      - "data/s1/**"
+      - "data/labs/**"
       - "规则与卡池/**"
       - "tools/build_review_site.py"
       - ".github/workflows/deploy-review-site.yml"

@@ -36,3 +36,13 @@ def test_load_trainable_cards_enforces_review_and_effect_gate(tmp_path: Path) ->
         encoding="utf-8",
     )
     assert [item["card_id"] for item in load_trainable_cards(path)] == ["ready"]
+
+
+def test_validation_accepts_a_supplementary_image_source() -> None:
+    image_card = card("image")
+    image_card["source"] = {
+        "kind": "image",
+        "image_path": "规则与卡池/补充卡面/S01-0002-佣兵部队.png",
+        "image_sha256": "b" * 64,
+    }
+    validate_catalog({"schema_version": "1.0", "cards": [image_card]})

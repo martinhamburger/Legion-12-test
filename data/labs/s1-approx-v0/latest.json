@@ -1,0 +1,4962 @@
+{
+  "schema_version": "1.0",
+  "lab_id": "s1-approx-v0",
+  "disclaimer": "近似规则实验：仅用于学习节奏、资源交换与出牌逻辑，不代表正式规则胜率。",
+  "config": {
+    "seed": 20260817,
+    "training_episodes": 20000,
+    "evaluation_games": 1000,
+    "max_turns": 10
+  },
+  "coverage": {
+    "main_cards": 29,
+    "leaders": 2,
+    "resources": 2,
+    "unmodeled": [
+      "天灾",
+      "反击响应链",
+      "前后排",
+      "复杂目标选择",
+      "未实现卡文",
+      "隐藏信息博弈"
+    ]
+  },
+  "profiles": {
+    "schema_version": "1.0",
+    "lab_id": "s1-approx-v0",
+    "disclaimer": "近似规则实验：仅用于学习节奏、资源交换与出牌逻辑，不代表正式规则胜率。",
+    "coverage": {
+      "main_cards": 29,
+      "leaders": 2,
+      "resources": 2,
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    "profiles": [
+      {
+        "profile_id": "S01-0002",
+        "name": "佣兵部队",
+        "kind": "unit",
+        "cost": 4,
+        "troops": 5000,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 1,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.5,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 1.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "防御"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "我方回合1次：可进行1次位移。\n对方进攻我方军团时，可从手牌中弃置此军团：抵挡本次进攻。",
+        "review_status": "needs_review",
+        "numbers_seen": [
+          1,
+          1
+        ],
+        "tags": [
+          "通用",
+          "骑兵"
+        ]
+      },
+      {
+        "profile_id": "S01-0012",
+        "name": "全军出击",
+        "kind": "tactic_active",
+        "cost": 1,
+        "troops": 0,
+        "health": 0,
+        "charge": true,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.12,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 1.0,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "冲锋"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "本回合从手牌中打出的下1张费用不高于6的军团获得冲锋。（可在登场回合进攻）",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          6
+        ],
+        "tags": [
+          "主动",
+          "战术",
+          "通用"
+        ]
+      },
+      {
+        "profile_id": "S01-0015",
+        "name": "议和谈判",
+        "kind": "tactic_active",
+        "cost": 0,
+        "troops": 0,
+        "health": 0,
+        "charge": false,
+        "draw": 1,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.0,
+          "card_advantage": 1.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "过牌或检索"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "抽取1张牌。随后询问对方是否议和谈判。\n·若对方同意，则双方各抽取1张牌。\n·若对方不同意，则双方不抽牌。",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          1
+        ],
+        "tags": [
+          "主动",
+          "战术",
+          "通用"
+        ]
+      },
+      {
+        "profile_id": "S01-0016",
+        "name": "绝对防御",
+        "kind": "tactic_counter",
+        "cost": 2,
+        "troops": 0,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 1,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.25,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 1.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "防御"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "对方进攻或发动效果时，弃置1张手牌：抵挡本次进攻或无效该效果。",
+        "review_status": "verified",
+        "numbers_seen": [
+          1
+        ],
+        "tags": [
+          "反击",
+          "战术",
+          "通用"
+        ]
+      },
+      {
+        "profile_id": "S01-0018",
+        "name": "落穴陷阱",
+        "kind": "tactic_counter",
+        "cost": 2,
+        "troops": 0,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.25,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "基础费用与兵力"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "对方军团登场时：使此军团登场效果无效。",
+        "review_status": "verified",
+        "numbers_seen": [],
+        "tags": [
+          "反击",
+          "战术",
+          "通用"
+        ]
+      },
+      {
+        "profile_id": "S01-0101",
+        "name": "吕布",
+        "kind": "unit",
+        "cost": 8,
+        "troops": 9000,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 1,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 1,
+        "features": {
+          "tempo": 1.0,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 1.5,
+          "face_pressure": 0.0,
+          "defense": 1.0,
+          "risk": 0.5
+        },
+        "approximated": [
+          "解场",
+          "防御",
+          "返还士气"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "进攻无损，无法被远程进攻。此军团进攻后，可返还4士气，将此军团转为活跃。登场时 可返还2士气：击杀对方1张天灾等级1或2的军团。",
+        "review_status": "verified",
+        "numbers_seen": [
+          4,
+          2,
+          1,
+          1,
+          2
+        ],
+        "tags": [
+          "天廷",
+          "斗士"
+        ]
+      },
+      {
+        "profile_id": "S01-0102",
+        "name": "武则天",
+        "kind": "unit",
+        "cost": 7,
+        "troops": 7000,
+        "health": 0,
+        "charge": false,
+        "draw": 1,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 1,
+        "features": {
+          "tempo": 0.88,
+          "card_advantage": 1.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 0.0,
+          "risk": 0.5
+        },
+        "approximated": [
+          "过牌或检索",
+          "返还士气"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "登场时 可返还1士气：选择对方最多2张休整的军团，在下个对方重置阶段无法转为活跃。阵亡时 抽取1张牌，我方主宰增加1点血量。",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "tags": [
+          "天廷",
+          "领军"
+        ]
+      },
+      {
+        "profile_id": "S01-0103",
+        "name": "李靖",
+        "kind": "unit",
+        "cost": 6,
+        "troops": 6000,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 1,
+        "features": {
+          "tempo": 0.75,
+          "card_advantage": 0.0,
+          "morale_acceleration": 1.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 0.0,
+          "risk": 0.5
+        },
+        "approximated": [
+          "追加士气或加速登场",
+          "返还士气"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "登场时 可展示牌库顶部1张牌。随后，选择将其放回牌库顶部或底部。若展示卡牌为费用不高于5的【天廷】军团，可返还1士气，将其活跃登场作为代替。",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          5,
+          1
+        ],
+        "tags": [
+          "天廷",
+          "领军"
+        ]
+      },
+      {
+        "profile_id": "S01-0104",
+        "name": "韩信",
+        "kind": "unit",
+        "cost": 5,
+        "troops": 5000,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 1000,
+        "defense": 0,
+        "return_morale": 1,
+        "features": {
+          "tempo": 0.62,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.75,
+          "defense": 0.0,
+          "risk": 0.5
+        },
+        "approximated": [
+          "兵力增益或强攻",
+          "返还士气"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "若我方士气少于对方，此军团登场费用-1。进攻时可返还1士气：此军团本回合兵力+1000，并获得强攻。（进攻对主宰造成额外1点伤害）",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          1,
+          1000,
+          1
+        ],
+        "tags": [
+          "天廷",
+          "武者"
+        ]
+      },
+      {
+        "profile_id": "S01-0105",
+        "name": "刘备",
+        "kind": "unit",
+        "cost": 5,
+        "troops": 3000,
+        "health": 0,
+        "charge": false,
+        "draw": 1,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 1,
+        "features": {
+          "tempo": 0.62,
+          "card_advantage": 1.0,
+          "morale_acceleration": 1.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 0.0,
+          "risk": 0.5
+        },
+        "approximated": [
+          "过牌或检索",
+          "追加士气或加速登场",
+          "返还士气"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "登场时 可返还1士气：选择将手牌中1张《关羽》或《张飞》活跃登场。\n主动休整 可返还1士气：查看我方牌库，选择1张《关羽》或《张飞》展示并加入手牌。随后，重洗牌库。",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "tags": [
+          "天廷",
+          "领军"
+        ]
+      },
+      {
+        "profile_id": "S01-0106",
+        "name": "关羽",
+        "kind": "unit",
+        "cost": 5,
+        "troops": 5000,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 1000,
+        "defense": 1,
+        "return_morale": 1,
+        "features": {
+          "tempo": 0.62,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.75,
+          "defense": 1.0,
+          "risk": 0.5
+        },
+        "approximated": [
+          "兵力增益或强攻",
+          "防御",
+          "返还士气"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "我方 回合1次 可进行1次位移。\n进攻时 可返还1士气：此军团本回合兵力+1000，并获得必中。\n（进攻无法被抵挡/支援）",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          1,
+          1,
+          1000
+        ],
+        "tags": [
+          "天廷",
+          "骑兵"
+        ]
+      },
+      {
+        "profile_id": "S01-0107",
+        "name": "张飞",
+        "kind": "unit",
+        "cost": 5,
+        "troops": 4000,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 1000,
+        "defense": 1,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.62,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.75,
+          "defense": 1.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "兵力增益或强攻",
+          "防御"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "若我方士气少于对方，此军团登场费用-1。「位于前排」获得挑衅，且在对方回合此军团兵力+1000。（对方只可进攻带有此效果的军团）",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          1000
+        ],
+        "tags": [
+          "天廷",
+          "武者"
+        ]
+      },
+      {
+        "profile_id": "S01-0108",
+        "name": "花木兰",
+        "kind": "unit",
+        "cost": 4,
+        "troops": 4000,
+        "health": 0,
+        "charge": true,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 1,
+        "features": {
+          "tempo": 0.5,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 1.0,
+          "defense": 0.0,
+          "risk": 0.5
+        },
+        "approximated": [
+          "冲锋",
+          "返还士气"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "登场时 可返还1士气：获得冲锋。（可在登场回合进攻）\n对方回合 阵亡时 选择对方场上1张休整的士气，在下个对方重置阶段无法转为活跃。",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          1
+        ],
+        "tags": [
+          "天廷",
+          "武者"
+        ]
+      },
+      {
+        "profile_id": "S01-0109",
+        "name": "白起",
+        "kind": "unit",
+        "cost": 3,
+        "troops": 3000,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 1,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.38,
+          "card_advantage": 0.0,
+          "morale_acceleration": 1.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "追加士气或加速登场"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "登场时 从士气牌库追加3张休整的士气。主动休整 从士气牌库追加1张休整的士气。",
+        "review_status": "verified",
+        "numbers_seen": [
+          3,
+          1
+        ],
+        "tags": [
+          "天廷",
+          "斗士"
+        ]
+      },
+      {
+        "profile_id": "S01-0117",
+        "name": "山河社稷图",
+        "kind": "artifact",
+        "cost": 3,
+        "troops": 0,
+        "health": 0,
+        "charge": false,
+        "draw": 1,
+        "morale_gain": 1,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 1,
+        "features": {
+          "tempo": 0.38,
+          "card_advantage": 1.0,
+          "morale_acceleration": 1.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 0.0,
+          "risk": 0.5
+        },
+        "approximated": [
+          "过牌或检索",
+          "追加士气或加速登场",
+          "返还士气"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "登场时 从士气牌库追加1张活跃的士气。\n主动休整 选择以下一项。\n·返还1活跃士气：抽取1张牌。\n·弃置1张手牌：查看牌库顶部3张牌，选择其中1张【天廷】卡牌，展示并加入手牌，其余卡牌自选顺序返回牌库顶部或底部。",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          1,
+          1,
+          1,
+          3,
+          1
+        ],
+        "tags": [
+          "圣物",
+          "天廷"
+        ]
+      },
+      {
+        "profile_id": "S01-0118",
+        "name": "神妙行军",
+        "kind": "tactic_active",
+        "cost": 3,
+        "troops": 0,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 1,
+        "buff": 1000,
+        "defense": 0,
+        "return_morale": 1,
+        "features": {
+          "tempo": 0.38,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 1.5,
+          "face_pressure": 0.75,
+          "defense": 0.0,
+          "risk": 0.5
+        },
+        "approximated": [
+          "解场",
+          "兵力增益或强攻",
+          "返还士气"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "选择我方前排1张军团，本回合兵力+2000。可返还2士气：击杀对方1张兵力不高于6000的军团。",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          2000,
+          2,
+          1,
+          6000
+        ],
+        "tags": [
+          "主动",
+          "天廷",
+          "战术"
+        ]
+      },
+      {
+        "profile_id": "S01-0119",
+        "name": "观星",
+        "kind": "tactic_active",
+        "cost": 1,
+        "troops": 0,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 1,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.12,
+          "card_advantage": 0.0,
+          "morale_acceleration": 1.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "追加士气或加速登场"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "查看牌库顶部5张牌，自选顺序放回牌库顶部或底部。随后，可从士气牌库追加1张活跃的士气。",
+        "review_status": "verified",
+        "numbers_seen": [
+          5,
+          1
+        ],
+        "tags": [
+          "主动",
+          "天廷",
+          "战术"
+        ]
+      },
+      {
+        "profile_id": "S01-0401",
+        "name": "本多忠胜",
+        "kind": "unit",
+        "cost": 8,
+        "troops": 8000,
+        "health": 0,
+        "charge": true,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 1,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 1.0,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 1.5,
+          "face_pressure": 1.0,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "冲锋",
+          "解场"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "登场时 获得 冲锋 。（可在登场回合进攻） 进攻时 对方所有军团本回合费用-1。随后击杀对方1张费用为0的军团。",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          1,
+          0
+        ],
+        "tags": [
+          "冲锋",
+          "武者",
+          "高天原"
+        ]
+      },
+      {
+        "profile_id": "S01-0404",
+        "name": "真田幸村",
+        "kind": "unit",
+        "cost": 5,
+        "troops": 4000,
+        "health": 0,
+        "charge": true,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.62,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 1.0,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "冲锋"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "登场时 获得 冲锋 。（可在登场回合进攻）",
+        "review_status": "verified",
+        "numbers_seen": [],
+        "tags": [
+          "武者",
+          "高天原"
+        ]
+      },
+      {
+        "profile_id": "S01-0405",
+        "name": "宫本武藏",
+        "kind": "unit",
+        "cost": 5,
+        "troops": 5000,
+        "health": 0,
+        "charge": true,
+        "draw": 1,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.62,
+          "card_advantage": 1.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 1.0,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "过牌或检索",
+          "冲锋"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "登场时 若我方前排没有其他军团，此军团获得 冲锋 。（可在登场回合进攻）\n进攻时 若我方手牌数量不高于对方，可抽取1张牌。",
+        "review_status": "verified",
+        "numbers_seen": [
+          1
+        ],
+        "tags": [
+          "冲锋",
+          "斗士",
+          "高天原"
+        ]
+      },
+      {
+        "profile_id": "S01-0409",
+        "name": "源义经",
+        "kind": "unit",
+        "cost": 4,
+        "troops": 4000,
+        "health": 0,
+        "charge": false,
+        "draw": 1,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.5,
+          "card_advantage": 1.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "过牌或检索"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "「位于后排」进攻时 此军团兵力视为2000，进攻距离+1，远程进攻无损。我方 回合1次 可进行1次位移。击杀时 可抽取1张牌。",
+        "review_status": "verified",
+        "numbers_seen": [
+          2000,
+          1,
+          1,
+          1,
+          1
+        ],
+        "tags": [
+          "骑兵"
+        ]
+      },
+      {
+        "profile_id": "S01-0410",
+        "name": "巴御前",
+        "kind": "unit",
+        "cost": 3,
+        "troops": 2000,
+        "health": 0,
+        "charge": true,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.38,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 1.0,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "冲锋"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "进攻距离+1，远程进攻无损。登场时获得冲锋。（可在登场回合进攻）",
+        "review_status": "verified",
+        "numbers_seen": [
+          1
+        ],
+        "tags": [
+          "弓手",
+          "高天原"
+        ]
+      },
+      {
+        "profile_id": "S01-0413",
+        "name": "源博雅",
+        "kind": "unit",
+        "cost": 3,
+        "troops": 2000,
+        "health": 0,
+        "charge": false,
+        "draw": 1,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.38,
+          "card_advantage": 1.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "过牌或检索"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "进攻距离+1，远程进攻无损。\n登场时 若我方手牌不高于5张，可抽取1张牌。\n进攻时 选择对方1张<反击战术>，本回合无法发动。",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          5,
+          1,
+          1
+        ],
+        "tags": [
+          "弓手",
+          "高天原"
+        ]
+      },
+      {
+        "profile_id": "S01-0414",
+        "name": "桂小五郎",
+        "kind": "unit",
+        "cost": 3,
+        "troops": 4000,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.38,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "基础费用与兵力"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "此军团进攻后，可返回牌库顶部。此军团返回牌库顶部时：将我方最多2张士气转为活跃。",
+        "review_status": "verified",
+        "numbers_seen": [
+          2
+        ],
+        "tags": [
+          "武者",
+          "高天原"
+        ]
+      },
+      {
+        "profile_id": "S01-0415",
+        "name": "服部半藏",
+        "kind": "unit",
+        "cost": 2,
+        "troops": 2000,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.25,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 1.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "防御"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "「位于前排」进攻距离+1，远程进攻无损。\n登场时 发动 隐匿。\n（翻转此牌，覆盖时无法被选为效果或攻击的目标，直至主动翻回正面。）",
+        "review_status": "verified",
+        "numbers_seen": [
+          1
+        ],
+        "tags": [
+          "刺客",
+          "高天原"
+        ]
+      },
+      {
+        "profile_id": "S01-0416",
+        "name": "稻姬本多小松",
+        "kind": "unit",
+        "cost": 1,
+        "troops": 1000,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 1000,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.12,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.75,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "兵力增益或强攻"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "进攻距离+1，远程进攻无损。\n登场时 进攻时 选择我方前排1张<稻姬本多小松>以外兵力不高于5000的【高天原】军团，本回合兵力+1000。",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          1,
+          5000,
+          1000
+        ],
+        "tags": [
+          "弓手",
+          "高天原"
+        ]
+      },
+      {
+        "profile_id": "S01-0417",
+        "name": "草薙剑",
+        "kind": "artifact",
+        "cost": 3,
+        "troops": 0,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 1,
+        "buff": 1000,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.38,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 1.5,
+          "face_pressure": 0.75,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "解场",
+          "兵力增益或强攻"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "登场时：击杀对方1张费用不高于2的军团。\n我方回合1次 可消耗1士气：选择以下一项。\n·选择对方1张军团，本回合费用-1。\n·选择我方1张【高天原】军团，本回合获得强攻。\n（进攻对主宰造成额外1点伤害）",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "tags": [
+          "圣物",
+          "天之丛云",
+          "降魔",
+          "高天原"
+        ]
+      },
+      {
+        "profile_id": "S01-0418",
+        "name": "天诛",
+        "kind": "tactic_active",
+        "cost": 4,
+        "troops": 0,
+        "health": 0,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 1,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.5,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 1.5,
+          "face_pressure": 0.0,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "解场"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "击杀对方1张费用不高于7的军团。",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          7
+        ],
+        "tags": [
+          "主动",
+          "战术",
+          "高天原"
+        ]
+      },
+      {
+        "profile_id": "S01-0419",
+        "name": "花魁的馈赠",
+        "kind": "tactic_active",
+        "cost": 1,
+        "troops": 0,
+        "health": 0,
+        "charge": false,
+        "draw": 1,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.12,
+          "card_advantage": 1.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "过牌或检索"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "查看牌库顶部3张牌，选择其中1张<花魁的馈赠>以外的【高天原】卡牌，展示并加入手牌，其余卡牌自选顺序返回牌库底部。随后，将最多1张士气转为活跃。",
+        "review_status": "verified",
+        "numbers_seen": [
+          3,
+          1,
+          1
+        ],
+        "tags": [
+          "主动",
+          "战术",
+          "高天原"
+        ]
+      }
+    ],
+    "leaders": [
+      {
+        "profile_id": "S01-01M1",
+        "name": "杨戬",
+        "kind": "ruler",
+        "cost": 0,
+        "troops": 0,
+        "health": 10,
+        "charge": false,
+        "draw": 1,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 0,
+        "defense": 0,
+        "return_morale": 1,
+        "features": {
+          "tempo": 0.0,
+          "card_advantage": 1.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.0,
+          "defense": 0.0,
+          "risk": 0.5
+        },
+        "approximated": [
+          "过牌或检索",
+          "返还士气"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "【我方】回合1次 可消耗1士气：抽取1张牌。随后将1张手牌放回牌库顶部或底部。\n【我方】回合1次 可返还4士气：对对方主宰造成1点非致命伤害。",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          4,
+          1
+        ],
+        "tags": [
+          "主宰者",
+          "二郎神",
+          "天廷",
+          "显圣真君"
+        ]
+      },
+      {
+        "profile_id": "S01-04M2",
+        "name": "须佐之男",
+        "kind": "ruler",
+        "cost": 0,
+        "troops": 0,
+        "health": 9,
+        "charge": false,
+        "draw": 0,
+        "morale_gain": 0,
+        "removal": 0,
+        "buff": 1000,
+        "defense": 0,
+        "return_morale": 0,
+        "features": {
+          "tempo": 0.0,
+          "card_advantage": 0.0,
+          "morale_acceleration": 0.0,
+          "board_control": 0.0,
+          "face_pressure": 0.75,
+          "defense": 0.0,
+          "risk": 0.0
+        },
+        "approximated": [
+          "兵力增益或强攻"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "素盏鸣尊 破坏神\n我方 回合1次 可消耗1士气：选择我方1张【高天原】军团，本回合位于前排进攻时兵力+2000。\n消耗2士气：将我方<草薙剑>置入前排，视为1张兵力5000的【武者】军团。（草薙剑仍可发动其效果）\n<草薙剑>离场时：可选择将其放回牌库顶部。",
+        "review_status": "verified",
+        "numbers_seen": [
+          1,
+          1,
+          1,
+          2000,
+          2,
+          1,
+          5000
+        ],
+        "tags": [
+          "主宰者",
+          "高天原"
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "profile_id": "resource:tianting",
+        "name": "天廷士气资源",
+        "kind": "faction_morale",
+        "approximated": [
+          "阵营资源的抽牌、追加士气或位移倾向"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "我方回合1次，可消耗2士气：从士气牌库追加1张活跃的士气。\n我方回合1次，我方士气为0张时，可从士气牌库追加2张休整的士气。",
+        "review_status": "needs_review"
+      },
+      {
+        "profile_id": "resource:takamagahara",
+        "name": "高天原士气资源",
+        "kind": "faction_morale",
+        "approximated": [
+          "阵营资源的抽牌、追加士气或位移倾向"
+        ],
+        "unmodeled": [
+          "天灾",
+          "反击响应链",
+          "前后排",
+          "复杂目标选择",
+          "未实现卡文",
+          "隐藏信息博弈"
+        ],
+        "source_text": "我方回合1次，可消耗2士气：抽取1张牌。随后可选择我方1张活跃的军团进行1格位移。",
+        "review_status": "needs_review"
+      }
+    ]
+  },
+  "training_curve": [
+    {
+      "episode": 1000,
+      "epsilon": 0.287,
+      "mean_reward": -0.272,
+      "win_rate": 0.364,
+      "mean_turns": 9.987,
+      "mean_q": -0.0306
+    },
+    {
+      "episode": 2000,
+      "epsilon": 0.274,
+      "mean_reward": -0.328,
+      "win_rate": 0.336,
+      "mean_turns": 9.998,
+      "mean_q": -0.0468
+    },
+    {
+      "episode": 3000,
+      "epsilon": 0.261,
+      "mean_reward": -0.196,
+      "win_rate": 0.402,
+      "mean_turns": 9.985,
+      "mean_q": -0.0548
+    },
+    {
+      "episode": 4000,
+      "epsilon": 0.248,
+      "mean_reward": -0.288,
+      "win_rate": 0.356,
+      "mean_turns": 9.996,
+      "mean_q": -0.0649
+    },
+    {
+      "episode": 5000,
+      "epsilon": 0.235,
+      "mean_reward": -0.282,
+      "win_rate": 0.359,
+      "mean_turns": 9.999,
+      "mean_q": -0.0733
+    },
+    {
+      "episode": 6000,
+      "epsilon": 0.222,
+      "mean_reward": -0.21,
+      "win_rate": 0.395,
+      "mean_turns": 9.998,
+      "mean_q": -0.0807
+    },
+    {
+      "episode": 7000,
+      "epsilon": 0.209,
+      "mean_reward": -0.262,
+      "win_rate": 0.369,
+      "mean_turns": 9.992,
+      "mean_q": -0.0867
+    },
+    {
+      "episode": 8000,
+      "epsilon": 0.196,
+      "mean_reward": -0.266,
+      "win_rate": 0.367,
+      "mean_turns": 9.994,
+      "mean_q": -0.0927
+    },
+    {
+      "episode": 9000,
+      "epsilon": 0.183,
+      "mean_reward": -0.334,
+      "win_rate": 0.333,
+      "mean_turns": 9.996,
+      "mean_q": -0.0978
+    },
+    {
+      "episode": 10000,
+      "epsilon": 0.17,
+      "mean_reward": -0.28,
+      "win_rate": 0.36,
+      "mean_turns": 9.99,
+      "mean_q": -0.1024
+    },
+    {
+      "episode": 11000,
+      "epsilon": 0.157,
+      "mean_reward": -0.254,
+      "win_rate": 0.373,
+      "mean_turns": 9.988,
+      "mean_q": -0.1072
+    },
+    {
+      "episode": 12000,
+      "epsilon": 0.144,
+      "mean_reward": -0.242,
+      "win_rate": 0.379,
+      "mean_turns": 9.994,
+      "mean_q": -0.1113
+    },
+    {
+      "episode": 13000,
+      "epsilon": 0.131,
+      "mean_reward": -0.212,
+      "win_rate": 0.394,
+      "mean_turns": 9.994,
+      "mean_q": -0.116
+    },
+    {
+      "episode": 14000,
+      "epsilon": 0.118,
+      "mean_reward": -0.234,
+      "win_rate": 0.383,
+      "mean_turns": 9.998,
+      "mean_q": -0.1202
+    },
+    {
+      "episode": 15000,
+      "epsilon": 0.105,
+      "mean_reward": -0.338,
+      "win_rate": 0.331,
+      "mean_turns": 9.996,
+      "mean_q": -0.1242
+    },
+    {
+      "episode": 16000,
+      "epsilon": 0.092,
+      "mean_reward": -0.298,
+      "win_rate": 0.351,
+      "mean_turns": 9.98,
+      "mean_q": -0.1292
+    },
+    {
+      "episode": 17000,
+      "epsilon": 0.079,
+      "mean_reward": -0.284,
+      "win_rate": 0.358,
+      "mean_turns": 9.99,
+      "mean_q": -0.1332
+    },
+    {
+      "episode": 18000,
+      "epsilon": 0.066,
+      "mean_reward": -0.286,
+      "win_rate": 0.357,
+      "mean_turns": 9.99,
+      "mean_q": -0.1365
+    },
+    {
+      "episode": 19000,
+      "epsilon": 0.053,
+      "mean_reward": -0.282,
+      "win_rate": 0.359,
+      "mean_turns": 9.994,
+      "mean_q": -0.1399
+    },
+    {
+      "episode": 20000,
+      "epsilon": 0.04,
+      "mean_reward": -0.288,
+      "win_rate": 0.356,
+      "mean_turns": 9.998,
+      "mean_q": -0.1439
+    }
+  ],
+  "evaluation": {
+    "games": 1000,
+    "learned_wins": 357,
+    "baseline_wins": 643,
+    "learned_score": 0.357,
+    "confidence_95": [
+      0.3279,
+      0.3872
+    ],
+    "by_faction": {
+      "tianting": 857,
+      "takamagahara": 143
+    }
+  },
+  "deck_insights": {
+    "cost_curve": {
+      "0": 3,
+      "1": 8,
+      "2": 8,
+      "3": 19,
+      "4": 14,
+      "5": 16,
+      "6": 3,
+      "7": 3,
+      "8": 6
+    },
+    "morale_waste_per_turn": 2.94,
+    "metric_note": "卡牌条件胜率与打出率均为近似对局相关性，不是因果或强度结论。"
+  },
+  "card_insights": [
+    {
+      "card_id": "S01-0002",
+      "name": "佣兵部队",
+      "cost": 4,
+      "play_count": 141,
+      "play_rate": 0.141,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.685,
+      "review_status": "needs_review",
+      "features": {
+        "tempo": 0.5,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 1.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "防御"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0012",
+      "name": "全军出击",
+      "cost": 1,
+      "play_count": 178,
+      "play_rate": 0.178,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.8953,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.12,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 1.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "冲锋"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0015",
+      "name": "议和谈判",
+      "cost": 0,
+      "play_count": 106,
+      "play_rate": 0.106,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.3019,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.0,
+        "card_advantage": 1.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "过牌或检索"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0016",
+      "name": "绝对防御",
+      "cost": 2,
+      "play_count": 125,
+      "play_rate": 0.125,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.4113,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.25,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 1.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "防御"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0018",
+      "name": "落穴陷阱",
+      "cost": 2,
+      "play_count": 34,
+      "play_rate": 0.034,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.0909,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.25,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "基础费用与兵力"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0101",
+      "name": "吕布",
+      "cost": 8,
+      "play_count": 160,
+      "play_rate": 0.16,
+      "mulligan_retention_rate": 0.0,
+      "conditional_win_rate": 0.9182,
+      "review_status": "verified",
+      "features": {
+        "tempo": 1.0,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 1.5,
+        "face_pressure": 0.0,
+        "defense": 1.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "解场",
+        "防御",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0102",
+      "name": "武则天",
+      "cost": 7,
+      "play_count": 133,
+      "play_rate": 0.133,
+      "mulligan_retention_rate": 0.0,
+      "conditional_win_rate": 0.8615,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.88,
+        "card_advantage": 1.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "过牌或检索",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0103",
+      "name": "李靖",
+      "cost": 6,
+      "play_count": 325,
+      "play_rate": 0.325,
+      "mulligan_retention_rate": 0.0,
+      "conditional_win_rate": 0.9223,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.75,
+        "card_advantage": 0.0,
+        "morale_acceleration": 1.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "追加士气或加速登场",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0104",
+      "name": "韩信",
+      "cost": 5,
+      "play_count": 196,
+      "play_rate": 0.196,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.8138,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.62,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.75,
+        "defense": 0.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "兵力增益或强攻",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0105",
+      "name": "刘备",
+      "cost": 5,
+      "play_count": 422,
+      "play_rate": 0.422,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.9309,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.62,
+        "card_advantage": 1.0,
+        "morale_acceleration": 1.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "过牌或检索",
+        "追加士气或加速登场",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0106",
+      "name": "关羽",
+      "cost": 5,
+      "play_count": 245,
+      "play_rate": 0.245,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.819,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.62,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.75,
+        "defense": 1.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "兵力增益或强攻",
+        "防御",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0107",
+      "name": "张飞",
+      "cost": 5,
+      "play_count": 46,
+      "play_rate": 0.046,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.3636,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.62,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.75,
+        "defense": 1.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "兵力增益或强攻",
+        "防御"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0108",
+      "name": "花木兰",
+      "cost": 4,
+      "play_count": 153,
+      "play_rate": 0.153,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.6824,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.5,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 1.0,
+        "defense": 0.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "冲锋",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0109",
+      "name": "白起",
+      "cost": 3,
+      "play_count": 615,
+      "play_rate": 0.615,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.8631,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.38,
+        "card_advantage": 0.0,
+        "morale_acceleration": 1.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "追加士气或加速登场"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0117",
+      "name": "山河社稷图",
+      "cost": 3,
+      "play_count": 625,
+      "play_rate": 0.625,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.9393,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.38,
+        "card_advantage": 1.0,
+        "morale_acceleration": 1.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "过牌或检索",
+        "追加士气或加速登场",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0118",
+      "name": "神妙行军",
+      "cost": 3,
+      "play_count": 300,
+      "play_rate": 0.3,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.9097,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.38,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 1.5,
+        "face_pressure": 0.75,
+        "defense": 0.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "解场",
+        "兵力增益或强攻",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0119",
+      "name": "观星",
+      "cost": 1,
+      "play_count": 506,
+      "play_rate": 0.506,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.8714,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.12,
+        "card_advantage": 0.0,
+        "morale_acceleration": 1.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "追加士气或加速登场"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0401",
+      "name": "本多忠胜",
+      "cost": 8,
+      "play_count": 214,
+      "play_rate": 0.214,
+      "mulligan_retention_rate": 0.0,
+      "conditional_win_rate": 0.4688,
+      "review_status": "verified",
+      "features": {
+        "tempo": 1.0,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 1.5,
+        "face_pressure": 1.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "冲锋",
+        "解场"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0404",
+      "name": "真田幸村",
+      "cost": 5,
+      "play_count": 325,
+      "play_rate": 0.325,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.2554,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.62,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 1.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "冲锋"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0405",
+      "name": "宫本武藏",
+      "cost": 5,
+      "play_count": 423,
+      "play_rate": 0.423,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.2845,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.62,
+        "card_advantage": 1.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 1.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "过牌或检索",
+        "冲锋"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0409",
+      "name": "源义经",
+      "cost": 4,
+      "play_count": 91,
+      "play_rate": 0.091,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.2597,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.5,
+        "card_advantage": 1.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "过牌或检索"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0410",
+      "name": "巴御前",
+      "cost": 3,
+      "play_count": 161,
+      "play_rate": 0.161,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.2113,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.38,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 1.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "冲锋"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0413",
+      "name": "源博雅",
+      "cost": 3,
+      "play_count": 20,
+      "play_rate": 0.02,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.2778,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.38,
+        "card_advantage": 1.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "过牌或检索"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0414",
+      "name": "桂小五郎",
+      "cost": 3,
+      "play_count": 0,
+      "play_rate": 0.0,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.0,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.38,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "基础费用与兵力"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0415",
+      "name": "服部半藏",
+      "cost": 2,
+      "play_count": 16,
+      "play_rate": 0.016,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.5,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.25,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 1.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "防御"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0416",
+      "name": "稻姬本多小松",
+      "cost": 1,
+      "play_count": 96,
+      "play_rate": 0.096,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.375,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.12,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.75,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "兵力增益或强攻"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0417",
+      "name": "草薙剑",
+      "cost": 3,
+      "play_count": 452,
+      "play_rate": 0.452,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.3222,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.38,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 1.5,
+        "face_pressure": 0.75,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "解场",
+        "兵力增益或强攻"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0418",
+      "name": "天诛",
+      "cost": 4,
+      "play_count": 295,
+      "play_rate": 0.295,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.2439,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.5,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 1.5,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "解场"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    },
+    {
+      "card_id": "S01-0419",
+      "name": "花魁的馈赠",
+      "cost": 1,
+      "play_count": 218,
+      "play_rate": 0.218,
+      "mulligan_retention_rate": 1.0,
+      "conditional_win_rate": 0.2304,
+      "review_status": "verified",
+      "features": {
+        "tempo": 0.12,
+        "card_advantage": 1.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "过牌或检索"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ]
+    }
+  ],
+  "representative_replays": [
+    {
+      "seed": 20360817,
+      "winner": "tianting",
+      "turns": 10,
+      "records": [
+        [
+          "tianting|1|10|9|1|6|0|0",
+          "hold"
+        ],
+        [
+          "takamagahara|2|9|10|2|7|0|0",
+          "play:S01-0419"
+        ],
+        [
+          "tianting|3|10|9|3|7|0|0",
+          "play:S01-0117"
+        ],
+        [
+          "takamagahara|4|9|10|4|8|0|0",
+          "play:S01-0417"
+        ],
+        [
+          "tianting|5|10|9|6|8|0|0",
+          "play:S01-0106"
+        ],
+        [
+          "takamagahara|6|9|10|6|8|0|1",
+          "play:S01-0405"
+        ],
+        [
+          "tianting|7|10|9|8|8|1|0",
+          "play:S01-0105"
+        ],
+        [
+          "takamagahara|8|7|10|8|8|0|2",
+          "play:S01-0410"
+        ],
+        [
+          "tianting|9|10|7|8|8|2|0",
+          "hold"
+        ],
+        [
+          "takamagahara|10|4|10|8|8|0|2",
+          "play:S01-0409"
+        ]
+      ],
+      "steps": [
+        {
+          "turn": 1,
+          "player": "tianting",
+          "hand": [
+            "关羽",
+            "山河社稷图",
+            "花木兰",
+            "刘备",
+            "张飞",
+            "全军出击"
+          ],
+          "active_morale": 1,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 9,
+          "legal_actions": [
+            "hold",
+            "play:S01-0012"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 2,
+          "player": "takamagahara",
+          "hand": [
+            "桂小五郎",
+            "佣兵部队",
+            "源义经",
+            "服部半藏",
+            "巴御前",
+            "草薙剑",
+            "服部半藏"
+          ],
+          "active_morale": 1,
+          "rested_morale": 1,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0415",
+            "play:S01-0419"
+          ],
+          "chosen_action": "play:S01-0419",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 花魁的馈赠；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 3,
+          "player": "tianting",
+          "hand": [
+            "关羽",
+            "花木兰",
+            "刘备",
+            "张飞",
+            "全军出击",
+            "关羽",
+            "佣兵部队"
+          ],
+          "active_morale": 1,
+          "rested_morale": 3,
+          "board": [],
+          "opponent_health": 9,
+          "legal_actions": [
+            "hold",
+            "play:S01-0012",
+            "play:S01-0117"
+          ],
+          "chosen_action": "play:S01-0117",
+          "reason": "Q-learning 估值最高",
+          "resolution": "打出 山河社稷图；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 4,
+          "player": "takamagahara",
+          "hand": [
+            "桂小五郎",
+            "佣兵部队",
+            "源义经",
+            "服部半藏",
+            "巴御前",
+            "服部半藏",
+            "源义经"
+          ],
+          "active_morale": 1,
+          "rested_morale": 3,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0409",
+            "play:S01-0410",
+            "play:S01-0414",
+            "play:S01-0415",
+            "play:S01-0417"
+          ],
+          "chosen_action": "play:S01-0417",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 草薙剑；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 5,
+          "player": "tianting",
+          "hand": [
+            "花木兰",
+            "刘备",
+            "张飞",
+            "全军出击",
+            "关羽",
+            "佣兵部队",
+            "绝对防御"
+          ],
+          "active_morale": 1,
+          "rested_morale": 5,
+          "board": [
+            "关羽"
+          ],
+          "opponent_health": 9,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0012",
+            "play:S01-0016",
+            "play:S01-0105",
+            "play:S01-0106",
+            "play:S01-0107",
+            "play:S01-0108"
+          ],
+          "chosen_action": "play:S01-0106",
+          "reason": "Q-learning 估值最高",
+          "resolution": "打出 关羽；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 6,
+          "player": "takamagahara",
+          "hand": [
+            "桂小五郎",
+            "佣兵部队",
+            "源义经",
+            "服部半藏",
+            "巴御前",
+            "服部半藏",
+            "源义经"
+          ],
+          "active_morale": 1,
+          "rested_morale": 5,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0405",
+            "play:S01-0409",
+            "play:S01-0410",
+            "play:S01-0414",
+            "play:S01-0415"
+          ],
+          "chosen_action": "play:S01-0405",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 宫本武藏；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 7,
+          "player": "tianting",
+          "hand": [
+            "花木兰",
+            "张飞",
+            "全军出击",
+            "关羽",
+            "佣兵部队",
+            "绝对防御",
+            "吕布"
+          ],
+          "active_morale": 3,
+          "rested_morale": 5,
+          "board": [
+            "关羽",
+            "刘备"
+          ],
+          "opponent_health": 7,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0012",
+            "play:S01-0016",
+            "play:S01-0101",
+            "play:S01-0105",
+            "play:S01-0106",
+            "play:S01-0107",
+            "play:S01-0108"
+          ],
+          "chosen_action": "play:S01-0105",
+          "reason": "Q-learning 估值最高",
+          "resolution": "打出 刘备；S01-0106 对主宰造成 2 点伤害",
+          "damage": 2
+        },
+        {
+          "turn": 8,
+          "player": "takamagahara",
+          "hand": [
+            "桂小五郎",
+            "佣兵部队",
+            "源义经",
+            "服部半藏",
+            "服部半藏",
+            "源义经",
+            "佣兵部队"
+          ],
+          "active_morale": 5,
+          "rested_morale": 3,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0409",
+            "play:S01-0410",
+            "play:S01-0414",
+            "play:S01-0415"
+          ],
+          "chosen_action": "play:S01-0410",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 巴御前；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 9,
+          "player": "tianting",
+          "hand": [
+            "花木兰",
+            "张飞",
+            "全军出击",
+            "关羽",
+            "佣兵部队",
+            "绝对防御",
+            "吕布",
+            "白起"
+          ],
+          "active_morale": 8,
+          "rested_morale": 0,
+          "board": [
+            "关羽",
+            "刘备"
+          ],
+          "opponent_health": 4,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0012",
+            "play:S01-0016",
+            "play:S01-0101",
+            "play:S01-0106",
+            "play:S01-0107",
+            "play:S01-0108",
+            "play:S01-0109"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；S01-0106 对主宰造成 2 点伤害；S01-0105 对主宰造成 1 点伤害",
+          "damage": 3
+        },
+        {
+          "turn": 10,
+          "player": "takamagahara",
+          "hand": [
+            "桂小五郎",
+            "佣兵部队",
+            "服部半藏",
+            "服部半藏",
+            "源义经",
+            "佣兵部队",
+            "议和谈判"
+          ],
+          "active_morale": 4,
+          "rested_morale": 4,
+          "board": [
+            "源义经"
+          ],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0015",
+            "play:S01-0409",
+            "play:S01-0414",
+            "play:S01-0415"
+          ],
+          "chosen_action": "play:S01-0409",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 源义经；没有可结算的进攻",
+          "damage": 0
+        }
+      ],
+      "mulligans": {
+        "tianting": {
+          "opening": [
+            "S01-0106",
+            "S01-0117",
+            "S01-0108",
+            "S01-0105",
+            "S01-0107",
+            "S01-0012"
+          ],
+          "replaced": [],
+          "kept": [
+            "S01-0106",
+            "S01-0117",
+            "S01-0108",
+            "S01-0105",
+            "S01-0107",
+            "S01-0012"
+          ]
+        },
+        "takamagahara": {
+          "opening": [
+            "S01-0414",
+            "S01-0401",
+            "S01-0002",
+            "S01-0419",
+            "S01-0401",
+            "S01-0409"
+          ],
+          "replaced": [
+            "S01-0401",
+            "S01-0401"
+          ],
+          "kept": [
+            "S01-0414",
+            "S01-0002",
+            "S01-0419",
+            "S01-0409"
+          ]
+        }
+      }
+    },
+    {
+      "seed": 20360818,
+      "winner": "tianting",
+      "turns": 10,
+      "records": [
+        [
+          "takamagahara|1|9|10|1|6|0|0",
+          "hold"
+        ],
+        [
+          "tianting|2|10|9|2|7|0|0",
+          "play:S01-0012"
+        ],
+        [
+          "takamagahara|3|9|10|3|7|0|0",
+          "hold"
+        ],
+        [
+          "tianting|4|10|9|4|7|0|0",
+          "play:S01-0117"
+        ],
+        [
+          "takamagahara|5|9|10|5|8|0|0",
+          "hold"
+        ],
+        [
+          "tianting|6|10|9|7|8|0|0",
+          "play:S01-0103"
+        ],
+        [
+          "takamagahara|7|9|10|7|8|0|1",
+          "hold"
+        ],
+        [
+          "tianting|8|10|9|8|8|1|0",
+          "play:S01-0117"
+        ],
+        [
+          "takamagahara|9|7|10|8|8|0|1",
+          "hold"
+        ],
+        [
+          "tianting|10|10|7|8|8|1|0",
+          "play:S01-0119"
+        ]
+      ],
+      "steps": [
+        {
+          "turn": 1,
+          "player": "takamagahara",
+          "hand": [
+            "花魁的馈赠",
+            "绝对防御",
+            "源义经",
+            "花魁的馈赠",
+            "真田幸村",
+            "天诛"
+          ],
+          "active_morale": 1,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0419"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 2,
+          "player": "tianting",
+          "hand": [
+            "白起",
+            "白起",
+            "韩信",
+            "韩信",
+            "李靖",
+            "吕布"
+          ],
+          "active_morale": 1,
+          "rested_morale": 1,
+          "board": [],
+          "opponent_health": 9,
+          "legal_actions": [
+            "hold",
+            "play:S01-0012"
+          ],
+          "chosen_action": "play:S01-0012",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 全军出击；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 3,
+          "player": "takamagahara",
+          "hand": [
+            "花魁的馈赠",
+            "绝对防御",
+            "源义经",
+            "花魁的馈赠",
+            "真田幸村",
+            "天诛",
+            "草薙剑"
+          ],
+          "active_morale": 3,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0016",
+            "play:S01-0417",
+            "play:S01-0419"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 4,
+          "player": "tianting",
+          "hand": [
+            "白起",
+            "白起",
+            "韩信",
+            "韩信",
+            "李靖",
+            "吕布",
+            "神妙行军"
+          ],
+          "active_morale": 2,
+          "rested_morale": 3,
+          "board": [],
+          "opponent_health": 9,
+          "legal_actions": [
+            "hold",
+            "play:S01-0109",
+            "play:S01-0117"
+          ],
+          "chosen_action": "play:S01-0117",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 山河社稷图；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 5,
+          "player": "takamagahara",
+          "hand": [
+            "花魁的馈赠",
+            "绝对防御",
+            "源义经",
+            "花魁的馈赠",
+            "真田幸村",
+            "天诛",
+            "草薙剑",
+            "绝对防御"
+          ],
+          "active_morale": 5,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0016",
+            "play:S01-0404",
+            "play:S01-0409",
+            "play:S01-0417",
+            "play:S01-0418",
+            "play:S01-0419"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 6,
+          "player": "tianting",
+          "hand": [
+            "白起",
+            "白起",
+            "韩信",
+            "韩信",
+            "吕布",
+            "神妙行军",
+            "落穴陷阱"
+          ],
+          "active_morale": 1,
+          "rested_morale": 6,
+          "board": [
+            "李靖"
+          ],
+          "opponent_health": 9,
+          "legal_actions": [
+            "hold",
+            "play:S01-0018",
+            "play:S01-0103",
+            "play:S01-0104",
+            "play:S01-0109",
+            "play:S01-0118"
+          ],
+          "chosen_action": "play:S01-0103",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 李靖；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 7,
+          "player": "takamagahara",
+          "hand": [
+            "花魁的馈赠",
+            "绝对防御",
+            "源义经",
+            "花魁的馈赠",
+            "真田幸村",
+            "天诛",
+            "草薙剑",
+            "绝对防御",
+            "源博雅"
+          ],
+          "active_morale": 7,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0016",
+            "play:S01-0404",
+            "play:S01-0409",
+            "play:S01-0413",
+            "play:S01-0417",
+            "play:S01-0418",
+            "play:S01-0419"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 8,
+          "player": "tianting",
+          "hand": [
+            "白起",
+            "白起",
+            "韩信",
+            "韩信",
+            "吕布",
+            "神妙行军",
+            "落穴陷阱",
+            "花木兰"
+          ],
+          "active_morale": 5,
+          "rested_morale": 3,
+          "board": [
+            "李靖"
+          ],
+          "opponent_health": 7,
+          "legal_actions": [
+            "hold",
+            "play:S01-0018",
+            "play:S01-0101",
+            "play:S01-0104",
+            "play:S01-0109",
+            "play:S01-0117",
+            "play:S01-0118"
+          ],
+          "chosen_action": "play:S01-0117",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 山河社稷图；S01-0103 对主宰造成 2 点伤害",
+          "damage": 2
+        },
+        {
+          "turn": 9,
+          "player": "takamagahara",
+          "hand": [
+            "花魁的馈赠",
+            "绝对防御",
+            "源义经",
+            "花魁的馈赠",
+            "真田幸村",
+            "天诛",
+            "草薙剑",
+            "绝对防御",
+            "源博雅",
+            "真田幸村"
+          ],
+          "active_morale": 8,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0016",
+            "play:S01-0404",
+            "play:S01-0409",
+            "play:S01-0413",
+            "play:S01-0417",
+            "play:S01-0418",
+            "play:S01-0419"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 10,
+          "player": "tianting",
+          "hand": [
+            "白起",
+            "白起",
+            "韩信",
+            "韩信",
+            "吕布",
+            "神妙行军",
+            "落穴陷阱",
+            "花木兰"
+          ],
+          "active_morale": 7,
+          "rested_morale": 1,
+          "board": [
+            "李靖"
+          ],
+          "opponent_health": 5,
+          "legal_actions": [
+            "hold",
+            "play:S01-0018",
+            "play:S01-0101",
+            "play:S01-0104",
+            "play:S01-0108",
+            "play:S01-0109",
+            "play:S01-0118",
+            "play:S01-0119"
+          ],
+          "chosen_action": "play:S01-0119",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 观星；S01-0103 对主宰造成 2 点伤害",
+          "damage": 2
+        }
+      ],
+      "mulligans": {
+        "takamagahara": {
+          "opening": [
+            "S01-0419",
+            "S01-0016",
+            "S01-0409",
+            "S01-0419",
+            "S01-0404",
+            "S01-0418"
+          ],
+          "replaced": [],
+          "kept": [
+            "S01-0419",
+            "S01-0016",
+            "S01-0409",
+            "S01-0419",
+            "S01-0404",
+            "S01-0418"
+          ]
+        },
+        "tianting": {
+          "opening": [
+            "S01-0109",
+            "S01-0109",
+            "S01-0103",
+            "S01-0104",
+            "S01-0102",
+            "S01-0104"
+          ],
+          "replaced": [
+            "S01-0103",
+            "S01-0102"
+          ],
+          "kept": [
+            "S01-0109",
+            "S01-0109",
+            "S01-0104",
+            "S01-0104"
+          ]
+        }
+      }
+    },
+    {
+      "seed": 20360819,
+      "winner": "tianting",
+      "turns": 10,
+      "records": [
+        [
+          "tianting|1|10|9|1|6|0|0",
+          "hold"
+        ],
+        [
+          "takamagahara|2|9|10|2|7|0|0",
+          "play:S01-0419"
+        ],
+        [
+          "tianting|3|10|9|3|7|0|0",
+          "play:S01-0109"
+        ],
+        [
+          "takamagahara|4|9|10|4|8|0|1",
+          "play:S01-0410"
+        ],
+        [
+          "tianting|5|10|9|5|7|1|0",
+          "play:S01-0002"
+        ],
+        [
+          "takamagahara|6|8|10|6|8|0|2",
+          "play:S01-0405"
+        ],
+        [
+          "tianting|7|10|8|7|7|1|1",
+          "play:S01-0118"
+        ],
+        [
+          "takamagahara|8|7|10|8|8|0|1",
+          "play:S01-0405"
+        ],
+        [
+          "tianting|9|10|7|8|7|0|1",
+          "play:S01-0106"
+        ],
+        [
+          "takamagahara|10|7|10|8|8|1|1",
+          "play:S01-0404"
+        ]
+      ],
+      "steps": [
+        {
+          "turn": 1,
+          "player": "tianting",
+          "hand": [
+            "张飞",
+            "神妙行军",
+            "佣兵部队",
+            "白起",
+            "关羽",
+            "李靖"
+          ],
+          "active_morale": 1,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 9,
+          "legal_actions": [
+            "hold"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 2,
+          "player": "takamagahara",
+          "hand": [
+            "源博雅",
+            "宫本武藏",
+            "巴御前",
+            "宫本武藏",
+            "议和谈判",
+            "源博雅",
+            "真田幸村"
+          ],
+          "active_morale": 1,
+          "rested_morale": 1,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0015",
+            "play:S01-0419"
+          ],
+          "chosen_action": "play:S01-0419",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 花魁的馈赠；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 3,
+          "player": "tianting",
+          "hand": [
+            "张飞",
+            "神妙行军",
+            "佣兵部队",
+            "关羽",
+            "李靖",
+            "武则天"
+          ],
+          "active_morale": 0,
+          "rested_morale": 3,
+          "board": [
+            "白起"
+          ],
+          "opponent_health": 9,
+          "legal_actions": [
+            "hold",
+            "play:S01-0109",
+            "play:S01-0118"
+          ],
+          "chosen_action": "play:S01-0109",
+          "reason": "Q-learning 估值最高",
+          "resolution": "打出 白起；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 4,
+          "player": "takamagahara",
+          "hand": [
+            "源博雅",
+            "宫本武藏",
+            "宫本武藏",
+            "议和谈判",
+            "源博雅",
+            "真田幸村",
+            "绝对防御"
+          ],
+          "active_morale": 1,
+          "rested_morale": 3,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0015",
+            "play:S01-0016",
+            "play:S01-0410",
+            "play:S01-0413"
+          ],
+          "chosen_action": "play:S01-0410",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 巴御前；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 5,
+          "player": "tianting",
+          "hand": [
+            "张飞",
+            "神妙行军",
+            "关羽",
+            "李靖",
+            "武则天",
+            "山河社稷图"
+          ],
+          "active_morale": 1,
+          "rested_morale": 4,
+          "board": [
+            "白起",
+            "佣兵部队"
+          ],
+          "opponent_health": 8,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0106",
+            "play:S01-0107",
+            "play:S01-0117",
+            "play:S01-0118"
+          ],
+          "chosen_action": "play:S01-0002",
+          "reason": "Q-learning 估值最高",
+          "resolution": "打出 佣兵部队；S01-0109 对主宰造成 1 点伤害",
+          "damage": 1
+        },
+        {
+          "turn": 6,
+          "player": "takamagahara",
+          "hand": [
+            "源博雅",
+            "宫本武藏",
+            "议和谈判",
+            "源博雅",
+            "真田幸村",
+            "绝对防御",
+            "巴御前"
+          ],
+          "active_morale": 1,
+          "rested_morale": 5,
+          "board": [
+            "宫本武藏"
+          ],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0015",
+            "play:S01-0016",
+            "play:S01-0404",
+            "play:S01-0405",
+            "play:S01-0410",
+            "play:S01-0413"
+          ],
+          "chosen_action": "play:S01-0405",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 宫本武藏；S01-0405 击破 S01-0109",
+          "damage": 0
+        },
+        {
+          "turn": 7,
+          "player": "tianting",
+          "hand": [
+            "张飞",
+            "关羽",
+            "李靖",
+            "武则天",
+            "山河社稷图",
+            "山河社稷图"
+          ],
+          "active_morale": 4,
+          "rested_morale": 3,
+          "board": [
+            "佣兵部队"
+          ],
+          "opponent_health": 7,
+          "legal_actions": [
+            "hold",
+            "play:S01-0102",
+            "play:S01-0103",
+            "play:S01-0106",
+            "play:S01-0107",
+            "play:S01-0117",
+            "play:S01-0118"
+          ],
+          "chosen_action": "play:S01-0118",
+          "reason": "Q-learning 估值最高",
+          "resolution": "打出 神妙行军；S01-0002 对主宰造成 1 点伤害",
+          "damage": 1
+        },
+        {
+          "turn": 8,
+          "player": "takamagahara",
+          "hand": [
+            "源博雅",
+            "议和谈判",
+            "源博雅",
+            "真田幸村",
+            "绝对防御",
+            "巴御前",
+            "源义经"
+          ],
+          "active_morale": 3,
+          "rested_morale": 5,
+          "board": [
+            "宫本武藏"
+          ],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0015",
+            "play:S01-0016",
+            "play:S01-0404",
+            "play:S01-0405",
+            "play:S01-0409",
+            "play:S01-0410",
+            "play:S01-0413"
+          ],
+          "chosen_action": "play:S01-0405",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 宫本武藏；S01-0405 击破 S01-0002",
+          "damage": 0
+        },
+        {
+          "turn": 9,
+          "player": "tianting",
+          "hand": [
+            "张飞",
+            "李靖",
+            "武则天",
+            "山河社稷图",
+            "山河社稷图",
+            "韩信"
+          ],
+          "active_morale": 3,
+          "rested_morale": 5,
+          "board": [
+            "关羽"
+          ],
+          "opponent_health": 7,
+          "legal_actions": [
+            "hold",
+            "play:S01-0102",
+            "play:S01-0103",
+            "play:S01-0104",
+            "play:S01-0106",
+            "play:S01-0107",
+            "play:S01-0117"
+          ],
+          "chosen_action": "play:S01-0106",
+          "reason": "Q-learning 估值最高",
+          "resolution": "打出 关羽；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 10,
+          "player": "takamagahara",
+          "hand": [
+            "源博雅",
+            "议和谈判",
+            "源博雅",
+            "绝对防御",
+            "巴御前",
+            "源义经",
+            "桂小五郎"
+          ],
+          "active_morale": 3,
+          "rested_morale": 5,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0015",
+            "play:S01-0016",
+            "play:S01-0404",
+            "play:S01-0409",
+            "play:S01-0410",
+            "play:S01-0413",
+            "play:S01-0414"
+          ],
+          "chosen_action": "play:S01-0404",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 真田幸村；没有可结算的进攻",
+          "damage": 0
+        }
+      ],
+      "mulligans": {
+        "tianting": {
+          "opening": [
+            "S01-0107",
+            "S01-0118",
+            "S01-0103",
+            "S01-0002",
+            "S01-0109",
+            "S01-0106"
+          ],
+          "replaced": [
+            "S01-0103"
+          ],
+          "kept": [
+            "S01-0107",
+            "S01-0118",
+            "S01-0002",
+            "S01-0109",
+            "S01-0106"
+          ]
+        },
+        "takamagahara": {
+          "opening": [
+            "S01-0419",
+            "S01-0413",
+            "S01-0405",
+            "S01-0410",
+            "S01-0405",
+            "S01-0015"
+          ],
+          "replaced": [],
+          "kept": [
+            "S01-0419",
+            "S01-0413",
+            "S01-0405",
+            "S01-0410",
+            "S01-0405",
+            "S01-0015"
+          ]
+        }
+      }
+    },
+    {
+      "seed": 20360820,
+      "winner": "tianting",
+      "turns": 10,
+      "records": [
+        [
+          "takamagahara|1|9|10|1|6|0|0",
+          "hold"
+        ],
+        [
+          "tianting|2|10|9|2|7|0|0",
+          "play:S01-0119"
+        ],
+        [
+          "takamagahara|3|9|10|3|7|0|0",
+          "hold"
+        ],
+        [
+          "tianting|4|10|9|5|7|0|0",
+          "play:S01-0105"
+        ],
+        [
+          "takamagahara|5|9|10|5|8|0|1",
+          "hold"
+        ],
+        [
+          "tianting|6|10|9|7|7|1|0",
+          "play:S01-0117"
+        ],
+        [
+          "takamagahara|7|8|10|7|8|0|1",
+          "hold"
+        ],
+        [
+          "tianting|8|10|8|8|8|1|0",
+          "play:S01-0119"
+        ],
+        [
+          "takamagahara|9|7|10|8|8|0|1",
+          "hold"
+        ],
+        [
+          "tianting|10|10|7|8|8|1|0",
+          "play:S01-0109"
+        ]
+      ],
+      "steps": [
+        {
+          "turn": 1,
+          "player": "takamagahara",
+          "hand": [
+            "宫本武藏",
+            "花魁的馈赠",
+            "源义经",
+            "佣兵部队",
+            "源义经",
+            "议和谈判"
+          ],
+          "active_morale": 1,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0015",
+            "play:S01-0419"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 2,
+          "player": "tianting",
+          "hand": [
+            "白起",
+            "佣兵部队",
+            "刘备",
+            "韩信",
+            "张飞",
+            "武则天"
+          ],
+          "active_morale": 2,
+          "rested_morale": 1,
+          "board": [],
+          "opponent_health": 9,
+          "legal_actions": [
+            "hold",
+            "play:S01-0119"
+          ],
+          "chosen_action": "play:S01-0119",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 观星；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 3,
+          "player": "takamagahara",
+          "hand": [
+            "宫本武藏",
+            "花魁的馈赠",
+            "源义经",
+            "佣兵部队",
+            "源义经",
+            "议和谈判",
+            "桂小五郎"
+          ],
+          "active_morale": 3,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0015",
+            "play:S01-0414",
+            "play:S01-0419"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 4,
+          "player": "tianting",
+          "hand": [
+            "白起",
+            "佣兵部队",
+            "韩信",
+            "张飞",
+            "武则天",
+            "绝对防御"
+          ],
+          "active_morale": 0,
+          "rested_morale": 5,
+          "board": [
+            "刘备"
+          ],
+          "opponent_health": 9,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0016",
+            "play:S01-0104",
+            "play:S01-0105",
+            "play:S01-0107",
+            "play:S01-0109"
+          ],
+          "chosen_action": "play:S01-0105",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 刘备；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 5,
+          "player": "takamagahara",
+          "hand": [
+            "宫本武藏",
+            "花魁的馈赠",
+            "源义经",
+            "佣兵部队",
+            "源义经",
+            "议和谈判",
+            "桂小五郎",
+            "宫本武藏"
+          ],
+          "active_morale": 5,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0015",
+            "play:S01-0405",
+            "play:S01-0409",
+            "play:S01-0414",
+            "play:S01-0419"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 6,
+          "player": "tianting",
+          "hand": [
+            "白起",
+            "佣兵部队",
+            "韩信",
+            "张飞",
+            "武则天",
+            "绝对防御",
+            "观星"
+          ],
+          "active_morale": 5,
+          "rested_morale": 3,
+          "board": [
+            "刘备"
+          ],
+          "opponent_health": 8,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0016",
+            "play:S01-0102",
+            "play:S01-0104",
+            "play:S01-0107",
+            "play:S01-0109",
+            "play:S01-0117"
+          ],
+          "chosen_action": "play:S01-0117",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 山河社稷图；S01-0105 对主宰造成 1 点伤害",
+          "damage": 1
+        },
+        {
+          "turn": 7,
+          "player": "takamagahara",
+          "hand": [
+            "宫本武藏",
+            "花魁的馈赠",
+            "源义经",
+            "佣兵部队",
+            "源义经",
+            "议和谈判",
+            "桂小五郎",
+            "宫本武藏",
+            "花魁的馈赠"
+          ],
+          "active_morale": 7,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0015",
+            "play:S01-0405",
+            "play:S01-0409",
+            "play:S01-0414",
+            "play:S01-0419"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 8,
+          "player": "tianting",
+          "hand": [
+            "白起",
+            "佣兵部队",
+            "韩信",
+            "张飞",
+            "武则天",
+            "绝对防御",
+            "花木兰"
+          ],
+          "active_morale": 7,
+          "rested_morale": 1,
+          "board": [
+            "刘备"
+          ],
+          "opponent_health": 7,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0016",
+            "play:S01-0102",
+            "play:S01-0104",
+            "play:S01-0107",
+            "play:S01-0108",
+            "play:S01-0109",
+            "play:S01-0119"
+          ],
+          "chosen_action": "play:S01-0119",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 观星；S01-0105 对主宰造成 1 点伤害",
+          "damage": 1
+        },
+        {
+          "turn": 9,
+          "player": "takamagahara",
+          "hand": [
+            "宫本武藏",
+            "花魁的馈赠",
+            "源义经",
+            "佣兵部队",
+            "源义经",
+            "议和谈判",
+            "桂小五郎",
+            "宫本武藏",
+            "花魁的馈赠",
+            "真田幸村"
+          ],
+          "active_morale": 8,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0015",
+            "play:S01-0404",
+            "play:S01-0405",
+            "play:S01-0409",
+            "play:S01-0414",
+            "play:S01-0419"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 10,
+          "player": "tianting",
+          "hand": [
+            "佣兵部队",
+            "韩信",
+            "张飞",
+            "武则天",
+            "绝对防御",
+            "花木兰",
+            "花木兰"
+          ],
+          "active_morale": 5,
+          "rested_morale": 3,
+          "board": [
+            "刘备",
+            "白起"
+          ],
+          "opponent_health": 6,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0016",
+            "play:S01-0102",
+            "play:S01-0104",
+            "play:S01-0107",
+            "play:S01-0108",
+            "play:S01-0109"
+          ],
+          "chosen_action": "play:S01-0109",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 白起；S01-0105 对主宰造成 1 点伤害",
+          "damage": 1
+        }
+      ],
+      "mulligans": {
+        "takamagahara": {
+          "opening": [
+            "S01-0405",
+            "S01-0419",
+            "S01-0409",
+            "S01-0002",
+            "S01-0409",
+            "S01-0015"
+          ],
+          "replaced": [],
+          "kept": [
+            "S01-0405",
+            "S01-0419",
+            "S01-0409",
+            "S01-0002",
+            "S01-0409",
+            "S01-0015"
+          ]
+        },
+        "tianting": {
+          "opening": [
+            "S01-0103",
+            "S01-0109",
+            "S01-0119",
+            "S01-0002",
+            "S01-0105",
+            "S01-0104"
+          ],
+          "replaced": [
+            "S01-0103"
+          ],
+          "kept": [
+            "S01-0109",
+            "S01-0119",
+            "S01-0002",
+            "S01-0105",
+            "S01-0104"
+          ]
+        }
+      }
+    },
+    {
+      "seed": 20360821,
+      "winner": "tianting",
+      "turns": 10,
+      "records": [
+        [
+          "tianting|1|10|9|1|6|0|0",
+          "play:S01-0119"
+        ],
+        [
+          "takamagahara|2|9|10|2|7|0|0",
+          "play:S01-0419"
+        ],
+        [
+          "tianting|3|10|9|4|6|0|0",
+          "play:S01-0109"
+        ],
+        [
+          "takamagahara|4|9|10|4|8|0|1",
+          "play:S01-0418"
+        ],
+        [
+          "tianting|5|10|9|6|6|0|0",
+          "play:S01-0108"
+        ],
+        [
+          "takamagahara|6|8|10|6|8|0|1",
+          "play:S01-0418"
+        ],
+        [
+          "tianting|7|10|8|8|6|0|0",
+          "play:S01-0102"
+        ],
+        [
+          "takamagahara|8|8|10|8|8|0|1",
+          "play:S01-0405"
+        ],
+        [
+          "tianting|9|10|8|8|6|1|0",
+          "hold"
+        ],
+        [
+          "takamagahara|10|6|10|8|8|0|1",
+          "play:S01-0409"
+        ]
+      ],
+      "steps": [
+        {
+          "turn": 1,
+          "player": "tianting",
+          "hand": [
+            "落穴陷阱",
+            "白起",
+            "观星",
+            "刘备",
+            "武则天"
+          ],
+          "active_morale": 1,
+          "rested_morale": 1,
+          "board": [],
+          "opponent_health": 9,
+          "legal_actions": [
+            "hold",
+            "play:S01-0119"
+          ],
+          "chosen_action": "play:S01-0119",
+          "reason": "Q-learning 估值最高",
+          "resolution": "打出 观星；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 2,
+          "player": "takamagahara",
+          "hand": [
+            "天诛",
+            "绝对防御",
+            "天诛",
+            "源义经",
+            "桂小五郎",
+            "佣兵部队",
+            "稻姬本多小松"
+          ],
+          "active_morale": 1,
+          "rested_morale": 1,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0016",
+            "play:S01-0419"
+          ],
+          "chosen_action": "play:S01-0419",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 花魁的馈赠；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 3,
+          "player": "tianting",
+          "hand": [
+            "落穴陷阱",
+            "观星",
+            "刘备",
+            "武则天",
+            "神妙行军"
+          ],
+          "active_morale": 1,
+          "rested_morale": 3,
+          "board": [
+            "白起"
+          ],
+          "opponent_health": 9,
+          "legal_actions": [
+            "hold",
+            "play:S01-0018",
+            "play:S01-0109",
+            "play:S01-0118",
+            "play:S01-0119"
+          ],
+          "chosen_action": "play:S01-0109",
+          "reason": "Q-learning 估值最高",
+          "resolution": "打出 白起；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 4,
+          "player": "takamagahara",
+          "hand": [
+            "绝对防御",
+            "天诛",
+            "源义经",
+            "桂小五郎",
+            "佣兵部队",
+            "稻姬本多小松",
+            "花魁的馈赠"
+          ],
+          "active_morale": 0,
+          "rested_morale": 4,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0016",
+            "play:S01-0409",
+            "play:S01-0414",
+            "play:S01-0416",
+            "play:S01-0418",
+            "play:S01-0419"
+          ],
+          "chosen_action": "play:S01-0418",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 天诛；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 5,
+          "player": "tianting",
+          "hand": [
+            "落穴陷阱",
+            "观星",
+            "刘备",
+            "武则天",
+            "神妙行军"
+          ],
+          "active_morale": 2,
+          "rested_morale": 4,
+          "board": [
+            "花木兰"
+          ],
+          "opponent_health": 8,
+          "legal_actions": [
+            "hold",
+            "play:S01-0018",
+            "play:S01-0105",
+            "play:S01-0108",
+            "play:S01-0118",
+            "play:S01-0119"
+          ],
+          "chosen_action": "play:S01-0108",
+          "reason": "Q-learning 估值最高",
+          "resolution": "打出 花木兰；S01-0108 对主宰造成 1 点伤害",
+          "damage": 1
+        },
+        {
+          "turn": 6,
+          "player": "takamagahara",
+          "hand": [
+            "绝对防御",
+            "源义经",
+            "桂小五郎",
+            "佣兵部队",
+            "稻姬本多小松",
+            "花魁的馈赠",
+            "桂小五郎"
+          ],
+          "active_morale": 2,
+          "rested_morale": 4,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0016",
+            "play:S01-0409",
+            "play:S01-0414",
+            "play:S01-0416",
+            "play:S01-0418",
+            "play:S01-0419"
+          ],
+          "chosen_action": "play:S01-0418",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 天诛；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 7,
+          "player": "tianting",
+          "hand": [
+            "落穴陷阱",
+            "观星",
+            "刘备",
+            "神妙行军",
+            "全军出击"
+          ],
+          "active_morale": 1,
+          "rested_morale": 7,
+          "board": [
+            "武则天"
+          ],
+          "opponent_health": 8,
+          "legal_actions": [
+            "hold",
+            "play:S01-0012",
+            "play:S01-0018",
+            "play:S01-0102",
+            "play:S01-0105",
+            "play:S01-0118",
+            "play:S01-0119"
+          ],
+          "chosen_action": "play:S01-0102",
+          "reason": "Q-learning 估值最高",
+          "resolution": "打出 武则天；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 8,
+          "player": "takamagahara",
+          "hand": [
+            "绝对防御",
+            "源义经",
+            "桂小五郎",
+            "佣兵部队",
+            "稻姬本多小松",
+            "花魁的馈赠",
+            "桂小五郎"
+          ],
+          "active_morale": 3,
+          "rested_morale": 5,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0016",
+            "play:S01-0405",
+            "play:S01-0409",
+            "play:S01-0414",
+            "play:S01-0416",
+            "play:S01-0419"
+          ],
+          "chosen_action": "play:S01-0405",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 宫本武藏；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 9,
+          "player": "tianting",
+          "hand": [
+            "落穴陷阱",
+            "观星",
+            "刘备",
+            "神妙行军",
+            "全军出击",
+            "张飞"
+          ],
+          "active_morale": 8,
+          "rested_morale": 0,
+          "board": [
+            "武则天"
+          ],
+          "opponent_health": 6,
+          "legal_actions": [
+            "hold",
+            "play:S01-0012",
+            "play:S01-0018",
+            "play:S01-0105",
+            "play:S01-0107",
+            "play:S01-0118",
+            "play:S01-0119"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；S01-0102 对主宰造成 2 点伤害",
+          "damage": 2
+        },
+        {
+          "turn": 10,
+          "player": "takamagahara",
+          "hand": [
+            "绝对防御",
+            "桂小五郎",
+            "佣兵部队",
+            "稻姬本多小松",
+            "花魁的馈赠",
+            "桂小五郎",
+            "源博雅"
+          ],
+          "active_morale": 4,
+          "rested_morale": 4,
+          "board": [
+            "源义经"
+          ],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0016",
+            "play:S01-0409",
+            "play:S01-0413",
+            "play:S01-0414",
+            "play:S01-0416",
+            "play:S01-0419"
+          ],
+          "chosen_action": "play:S01-0409",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 源义经；没有可结算的进攻",
+          "damage": 0
+        }
+      ],
+      "mulligans": {
+        "tianting": {
+          "opening": [
+            "S01-0119",
+            "S01-0101",
+            "S01-0018",
+            "S01-0109",
+            "S01-0119",
+            "S01-0105"
+          ],
+          "replaced": [
+            "S01-0101"
+          ],
+          "kept": [
+            "S01-0119",
+            "S01-0018",
+            "S01-0109",
+            "S01-0119",
+            "S01-0105"
+          ]
+        },
+        "takamagahara": {
+          "opening": [
+            "S01-0418",
+            "S01-0419",
+            "S01-0016",
+            "S01-0418",
+            "S01-0409",
+            "S01-0414"
+          ],
+          "replaced": [],
+          "kept": [
+            "S01-0418",
+            "S01-0419",
+            "S01-0016",
+            "S01-0418",
+            "S01-0409",
+            "S01-0414"
+          ]
+        }
+      }
+    },
+    {
+      "seed": 20360822,
+      "winner": "tianting",
+      "turns": 10,
+      "records": [
+        [
+          "takamagahara|1|9|10|1|6|0|0",
+          "hold"
+        ],
+        [
+          "tianting|2|10|9|2|7|0|0",
+          "play:S01-0012"
+        ],
+        [
+          "takamagahara|3|9|10|3|7|0|0",
+          "hold"
+        ],
+        [
+          "tianting|4|10|9|4|7|0|0",
+          "play:S01-0117"
+        ],
+        [
+          "takamagahara|5|9|10|5|8|0|0",
+          "hold"
+        ],
+        [
+          "tianting|6|10|9|7|8|0|0",
+          "play:S01-0102"
+        ],
+        [
+          "takamagahara|7|9|10|7|8|0|1",
+          "hold"
+        ],
+        [
+          "tianting|8|10|9|8|8|1|0",
+          "play:S01-0119"
+        ],
+        [
+          "takamagahara|9|7|10|8|8|0|1",
+          "hold"
+        ],
+        [
+          "tianting|10|10|7|8|8|1|0",
+          "play:S01-0101"
+        ]
+      ],
+      "steps": [
+        {
+          "turn": 1,
+          "player": "takamagahara",
+          "hand": [
+            "议和谈判",
+            "桂小五郎",
+            "宫本武藏",
+            "服部半藏",
+            "宫本武藏",
+            "稻姬本多小松"
+          ],
+          "active_morale": 1,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0015",
+            "play:S01-0416"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 2,
+          "player": "tianting",
+          "hand": [
+            "绝对防御",
+            "花木兰",
+            "张飞",
+            "山河社稷图",
+            "吕布",
+            "花木兰"
+          ],
+          "active_morale": 1,
+          "rested_morale": 1,
+          "board": [],
+          "opponent_health": 9,
+          "legal_actions": [
+            "hold",
+            "play:S01-0012",
+            "play:S01-0016"
+          ],
+          "chosen_action": "play:S01-0012",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 全军出击；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 3,
+          "player": "takamagahara",
+          "hand": [
+            "议和谈判",
+            "桂小五郎",
+            "宫本武藏",
+            "服部半藏",
+            "宫本武藏",
+            "稻姬本多小松",
+            "花魁的馈赠"
+          ],
+          "active_morale": 3,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0015",
+            "play:S01-0414",
+            "play:S01-0415",
+            "play:S01-0416",
+            "play:S01-0419"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 4,
+          "player": "tianting",
+          "hand": [
+            "绝对防御",
+            "花木兰",
+            "张飞",
+            "吕布",
+            "花木兰",
+            "关羽",
+            "武则天"
+          ],
+          "active_morale": 2,
+          "rested_morale": 3,
+          "board": [],
+          "opponent_health": 9,
+          "legal_actions": [
+            "hold",
+            "play:S01-0016",
+            "play:S01-0108",
+            "play:S01-0117"
+          ],
+          "chosen_action": "play:S01-0117",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 山河社稷图；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 5,
+          "player": "takamagahara",
+          "hand": [
+            "议和谈判",
+            "桂小五郎",
+            "宫本武藏",
+            "服部半藏",
+            "宫本武藏",
+            "稻姬本多小松",
+            "花魁的馈赠",
+            "源博雅"
+          ],
+          "active_morale": 5,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0015",
+            "play:S01-0405",
+            "play:S01-0413",
+            "play:S01-0414",
+            "play:S01-0415",
+            "play:S01-0416",
+            "play:S01-0419"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 6,
+          "player": "tianting",
+          "hand": [
+            "绝对防御",
+            "花木兰",
+            "张飞",
+            "吕布",
+            "花木兰",
+            "关羽",
+            "武则天"
+          ],
+          "active_morale": 0,
+          "rested_morale": 7,
+          "board": [
+            "武则天"
+          ],
+          "opponent_health": 9,
+          "legal_actions": [
+            "hold",
+            "play:S01-0016",
+            "play:S01-0102",
+            "play:S01-0106",
+            "play:S01-0107",
+            "play:S01-0108"
+          ],
+          "chosen_action": "play:S01-0102",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 武则天；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 7,
+          "player": "takamagahara",
+          "hand": [
+            "议和谈判",
+            "桂小五郎",
+            "宫本武藏",
+            "服部半藏",
+            "宫本武藏",
+            "稻姬本多小松",
+            "花魁的馈赠",
+            "源博雅",
+            "绝对防御"
+          ],
+          "active_morale": 7,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0015",
+            "play:S01-0016",
+            "play:S01-0405",
+            "play:S01-0413",
+            "play:S01-0414",
+            "play:S01-0415",
+            "play:S01-0416",
+            "play:S01-0419"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 8,
+          "player": "tianting",
+          "hand": [
+            "绝对防御",
+            "花木兰",
+            "张飞",
+            "吕布",
+            "花木兰",
+            "关羽",
+            "武则天"
+          ],
+          "active_morale": 7,
+          "rested_morale": 1,
+          "board": [
+            "武则天"
+          ],
+          "opponent_health": 7,
+          "legal_actions": [
+            "hold",
+            "play:S01-0016",
+            "play:S01-0101",
+            "play:S01-0102",
+            "play:S01-0106",
+            "play:S01-0107",
+            "play:S01-0108",
+            "play:S01-0119"
+          ],
+          "chosen_action": "play:S01-0119",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 观星；S01-0102 对主宰造成 2 点伤害",
+          "damage": 2
+        },
+        {
+          "turn": 9,
+          "player": "takamagahara",
+          "hand": [
+            "议和谈判",
+            "桂小五郎",
+            "宫本武藏",
+            "服部半藏",
+            "宫本武藏",
+            "稻姬本多小松",
+            "花魁的馈赠",
+            "源博雅",
+            "绝对防御",
+            "巴御前"
+          ],
+          "active_morale": 8,
+          "rested_morale": 0,
+          "board": [],
+          "opponent_health": 10,
+          "legal_actions": [
+            "hold",
+            "play:S01-0015",
+            "play:S01-0016",
+            "play:S01-0405",
+            "play:S01-0410",
+            "play:S01-0413",
+            "play:S01-0414",
+            "play:S01-0415",
+            "play:S01-0416",
+            "play:S01-0419"
+          ],
+          "chosen_action": "hold",
+          "reason": "Q-learning 估值最高",
+          "resolution": "保留手牌；没有可结算的进攻",
+          "damage": 0
+        },
+        {
+          "turn": 10,
+          "player": "tianting",
+          "hand": [
+            "绝对防御",
+            "花木兰",
+            "张飞",
+            "花木兰",
+            "关羽",
+            "武则天",
+            "佣兵部队"
+          ],
+          "active_morale": 0,
+          "rested_morale": 8,
+          "board": [
+            "武则天",
+            "吕布"
+          ],
+          "opponent_health": 5,
+          "legal_actions": [
+            "hold",
+            "play:S01-0002",
+            "play:S01-0016",
+            "play:S01-0101",
+            "play:S01-0102",
+            "play:S01-0106",
+            "play:S01-0107",
+            "play:S01-0108"
+          ],
+          "chosen_action": "play:S01-0101",
+          "reason": "策略先验评分最高",
+          "resolution": "打出 吕布；S01-0102 对主宰造成 2 点伤害",
+          "damage": 2
+        }
+      ],
+      "mulligans": {
+        "takamagahara": {
+          "opening": [
+            "S01-0015",
+            "S01-0414",
+            "S01-0405",
+            "S01-0415",
+            "S01-0405",
+            "S01-0416"
+          ],
+          "replaced": [],
+          "kept": [
+            "S01-0015",
+            "S01-0414",
+            "S01-0405",
+            "S01-0415",
+            "S01-0405",
+            "S01-0416"
+          ]
+        },
+        "tianting": {
+          "opening": [
+            "S01-0016",
+            "S01-0108",
+            "S01-0107",
+            "S01-0101",
+            "S01-0012",
+            "S01-0117"
+          ],
+          "replaced": [
+            "S01-0101"
+          ],
+          "kept": [
+            "S01-0016",
+            "S01-0108",
+            "S01-0107",
+            "S01-0012",
+            "S01-0117"
+          ]
+        }
+      }
+    }
+  ],
+  "strict_boundary": "This artifact is not accepted by load_simulatable_reference_decks and never changes strict ruleset status."
+}

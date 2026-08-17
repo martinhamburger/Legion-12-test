@@ -13,6 +13,18 @@ class CatalogValidationError(ValueError):
 
 REVIEW_STATUSES = {"needs_review", "verified", "rejected"}
 EFFECT_STATUSES = {"not_started", "partial", "implemented", "not_applicable"}
+ENGINE_CARD_TYPES = {
+    "ruler",
+    "unit",
+    "artifact",
+    "tactic_active",
+    "tactic_counter",
+    "city",
+    "faction_morale",
+    "disaster",
+    "token",
+    "unmodeled",
+}
 
 
 def load_catalog(path: Path) -> dict[str, Any]:
@@ -41,12 +53,22 @@ def validate_catalog(payload: dict[str, Any]) -> None:
         seen.add(card_id)
 
         source = card.get("source", {})
-        if not isinstance(source.get("pdf_path"), str) or not source["pdf_path"]:
-            raise CatalogValidationError(f"{card_id} is missing source.pdf_path")
-        if not isinstance(source.get("pdf_sha256"), str) or len(source["pdf_sha256"]) != 64:
-            raise CatalogValidationError(f"{card_id} is missing source.pdf_sha256")
-        if not isinstance(source.get("page"), int) or source["page"] < 1:
-            raise CatalogValidationError(f"{card_id} has an invalid source.page")
+        if source.get("kind") == "image":
+            if not isinstance(source.get("image_path"), str) or not source["image_path"]:
+                raise CatalogValidationError(f"{card_id} is missing source.image_path")
+            if not isinstance(source.get("image_sha256"), str) or len(source["image_sha256"]) != 64:
+                raise CatalogValidationError(f"{card_id} is missing source.image_sha256")
+        else:
+            if not isinstance(source.get("pdf_path"), str) or not source["pdf_path"]:
+                raise CatalogValidationError(f"{card_id} is missing source.pdf_path")
+            if not isinstance(source.get("pdf_sha256"), str) or len(source["pdf_sha256"]) != 64:
+                raise CatalogValidationError(f"{card_id} is missing source.pdf_sha256")
+            if not isinstance(source.get("page"), int) or source["page"] < 1:
+                raise CatalogValidationError(f"{card_id} has an invalid source.page")
+
+        engine_card_type = card.get("engine_card_type")
+        if engine_card_type is not None and engine_card_type not in ENGINE_CARD_TYPES:
+            raise CatalogValidationError(f"{card_id} has an invalid engine_card_type")
 
         review = card.get("review", {})
         if review.get("status") not in REVIEW_STATUSES:

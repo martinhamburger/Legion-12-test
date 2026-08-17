@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "game_version": "S1",
+  "factions": [
+    {
+      "faction_id": "tianting",
+      "label": "天廷",
+      "morale_deck_size": 8,
+      "resource_definition_id": "S01-01C1",
+      "source_card_type_raw": "士气卡",
+      "engine_card_type": "faction_morale",
+      "variants": [
+        "S01-01C1",
+        "S01-01C1a"
+      ],
+      "effects": [
+        {
+          "limit": "我方回合1次",
+          "cost": [
+            {
+              "op": "pay_morale",
+              "amount": 2
+            }
+          ],
+          "operations": [
+            {
+              "op": "add_active_morale",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "limit": "我方回合1次",
+          "condition": {
+            "morale_zone_count": 0
+          },
+          "operations": [
+            {
+              "op": "add_rested_morale",
+              "amount": 2
+            }
+          ]
+        }
+      ],
+      "text": "我方回合1次，可消耗2士气：从士气牌库追加1张活跃的士气。\n我方回合1次，我方士气为0张时，可从士气牌库追加2张休整的士气。",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Official faction morale card; review before simulation."
+      },
+      "source": {
+        "asset_path": "规则与卡池/天廷阵营.pdf",
+        "asset_sha256": "8a7e759477d02065f29777dd4cf18dce3ef458fc62f549b0d73e369ab6edac03",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/天廷阵营.pdf",
+        "pdf_sha256": "8a7e759477d02065f29777dd4cf18dce3ef458fc62f549b0d73e369ab6edac03",
+        "page": 1
+      }
+    },
+    {
+      "faction_id": "takamagahara",
+      "label": "高天原",
+      "morale_deck_size": 8,
+      "resource_definition_id": "S01-04C1",
+      "source_card_type_raw": "士气卡",
+      "engine_card_type": "faction_morale",
+      "variants": [
+        "S01-04C1",
+        "S01-04C1a"
+      ],
+      "effects": [
+        {
+          "limit": "我方回合1次",
+          "cost": [
+            {
+              "op": "pay_morale",
+              "amount": 2
+            }
+          ],
+          "operations": [
+            {
+              "op": "draw",
+              "amount": 1
+            },
+            {
+              "op": "move",
+              "amount": 1,
+              "target": "own_active_unit",
+              "optional": true
+            }
+          ]
+        }
+      ],
+      "text": "我方回合1次，可消耗2士气：抽取1张牌。随后可选择我方1张活跃的军团进行1格位移。",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Official faction morale card; review before simulation."
+      },
+      "source": {
+        "asset_path": "规则与卡池/高天原阵营.pdf",
+        "asset_sha256": "8e80676e16815ba2752ad8b8543a2f622a8a2903d3b6db5935cde0b051a5cb86",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/高天原阵营.pdf",
+        "pdf_sha256": "8e80676e16815ba2752ad8b8543a2f622a8a2903d3b6db5935cde0b051a5cb86",
+        "page": 1
+      }
+    }
+  ]
+}

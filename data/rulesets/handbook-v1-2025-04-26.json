@@ -1,0 +1,683 @@
+{
+  "schema_version": "1.0",
+  "ruleset_id": "handbook-v1-2025-04-26",
+  "display_name": "规则手册 Ver1.0（历史参考）",
+  "game_version": "S1_legacy",
+  "role": "historical_reference_only",
+  "must_not_drive": [
+    "standard-2.0-s01",
+    "training",
+    "strict_simulation"
+  ],
+  "source": {
+    "asset_path": "规则与卡池/规则手册.pdf",
+    "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+    "kind": "pdf_page",
+    "pdf_path": "规则与卡池/规则手册.pdf",
+    "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+    "page": null,
+    "pages": 22
+  },
+  "rules": [
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-001",
+      "title": "规则手册",
+      "text": "规则手册\n\n十二军团  2025年4月26日 20:42  上海\n\nCynic Games Production\n\nLEGION12\n十二軍团\n\n规则手册\nHandbook Ver1.0\n\n服务号 · CYNIC GAMES",
+      "chapter_tags": [
+        "cover"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 1
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:41:12+00:00",
+        "raw_response": "{\"title\":\"规则手册\",\"text\":\"规则手册\\n\\n十二军团  2025年4月26日 20:42  上海\\n\\nCynic Games Production\\n\\nLEGION12\\n十二軍团\\n\\n规则手册\\nHandbook Ver1.0\\n\\n服务号 · CYNIC GAMES\",\"notes\":\"Page 1/22. Cover page of the LEGION12 (十二军团) rulebook. Contains publication metadata: Cynic Games Production, Handbook Ver1.0, dated 2025年4月26日, published from Shanghai. WeChat service account: CYNIC GAMES. URL: https://mp.weixin.qq.com/s/b5Yw_c-S-S8OjXtrgp5PSg. Timestamp 2026/8/16 23:20 appears to be a screenshot capture date, not part of the original document.\"}",
+        "notes": "Page 1/22. Cover page of the LEGION12 (十二军团) rulebook. Contains publication metadata: Cynic Games Production, Handbook Ver1.0, dated 2025年4月26日, published from Shanghai. WeChat service account: CYNIC GAMES. URL: https://mp.weixin.qq.com/s/b5Yw_c-S-S8OjXtrgp5PSg. Timestamp 2026/8/16 23:20 appears to be a screenshot capture date, not part of the original document."
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-002",
+      "title": "规则手册",
+      "text": "LEGION12\n十二軍团\n\n欢迎，主宰者！\n\n一场灾难毫无预兆地席卷了整个宇宙……各个时空中原本毫无关联的文明，被汇聚在了一起。神祇们被迫带领自己的文明卷入这场纷争。他们为了生存，争夺领地和资源，开启了永无止境的战争，但他们不会知晓，所有这一切，都在一场巨大的阴谋之中……\n\n游戏概览&胜利条件\n\n在《十二軍团》中，玩家将化身为神明，成为一个阵营的主宰者，构建军团、调整战术、排兵布阵、运筹帷幄，在战场上与对手决战到底……在战火四起的同时，天灾也可能会随时降临……\n·对手主宰的血量降至0时，你获得胜利\n·对手牌库为空，且需要抽牌时，你获得胜利",
+      "chapter_tags": [
+        "overview",
+        "victory_conditions"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 2
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:41:27+00:00",
+        "raw_response": "{\"title\":\"规则手册\",\"text\":\"LEGION12\\n十二軍团\\n\\n欢迎，主宰者！\\n\\n一场灾难毫无预兆地席卷了整个宇宙……各个时空中原本毫无关联的文明，被汇聚在了一起。神祇们被迫带领自己的文明卷入这场纷争。他们为了生存，争夺领地和资源，开启了永无止境的战争，但他们不会知晓，所有这一切，都在一场巨大的阴谋之中……\\n\\n游戏概览&胜利条件\\n\\n在《十二軍团》中，玩家将化身为神明，成为一个阵营的主宰者，构建军团、调整战术、排兵布阵、运筹帷幄，在战场上与对手决战到底……在战火四起的同时，天灾也可能会随时降临……\\n·对手主宰的血量降至0时，你获得胜利\\n·对手牌库为空，且需要抽牌时，你获得胜利\",\"notes\":\"Page 01 of handbook. Footer contains '服务号 · CYNIC GAMES' and page number '01'. Top of image has browser/UI chrome showing '2026/8/16 23:20' and '规则手册'. Bottom of image shows WeChat article URL.\"}",
+        "notes": "Page 01 of handbook. Footer contains '服务号 · CYNIC GAMES' and page number '01'. Top of image has browser/UI chrome showing '2026/8/16 23:20' and '规则手册'. Bottom of image shows WeChat article URL."
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-003",
+      "title": "目录",
+      "text": "游戏概览&胜利条件................................01\n目录....................................................02\n游戏布局................................................03\n卡牌详解................................................04\n核心概念................................................08\n对局准备................................................09\n回合流程................................................10\n战斗详解................................................11\n主要阶段范例........................................12\n牌库构筑................................................14\n预构筑推荐............................................14\n变体规则................................................15\n狂暴模式（1V1）...................................15\n双头龙模式（2V2）...............................15\n主神模式（1V2）...................................15\n阵营简介·天廷......................................16\n阵营简介·高天原..................................17\n阵营简介·阿斯加德..............................18\n阵营简介·太阳城..................................19\n致谢....................................................20",
+      "chapter_tags": [
+        "contents"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 3
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:41:38+00:00",
+        "raw_response": "{\"title\":\"目录\",\"text\":\"游戏概览&胜利条件................................01\\n目录....................................................02\\n游戏布局................................................03\\n卡牌详解................................................04\\n核心概念................................................08\\n对局准备................................................09\\n回合流程................................................10\\n战斗详解................................................11\\n主要阶段范例........................................12\\n牌库构筑................................................14\\n预构筑推荐............................................14\\n变体规则................................................15\\n狂暴模式（1V1）...................................15\\n双头龙模式（2V2）...............................15\\n主神模式（1V2）...................................15\\n阵营简介·天廷......................................16\\n阵营简介·高天原..................................17\\n阵营简介·阿斯加德..............................18\\n阵营简介·太阳城..................................19\\n致谢....................................................20\",\"notes\":\"Page 02 of rulebook. Decorative illustration on left shows golden vertical portal/door with scales and eye symbols, silhouetted figures at base. Footer contains page number '02' and '服务号 · CYNIC GAMES'. Top of image shows document metadata: date '2026/8/16 23:20', title '规则手册', and URL 'https://mp.weixin.qq.com/s/b5Yw_c-S-S8OjXtrgp5PSg'.\"}",
+        "notes": "Page 02 of rulebook. Decorative illustration on left shows golden vertical portal/door with scales and eye symbols, silhouetted figures at base. Footer contains page number '02' and '服务号 · CYNIC GAMES'. Top of image shows document metadata: date '2026/8/16 23:20', title '规则手册', and URL 'https://mp.weixin.qq.com/s/b5Yw_c-S-S8OjXtrgp5PSg'."
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-004",
+      "title": "游戏布局",
+      "text": "天灾记录轨\n天灾牌库（共用）\n战场·前排\n圣物区\n战场·后排\n主宰者\n牌库\n士气牌库\n墓地\n士气区\n\n1. 双方同时展示主宰并放置在主宰区，设置主宰血量。\n2. 将切洗好的牌库和士气牌库放置在指定区域。\n3. 选择天灾阶段（P.09）后，将天灾牌库放置在指定区域。",
+      "chapter_tags": [
+        "game_layout",
+        "setup"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 4
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:41:47+00:00",
+        "raw_response": "{\"title\":\"游戏布局\",\"text\":\"天灾记录轨\\n天灾牌库（共用）\\n战场·前排\\n圣物区\\n战场·后排\\n主宰者\\n牌库\\n士气牌库\\n墓地\\n士气区\\n\\n1. 双方同时展示主宰并放置在主宰区，设置主宰血量。\\n2. 将切洗好的牌库和士气牌库放置在指定区域。\\n3. 选择天灾阶段（P.09）后，将天灾牌库放置在指定区域。\",\"notes\":\"Page 03 of rulebook. Contains visual diagram of game layout with labeled zones: 天灾记录轨 (calamity track), 天灾牌库 (calamity deck, shared), 战场·前排 (battlefield front row), 圣物区 (relic zone), 战场·后排 (battlefield back row), 主宰者 (master), 牌库 (deck), 士气牌库 (morale deck), 墓地 (graveyard), 士气区 (morale zone). Bottom shows setup steps 1-3. Footer: 服务号 · CYNIC GAMES, page number 03.\"}",
+        "notes": "Page 03 of rulebook. Contains visual diagram of game layout with labeled zones: 天灾记录轨 (calamity track), 天灾牌库 (calamity deck, shared), 战场·前排 (battlefield front row), 圣物区 (relic zone), 战场·后排 (battlefield back row), 主宰者 (master), 牌库 (deck), 士气牌库 (morale deck), 墓地 (graveyard), 士气区 (morale zone). Bottom shows setup steps 1-3. Footer: 服务号 · CYNIC GAMES, page number 03."
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-005",
+      "title": "卡牌详解",
+      "text": "天灾卡\n\n[图示标注]\n混沌标志\n天灾名称\n机制效果\n机制注解\n卡牌分类\n天灾插画\n天灾称谓\n天灾标志\n\n天灾为《十二軍团》的特殊机制，每回合结束会固定增加1点；且拥有天灾等级的军团登场时会增加等同其天灾等级星数的天灾值。\n\n当天灾值累计高于8时，则会触发天灾。某些天灾拥有混沌标志，可在对战开始前决定是否需要加入本局游戏。\n\n天灾值在回合结束时高于8时，将由下一位玩家翻开并触发天灾。\n\n天灾值在回合内因主动登场拥有天灾等级的军团而高于8时，由当前回合玩家即刻翻开并触发天灾。",
+      "chapter_tags": [
+        "card_anatomy",
+        "disaster"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 5
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:41:57+00:00",
+        "raw_response": "{\"title\":\"卡牌详解\",\"text\":\"天灾卡\\n\\n[图示标注]\\n混沌标志\\n天灾名称\\n机制效果\\n机制注解\\n卡牌分类\\n天灾插画\\n天灾称谓\\n天灾标志\\n\\n天灾为《十二軍团》的特殊机制，每回合结束会固定增加1点；且拥有天灾等级的军团登场时会增加等同其天灾等级星数的天灾值。\\n\\n当天灾值累计高于8时，则会触发天灾。某些天灾拥有混沌标志，可在对战开始前决定是否需要加入本局游戏。\\n\\n天灾值在回合结束时高于8时，将由下一位玩家翻开并触发天灾。\\n\\n天灾值在回合内因主动登场拥有天灾等级的军团而高于8时，由当前回合玩家即刻翻开并触发天灾。\",\"notes\":\"卡牌插图中的文字包括：天灾终局 DESTRUCTION、诸神黄昏、无法逃避的世界终末、5、LEGION12。页码04。底部有服务号·CYNIC GAMES标识。\"}",
+        "notes": "卡牌插图中的文字包括：天灾终局 DESTRUCTION、诸神黄昏、无法逃避的世界终末、5、LEGION12。页码04。底部有服务号·CYNIC GAMES标识。"
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-006",
+      "title": "主宰卡 / 军团卡",
+      "text": "主宰卡\n主宰是玩家在对战中的神明化身。\n主宰的选定对于后续构筑卡组有着诸多影响以及不同的策略思考。\n主宰的生命值无法超过上限。通常当主宰者的血量降为0时，代表战败，本局对战判定为负。\n\n主宰卡标注：\n生命值\n卡牌分类\n角色立绘\n卡牌名称\n神明称号\n效果描述\n阵营标志\n所属阵营\n\n军团卡\n军团卡是对战中负责发动进攻的最主要手段，也是战场上的壁垒，他们往往需要消耗士气进行登场，且登场的回合无法发动进攻。\n带有天灾等级的军团登场时，会增加相应等级的天灾值。\n军团的兵种职介包括武者、术士等，其作用会由其他效果进行指向。\n在兵种职介处会对进攻距离进行区分，包括近战和远程，具体区别在进攻距离（P.11）详解。\n\n军团卡标注：\n费用\n卡牌分类\n角色立绘\n兵种职介\n天灾等级\n卡牌名称\n效果描述\n兵力值\n阵营标志",
+      "chapter_tags": [
+        "card_anatomy",
+        "ruler",
+        "legion"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 6
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:42:08+00:00",
+        "raw_response": "{\"title\":\"主宰卡 / 军团卡\",\"text\":\"主宰卡\\n主宰是玩家在对战中的神明化身。\\n主宰的选定对于后续构筑卡组有着诸多影响以及不同的策略思考。\\n主宰的生命值无法超过上限。通常当主宰者的血量降为0时，代表战败，本局对战判定为负。\\n\\n主宰卡标注：\\n生命值\\n卡牌分类\\n角色立绘\\n卡牌名称\\n神明称号\\n效果描述\\n阵营标志\\n所属阵营\\n\\n军团卡\\n军团卡是对战中负责发动进攻的最主要手段，也是战场上的壁垒，他们往往需要消耗士气进行登场，且登场的回合无法发动进攻。\\n带有天灾等级的军团登场时，会增加相应等级的天灾值。\\n军团的兵种职介包括武者、术士等，其作用会由其他效果进行指向。\\n在兵种职介处会对进攻距离进行区分，包括近战和远程，具体区别在进攻距离（P.11）详解。\\n\\n军团卡标注：\\n费用\\n卡牌分类\\n角色立绘\\n兵种职介\\n天灾等级\\n卡牌名称\\n效果描述\\n兵力值\\n阵营标志\",\"notes\":\"页码05。主宰卡示例为洛基，所属阵营阿斯加德。军团卡示例为织田信长，兵力值4000，高天原阵营。页面顶部有\\\"规则手册\\\"标题，底部有\\\"服务号 · CYNIC GAMES\\\"水印。\"}",
+        "notes": "页码05。主宰卡示例为洛基，所属阵营阿斯加德。军团卡示例为织田信长，兵力值4000，高天原阵营。页面顶部有\"规则手册\"标题，底部有\"服务号 · CYNIC GAMES\"水印。"
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-007",
+      "title": "圣物卡",
+      "text": "圣物为主宰者的神之造物，每个圣物都拥有其阵营独有且异常强大的效果。\n圣物卡放置在圣物区，你的圣物区仅能存在1张圣物，当你想打出新圣物时，将场上原有的圣物置入墓地。\n圣物在登场后，将会持续为我方提供强力效果。\n\n费用\n卡牌分类\n圣物插画\n圣物标志\n卡牌名称\n圣物称号\n效果描述\n阵营标志\n卡牌分类\n\n战术卡\n\n费用\n卡牌分类\n战术插画\n战术标志\n卡牌名称\n效果描述\n战术种类\n\n当前战术卡分为\"主动\"和\"反击\"两种。\n主动战术在玩家自己的回合内主动打出，消耗士气后立即使用并结算战术效果。\n反击战术在玩家自己的回合消耗相应士气后，将该反击战术以背面朝上的形式，放置在战场后排其中1格（占据卡位，军团无法移动进入覆盖卡的位置）。反击战术的效果通常在对方回合发动，根据效果描述时机执行即可。",
+      "chapter_tags": [
+        "card_anatomy",
+        "artifact",
+        "tactic"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 7
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:42:20+00:00",
+        "raw_response": "{\"title\":\"圣物卡\",\"text\":\"圣物为主宰者的神之造物，每个圣物都拥有其阵营独有且异常强大的效果。\\n圣物卡放置在圣物区，你的圣物区仅能存在1张圣物，当你想打出新圣物时，将场上原有的圣物置入墓地。\\n圣物在登场后，将会持续为我方提供强力效果。\\n\\n费用\\n卡牌分类\\n圣物插画\\n圣物标志\\n卡牌名称\\n圣物称号\\n效果描述\\n阵营标志\\n卡牌分类\\n\\n战术卡\\n\\n费用\\n卡牌分类\\n战术插画\\n战术标志\\n卡牌名称\\n效果描述\\n战术种类\\n\\n当前战术卡分为\\\"主动\\\"和\\\"反击\\\"两种。\\n主动战术在玩家自己的回合内主动打出，消耗士气后立即使用并结算战术效果。\\n反击战术在玩家自己的回合消耗相应士气后，将该反击战术以背面朝上的形式，放置在战场后排其中1格（占据卡位，军团无法移动进入覆盖卡的位置）。反击战术的效果通常在对方回合发动，根据效果描述时机执行即可。\",\"notes\":\"Page number 06. Service account: CYNIC GAMES. Artifact card example shows '山河社稷图' with subtitle '四相变化 无穷之妙'. Tactic card example shows '邪恶仪式' with '战术 主动' and '通用'. Card anatomy labels for artifact: 费用, 卡牌分类, 圣物插画, 圣物标志, 卡牌名称, 圣物称号, 效果描述, 阵营标志, 卡牌分类. Card anatomy labels for tactic: 费用, 卡牌分类, 战术插画, 战术标志, 卡牌名称, 效果描述, 战术种类.\"}",
+        "notes": "Page number 06. Service account: CYNIC GAMES. Artifact card example shows '山河社稷图' with subtitle '四相变化 无穷之妙'. Tactic card example shows '邪恶仪式' with '战术 主动' and '通用'. Card anatomy labels for artifact: 费用, 卡牌分类, 圣物插画, 圣物标志, 卡牌名称, 圣物称号, 效果描述, 阵营标志, 卡牌分类. Card anatomy labels for tactic: 费用, 卡牌分类, 战术插画, 战术标志, 卡牌名称, 效果描述, 战术种类."
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-008",
+      "title": "士气卡",
+      "text": "士气卡在游戏中为玩家提供费用，通常上限为8张。\n（太阳城为6张）\n玩家通过消耗士气来打出手中的军团/战术/圣物。\n消耗1士气，可以使战场上你的1张活跃军团位移1格。\n除了作为费用，不同阵营的士气还会拥有自己独特的阵营效果。",
+      "chapter_tags": [
+        "card_anatomy",
+        "morale"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 8
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:42:26+00:00",
+        "raw_response": "{\"title\":\"士气卡\",\"text\":\"士气卡在游戏中为玩家提供费用，通常上限为8张。\\n（太阳城为6张）\\n玩家通过消耗士气来打出手中的军团/战术/圣物。\\n消耗1士气，可以使战场上你的1张活跃军团位移1格。\\n除了作为费用，不同阵营的士气还会拥有自己独特的阵营效果。\",\"notes\":\"士气卡示意图标注：卡牌分类、阵营标志、位移标志、阵营效果、所属阵营\"}",
+        "notes": "士气卡示意图标注：卡牌分类、阵营标志、位移标志、阵营效果、所属阵营"
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-009",
+      "title": "核心概念",
+      "text": "黄金规则\n当卡面文本与规则手册文本存在冲突时，以卡面为准。\n\n支付费用\n军团等卡牌在其左上角标注了打出费用，游戏当中也有其他需要支付费用的行动。\n将1张活跃的士气转为休整即支付1点费用。\n部分卡牌上的能力需要支付才能结算，格式为“费用：效果”。\n如果玩家无法支付能力的全部费用，就无法结算其效果。\n\n控制者与所有者\n你是你当前控制卡牌的控制者，但卡牌的所有权仅属于其原本的所有者。卡牌永远无法进入非所有者的手牌、牌库和墓地。\n\n活跃与休整\n卡牌以活跃状态登场，此时为竖直。一些行动需要你将卡牌转为休整，此时将卡牌顺时针旋转90°，已经休整的卡牌不会再转为休整。\n\n登场失调\n军团卡进入战场后需要准备时间，其在登场的回合无法进攻。\n\n战场位置\n战场的前后排分别有3格位置，卡牌无论正面或覆盖均占据1格位置，你可以打出卡牌顶替覆盖的战术，但无法顶替正面的卡牌（圣物区的卡牌可被顶替），被顶替的卡牌正面向上置入其所有者的墓地。\n\n击杀时/阵亡时\n击杀时效果为军团通过战斗击杀军团时触发。阵亡时效果为军团被战斗或效果击杀并置入墓地时触发。\n\n触发天灾\n当天灾值累计高于8时，则会触发天灾。即展示天灾牌库顶部的1张牌并结算其效果，部分天灾会产生持续性效果，直至触发下一张天灾之前都会生效。天灾触发后将天灾值重置为0。\n当天灾值在回合结束时增长并高于8时，将在下个玩家回合开始时触发天灾。",
+      "chapter_tags": [
+        "core_concepts",
+        "golden_rule",
+        "disaster"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 9
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:42:54+00:00",
+        "raw_response": "{\"title\":\"核心概念\",\"text\":\"黄金规则\\n当卡面文本与规则手册文本存在冲突时，以卡面为准。\\n\\n支付费用\\n军团等卡牌在其左上角标注了打出费用，游戏当中也有其他需要支付费用的行动。\\n将1张活跃的士气转为休整即支付1点费用。\\n部分卡牌上的能力需要支付才能结算，格式为“费用：效果”。\\n如果玩家无法支付能力的全部费用，就无法结算其效果。\\n\\n控制者与所有者\\n你是你当前控制卡牌的控制者，但卡牌的所有权仅属于其原本的所有者。卡牌永远无法进入非所有者的手牌、牌库和墓地。\\n\\n活跃与休整\\n卡牌以活跃状态登场，此时为竖直。一些行动需要你将卡牌转为休整，此时将卡牌顺时针旋转90°，已经休整的卡牌不会再转为休整。\\n\\n登场失调\\n军团卡进入战场后需要准备时间，其在登场的回合无法进攻。\\n\\n战场位置\\n战场的前后排分别有3格位置，卡牌无论正面或覆盖均占据1格位置，你可以打出卡牌顶替覆盖的战术，但无法顶替正面的卡牌（圣物区的卡牌可被顶替），被顶替的卡牌正面向上置入其所有者的墓地。\\n\\n击杀时/阵亡时\\n击杀时效果为军团通过战斗击杀军团时触发。阵亡时效果为军团被战斗或效果击杀并置入墓地时触发。\\n\\n触发天灾\\n当天灾值累计高于8时，则会触发天灾。即展示天灾牌库顶部的1张牌并结算其效果，部分天灾会产生持续性效果，直至触发下一张天灾之前都会生效。天灾触发后将天灾值重置为0。\\n当天灾值在回合结束时增长并高于8时，将在下个玩家回合开始时触发天灾。\",\"notes\":\"Page 08 (as printed on page). Includes illustration showing '活跃' (active/ready) and '休整' (exhausted/resting) card orientations with two example cards. Footer: 服务号 · CYNIC GAMES. No other legible text outside main body.\"}",
+        "notes": "Page 08 (as printed on page). Includes illustration showing '活跃' (active/ready) and '休整' (exhausted/resting) card orientations with two example cards. Footer: 服务号 · CYNIC GAMES. No other legible text outside main body."
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-010",
+      "title": "规则手册",
+      "text": "位移\n位移1格时，可以向战场前后或左右自己的空位移动，不可越过卡牌。1次位移时则可以移动至战场上自己的任意空位，可越过卡牌。\n\n返还士气\n返还士气指将场上指定数量的士气卡放回士气牌库，不论其状态是休整或是活跃均可返还。\n\n兵力\n当军团兵力降为0时自动阵亡并置入墓地。\n\n对局准备\n1. 双方同时展示主宰并放置在主宰区，设置主宰血量。\n2. 将切洗好的牌库和士气牌库放置在指定区域。\n3. 通过掷骰等随机方式决出胜者，胜者可选择先攻或后攻。\n4. 选择天灾（选择天灾阶段效果在此时触发）\n·【最终天灾 堙灭】为必定加入游戏，无需选择。\n·先攻玩家可以决定是否在本场游戏当中加入混沌天灾，若选择不加入则从天灾池中移除所有混沌天灾。\n·从天灾池随机抽取5张，先攻玩家3张，后攻玩家2张。双方各自选择1张，将未被选择的所有天灾洗混并随机抽取其中1张，将这张天灾与玩家选取的天灾洗混，放置在【最终天灾 堙灭】上，此4张天灾为本场游戏的天灾牌库。\n5. 双方各自从牌库顶部抽取6张牌作为起始手牌。双方各有1次调度机会，将需要调度的卡牌放回牌库底部，并从顶部抽取与放回数量相同的卡牌，最后重洗牌库。\n6. 将天灾值设置到初始值0点，游戏即可开始。",
+      "chapter_tags": [
+        "core_concepts",
+        "return_morale",
+        "setup",
+        "disaster_draft"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 10
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:43:06+00:00",
+        "raw_response": "{\"title\":\"规则手册\",\"text\":\"位移\\n位移1格时，可以向战场前后或左右自己的空位移动，不可越过卡牌。1次位移时则可以移动至战场上自己的任意空位，可越过卡牌。\\n\\n返还士气\\n返还士气指将场上指定数量的士气卡放回士气牌库，不论其状态是休整或是活跃均可返还。\\n\\n兵力\\n当军团兵力降为0时自动阵亡并置入墓地。\\n\\n对局准备\\n1. 双方同时展示主宰并放置在主宰区，设置主宰血量。\\n2. 将切洗好的牌库和士气牌库放置在指定区域。\\n3. 通过掷骰等随机方式决出胜者，胜者可选择先攻或后攻。\\n4. 选择天灾（选择天灾阶段效果在此时触发）\\n·【最终天灾 堙灭】为必定加入游戏，无需选择。\\n·先攻玩家可以决定是否在本场游戏当中加入混沌天灾，若选择不加入则从天灾池中移除所有混沌天灾。\\n·从天灾池随机抽取5张，先攻玩家3张，后攻玩家2张。双方各自选择1张，将未被选择的所有天灾洗混并随机抽取其中1张，将这张天灾与玩家选取的天灾洗混，放置在【最终天灾 堙灭】上，此4张天灾为本场游戏的天灾牌库。\\n5. 双方各自从牌库顶部抽取6张牌作为起始手牌。双方各有1次调度机会，将需要调度的卡牌放回牌库底部，并从顶部抽取与放回数量相同的卡牌，最后重洗牌库。\\n6. 将天灾值设置到初始值0点，游戏即可开始。\",\"notes\":\"Page 09/22. Card image caption: 最终天灾 堙灭. Footer: 服务号 · CYNIC GAMES. Card text DESTRUCTION / 最终天灾 堙灭 / [不清晰]回合开始时，对所有主宰造成1点非致命伤害。\"}",
+        "notes": "Page 09/22. Card image caption: 最终天灾 堙灭. Footer: 服务号 · CYNIC GAMES. Card text DESTRUCTION / 最终天灾 堙灭 / [不清晰]回合开始时，对所有主宰造成1点非致命伤害。"
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-011",
+      "title": "回合流程",
+      "text": "在《十二军团》中，玩家交替进行回合，直至决出胜者，一个完整的回合包含以下6个阶段：\n\n1. 触发天灾  2. 重置阶段  3. 抽牌阶段\n4. 士气阶段  5. 主要阶段  6. 结束阶段\n\n触发天灾\n若当前天灾值高于8，则由当前回合玩家翻开天灾并触发该其效果。\n\n重置阶段\n将我方战场所有处于休整状态的主宰、军团、士气等，转为活跃状态。\n\n抽牌阶段\n从牌库顶部抽取1张牌。先攻玩家第一回合不抽牌。\n\n士气阶段\n从士气牌库追加2张活跃状态的士气，放置在士气区域。先攻玩家第一回合只追加1张士气。\n\n主要阶段\n玩家可以以任意顺序执行以下行动：\n·打出卡牌\n·发动卡牌的效果\n·支付费用覆盖反击战术\n·发动进攻\n·消耗1士气，移动你控制的1张活跃状态军团1格\n·发动阵营效果\n\n结束阶段\n回合结束时效果结算后，将天灾值增加1点。我方战场上所有军团恢复损耗的兵力，结束并移交回合。",
+      "chapter_tags": [
+        "turn_flow",
+        "morale"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 11
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:43:16+00:00",
+        "raw_response": "{\"title\":\"回合流程\",\"text\":\"在《十二军团》中，玩家交替进行回合，直至决出胜者，一个完整的回合包含以下6个阶段：\\n\\n1. 触发天灾  2. 重置阶段  3. 抽牌阶段\\n4. 士气阶段  5. 主要阶段  6. 结束阶段\\n\\n触发天灾\\n若当前天灾值高于8，则由当前回合玩家翻开天灾并触发该其效果。\\n\\n重置阶段\\n将我方战场所有处于休整状态的主宰、军团、士气等，转为活跃状态。\\n\\n抽牌阶段\\n从牌库顶部抽取1张牌。先攻玩家第一回合不抽牌。\\n\\n士气阶段\\n从士气牌库追加2张活跃状态的士气，放置在士气区域。先攻玩家第一回合只追加1张士气。\\n\\n主要阶段\\n玩家可以以任意顺序执行以下行动：\\n·打出卡牌\\n·发动卡牌的效果\\n·支付费用覆盖反击战术\\n·发动进攻\\n·消耗1士气，移动你控制的1张活跃状态军团1格\\n·发动阵营效果\\n\\n结束阶段\\n回合结束时效果结算后，将天灾值增加1点。我方战场上所有军团恢复损耗的兵力，结束并移交回合。\",\"notes\":\"页码10，底部有服务号·CYNIC GAMES标识。页面顶部有\\\"规则手册\\\"字样。\"}",
+        "notes": "页码10，底部有服务号·CYNIC GAMES标识。页面顶部有\"规则手册\"字样。"
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-012",
+      "title": "战斗详解",
+      "text": "主要阶段中，回合玩家可以通过将其控制的活跃状态军团卡转为休整状态，来攻击对方处于攻击范围内的合理对象。战斗按照以下顺序进行处理：\n\n1. 进攻宣言\n指定我方1张处于活跃状态的军团卡作为进攻者，将其转为休整状态并指定对方1张进攻距离内的合理对象作为进攻目标。先进入进攻方“进攻时”效果时机，结算完毕后发动被进攻方“对方攻击时”效果。\n\n进攻距离\n近战\n进攻距离为默认1，即位于前排时可对对手前排或主宰发动进攻。\n远程\n进攻距离+1，位于后排时可对对手前排发动进攻，并且不会损耗自身兵力。位于前排时可对对手前排、后排和主宰发动进攻，此时进攻对手前排会损耗自身兵力。\n\n2.抵挡/支援\n·抵挡：主宰受到进攻时，可将手牌合计大于或等于本次进攻数值的军团置入墓地，抵挡本次进攻。\n·支援：战场前排的军团受到进攻时，若其后排军团的兵力与被进攻军团的兵力大于或等于本次进攻数值，则可以让后排军团置入墓地抵挡本次攻击，进攻军团不会因为本次战斗损耗兵力。\n\n3.伤害结算\n·主宰：主宰受到进攻时，若未成功抵挡，则受到1点伤害。\n·军团：战斗双方同时受到等同于对方兵力值的伤害（损耗兵力），兵力值因此降为0或以下的军团战败并置入墓地。",
+      "chapter_tags": [
+        "combat"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 12
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:43:27+00:00",
+        "raw_response": "{\"title\":\"战斗详解\",\"text\":\"主要阶段中，回合玩家可以通过将其控制的活跃状态军团卡转为休整状态，来攻击对方处于攻击范围内的合理对象。战斗按照以下顺序进行处理：\\n\\n1. 进攻宣言\\n指定我方1张处于活跃状态的军团卡作为进攻者，将其转为休整状态并指定对方1张进攻距离内的合理对象作为进攻目标。先进入进攻方“进攻时”效果时机，结算完毕后发动被进攻方“对方攻击时”效果。\\n\\n进攻距离\\n近战\\n进攻距离为默认1，即位于前排时可对对手前排或主宰发动进攻。\\n远程\\n进攻距离+1，位于后排时可对对手前排发动进攻，并且不会损耗自身兵力。位于前排时可对对手前排、后排和主宰发动进攻，此时进攻对手前排会损耗自身兵力。\\n\\n2.抵挡/支援\\n·抵挡：主宰受到进攻时，可将手牌合计大于或等于本次进攻数值的军团置入墓地，抵挡本次进攻。\\n·支援：战场前排的军团受到进攻时，若其后排军团的兵力与被进攻军团的兵力大于或等于本次进攻数值，则可以让后排军团置入墓地抵挡本次攻击，进攻军团不会因为本次战斗损耗兵力。\\n\\n3.伤害结算\\n·主宰：主宰受到进攻时，若未成功抵挡，则受到1点伤害。\\n·军团：战斗双方同时受到等同于对方兵力值的伤害（损耗兵力），兵力值因此降为0或以下的军团战败并置入墓地。\",\"notes\":\"Page 11 of handbook. Footer contains '服务号 · CYNIC GAMES' and page number 11.\"}",
+        "notes": "Page 11 of handbook. Footer contains '服务号 · CYNIC GAMES' and page number 11."
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-013",
+      "title": "规则手册",
+      "text": "主要阶段范例\n\n可执行行动\n·打出卡牌\n·发动卡牌效果\n·覆盖反击战术\n·发动进攻\n·消耗1士气，移动你控制的1张活跃军团1格\n·发动阵营效果\n\n进攻主宰\n杨戬使用花木兰进攻对手的主宰天照大神，此时对手可以从手牌弃置合计大于等于4000兵力值的军团卡抵挡本次进攻，否则天照大神受到1点伤害。\n\n打出卡牌\n杨戬将5张活跃的士气转为休整，从手牌中打出1张刘备到自己的战场。刘备天灾等级为1，天灾值增加1点。此时可以发动刘备的登场时效果。\n\n移动\n杨戬将1张活跃的士气转为休整，将秦良玉移动至相邻的左侧空位。\n\n覆盖反击战术\n杨戬将2张活跃的士气转为休整，从手牌将1张落穴陷阱覆盖至战场后排，等待合适时机发动。\n\n进攻军团\n杨戬使用李靖（6000兵力）进攻对手的宫本武藏（5000兵力），此时天照大神可以选择让其后排巴御前（2000兵力）抵挡本次进攻。否则战斗结算，李靖剩余1000兵力留场，宫本武藏战败置入墓地。",
+      "chapter_tags": [
+        "main_phase",
+        "examples"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 13
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:43:47+00:00",
+        "raw_response": "{\"title\":\"规则手册\",\"text\":\"主要阶段范例\\n\\n可执行行动\\n·打出卡牌\\n·发动卡牌效果\\n·覆盖反击战术\\n·发动进攻\\n·消耗1士气，移动你控制的1张活跃军团1格\\n·发动阵营效果\\n\\n进攻主宰\\n杨戬使用花木兰进攻对手的主宰天照大神，此时对手可以从手牌弃置合计大于等于4000兵力值的军团卡抵挡本次进攻，否则天照大神受到1点伤害。\\n\\n打出卡牌\\n杨戬将5张活跃的士气转为休整，从手牌中打出1张刘备到自己的战场。刘备天灾等级为1，天灾值增加1点。此时可以发动刘备的登场时效果。\\n\\n移动\\n杨戬将1张活跃的士气转为休整，将秦良玉移动至相邻的左侧空位。\\n\\n覆盖反击战术\\n杨戬将2张活跃的士气转为休整，从手牌将1张落穴陷阱覆盖至战场后排，等待合适时机发动。\\n\\n进攻军团\\n杨戬使用李靖（6000兵力）进攻对手的宫本武藏（5000兵力），此时天照大神可以选择让其后排巴御前（2000兵力）抵挡本次进攻。否则战斗结算，李靖剩余1000兵力留场，宫本武藏战败置入墓地。\",\"notes\":\"Page 13/22. Image shows example board state with multiple card zones and arrows illustrating movement/combat. Some small card text is illegible. Watermark: 服务号·CYNIC GAME. URL at bottom: https://mp.weixin.qq.com/s/b5Yw_c-S-S8OjXtrgp5PSg\"}",
+        "notes": "Page 13/22. Image shows example board state with multiple card zones and arrows illustrating movement/combat. Some small card text is illegible. Watermark: 服务号·CYNIC GAME. URL at bottom: https://mp.weixin.qq.com/s/b5Yw_c-S-S8OjXtrgp5PSg"
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-014",
+      "title": "牌库构筑",
+      "text": "构筑1个牌库，你需要遵循以下步骤：\n1. 选择1个主宰\n2. 构建40~50张的游戏牌库，在构筑之中你只能携带与所选主宰相同阵营以及通用的卡牌。同名卡在构筑内最多只可以带3张。\n牌库中可以携带的卡牌类型包括军团卡、圣物卡以及战术卡。\n3. 选择与你阵营对应的8张士气卡（太阳城阵营为6张）组成你的士气牌库。\n\n预构筑推荐\n初次游玩时，推荐使用如下构筑：\n\n颂威华夏\n主宰 杨戬\n上手难度 ★★☆\n2× 秦良玉\n3× 花木兰\n3× 刘备\n3× 关羽\n3× 张飞\n3× 韩信\n3× 李靖\n2× 武则天\n3× 吕布\n3× 山河社稷图\n3× 观星\n2× 神妙行军\n3× 议和谈判\n2× 战略转移\n2× 野外扎营\n\n除魔物语\n主宰 须佐之男\n上手难度 ★☆☆\n3× 稻姬本多小松\n2× 服部半藏\n3× 巴御前\n2× 源博雅\n2× 源义经\n3× 高杉晋作\n2× 坂本龙马\n3× 土方岁三\n3× 真田幸村\n2× 宫本武藏\n2× 织田信长\n3× 佣兵部队\n3× 草薙剑\n3× 花魁的馈赠\n2× 天诛\n2× 战略转移\n\n万千面相\n主宰 洛基\n上手难度 ★★☆\n3× 无骨者伊瓦尔\n3× 奥尔加\n3× 夺命诗人埃吉尔\n3× 布伦希尔德\n3× 齐格鲁德\n3× 阿尔维达\n2× 传奇的拉格纳\n2× 无情者哈拉尔\n3× 贝奥武夫\n3× 黑胡子蒂奇\n3× 神剑格拉墨\n2× 复仇血鹰\n3× 女武神的召唤\n2× 猎杀时刻\n2× 野外扎营\n\n亡者之书\n主宰 梅杰德\n上手难度 ★★★\n3× 陵墓守卫*\n3× 克里奥帕特拉七世\n2× 锡瓦的卡巴\n3× 尼托克丽丝\n2× 纳芙蒂蒂\n2× 托勒密十三世\n2× 图坦卡蒙\n3× 霍列姆赫布\n3× 陵墓构造体\n3× 图特摩斯三世\n1× 卡诺匹斯箱\n1× 卡诺匹斯罐二\n1× 卡诺匹斯罐三\n3× 安卡神碑\n3× 法老王的庆典\n3× 智慧法典·卷一\n3× 杜阿特之门\n2× 野外扎营",
+      "chapter_tags": [
+        "deckbuilding",
+        "reference_decks"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 14
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:44:10+00:00",
+        "raw_response": "{\"title\":\"牌库构筑\",\"text\":\"构筑1个牌库，你需要遵循以下步骤：\\n1. 选择1个主宰\\n2. 构建40~50张的游戏牌库，在构筑之中你只能携带与所选主宰相同阵营以及通用的卡牌。同名卡在构筑内最多只可以带3张。\\n牌库中可以携带的卡牌类型包括军团卡、圣物卡以及战术卡。\\n3. 选择与你阵营对应的8张士气卡（太阳城阵营为6张）组成你的士气牌库。\\n\\n预构筑推荐\\n初次游玩时，推荐使用如下构筑：\\n\\n颂威华夏\\n主宰 杨戬\\n上手难度 ★★☆\\n2× 秦良玉\\n3× 花木兰\\n3× 刘备\\n3× 关羽\\n3× 张飞\\n3× 韩信\\n3× 李靖\\n2× 武则天\\n3× 吕布\\n3× 山河社稷图\\n3× 观星\\n2× 神妙行军\\n3× 议和谈判\\n2× 战略转移\\n2× 野外扎营\\n\\n除魔物语\\n主宰 须佐之男\\n上手难度 ★☆☆\\n3× 稻姬本多小松\\n2× 服部半藏\\n3× 巴御前\\n2× 源博雅\\n2× 源义经\\n3× 高杉晋作\\n2× 坂本龙马\\n3× 土方岁三\\n3× 真田幸村\\n2× 宫本武藏\\n2× 织田信长\\n3× 佣兵部队\\n3× 草薙剑\\n3× 花魁的馈赠\\n2× 天诛\\n2× 战略转移\\n\\n万千面相\\n主宰 洛基\\n上手难度 ★★☆\\n3× 无骨者伊瓦尔\\n3× 奥尔加\\n3× 夺命诗人埃吉尔\\n3× 布伦希尔德\\n3× 齐格鲁德\\n3× 阿尔维达\\n2× 传奇的拉格纳\\n2× 无情者哈拉尔\\n3× 贝奥武夫\\n3× 黑胡子蒂奇\\n3× 神剑格拉墨\\n2× 复仇血鹰\\n3× 女武神的召唤\\n2× 猎杀时刻\\n2× 野外扎营\\n\\n亡者之书\\n主宰 梅杰德\\n上手难度 ★★★\\n3× 陵墓守卫*\\n3× 克里奥帕特拉七世\\n2× 锡瓦的卡巴\\n3× 尼托克丽丝\\n2× 纳芙蒂蒂\\n2× 托勒密十三世\\n2× 图坦卡蒙\\n3× 霍列姆赫布\\n3× 陵墓构造体\\n3× 图特摩斯三世\\n1× 卡诺匹斯箱\\n1× 卡诺匹斯罐二\\n1× 卡诺匹斯罐三\\n3× 安卡神碑\\n3× 法老王的庆典\\n3× 智慧法典·卷一\\n3× 杜阿特之门\\n2× 野外扎营\",\"notes\":\"Page 14/22. Four preconstructed deck lists shown with their master, difficulty rating, and card counts. Faction names: 天廷 (Heaven Court) for 杨戬, 高天原 (Takamagahara) for 须佐之男, 阿斯加德 (Asgard) for 洛基, 太阳城 (Heliopolis/Sun City) for 梅杰德. The asterisk on 陵墓守卫* appears in the original. Card name 智慧法典·卷一 uses a middle dot separator.\"}",
+        "notes": "Page 14/22. Four preconstructed deck lists shown with their master, difficulty rating, and card counts. Faction names: 天廷 (Heaven Court) for 杨戬, 高天原 (Takamagahara) for 须佐之男, 阿斯加德 (Asgard) for 洛基, 太阳城 (Heliopolis/Sun City) for 梅杰德. The asterisk on 陵墓守卫* appears in the original. Card name 智慧法典·卷一 uses a middle dot separator."
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-015",
+      "title": "变体规则",
+      "text": "玩家在熟悉基本游戏后，可以选用以下变体模式体验更多乐趣：\n\n狂暴模式（1v1）\n玩家额外将对应阵营的主城卡加入游戏。\n1. 构筑：\n·构筑上限增加主城卡城甲的数量。\n2. 对局准备：\n·士气卡上限增加2张，游戏开始时玩家追加2张活跃的士气。\n·双方调度后，从牌库顶部展示城甲数量的卡牌公开放置到城甲区域。\n3. 机制\n·玩家的主宰受到伤害时可以将其城甲区域任意1张牌加入手牌，视为承受了1点伤害。\n·主城卡休整后将无法发动任何效果，在发动其主动休整效果前请优先使用完其他需要的效果。\n\n双头龙模式（2v2）\n玩家两两组队进行对抗。\n1. 构筑：\n·同名通用卡同一队只能携带最多3张。\n2. 对局准备：\n·队伍血量为同一队2个主宰血量之和，最多为16。\n3. 机制：\n·战场从6格变为8格（前排4格+后排4格）。\n·同一队共享回合与战场，可以自由进行行动。可以帮队友进行抵挡或支援。\n·同一队玩家共同承受伤害和回复。\n\n主神模式（1v2）\n单人的玩家成为主神，仅他使用与狂暴模式相同的增加规则。\n双人的玩家组队，使用双头龙模式增加的规则。（战场变化影响全局）\n除此之外本模式还有以下变化。\n1. 对局准备：\n·主神玩家必定先手。\n2. 机制：\n·组队玩家各减少1张士气上限，并在游戏中添加1张队伍共用的士气卡。\n\n天灾选择方式\n各模式\n\n| 模式 | 总分配数 | 先攻分配 | 后攻分配 | 先攻选择 | 后攻选择 | 随机数量 | 牌库总数 |\n|------|---------|---------|---------|---------|---------|---------|---------|\n| 标准/狂暴 | 5 | 3 | 2 | 1 | 1 | 1 | 3+1 |\n| 主神 | 5 | 3 | 2 | 2 | 1 | 1 | 4+1 |\n| 双头龙 | 5 | 3 | 2 | 1 | 1 | 2 | 4+1 |",
+      "chapter_tags": [
+        "variant_rules",
+        "disaster_draft"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 15
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:44:30+00:00",
+        "raw_response": "{\"title\": \"变体规则\", \"text\": \"玩家在熟悉基本游戏后，可以选用以下变体模式体验更多乐趣：\\n\\n狂暴模式（1v1）\\n玩家额外将对应阵营的主城卡加入游戏。\\n1. 构筑：\\n·构筑上限增加主城卡城甲的数量。\\n2. 对局准备：\\n·士气卡上限增加2张，游戏开始时玩家追加2张活跃的士气。\\n·双方调度后，从牌库顶部展示城甲数量的卡牌公开放置到城甲区域。\\n3. 机制\\n·玩家的主宰受到伤害时可以将其城甲区域任意1张牌加入手牌，视为承受了1点伤害。\\n·主城卡休整后将无法发动任何效果，在发动其主动休整效果前请优先使用完其他需要的效果。\\n\\n双头龙模式（2v2）\\n玩家两两组队进行对抗。\\n1. 构筑：\\n·同名通用卡同一队只能携带最多3张。\\n2. 对局准备：\\n·队伍血量为同一队2个主宰血量之和，最多为16。\\n3. 机制：\\n·战场从6格变为8格（前排4格+后排4格）。\\n·同一队共享回合与战场，可以自由进行行动。可以帮队友进行抵挡或支援。\\n·同一队玩家共同承受伤害和回复。\\n\\n主神模式（1v2）\\n单人的玩家成为主神，仅他使用与狂暴模式相同的增加规则。\\n双人的玩家组队，使用双头龙模式增加的规则。（战场变化影响全局）\\n除此之外本模式还有以下变化。\\n1. 对局准备：\\n·主神玩家必定先手。\\n2. 机制：\\n·组队玩家各减少1张士气上限，并在游戏中添加1张队伍共用的士气卡。\\n\\n天灾选择方式\\n各模式\\n\\n| 模式 | 总分配数 | 先攻分配 | 后攻分配 | 先攻选择 | 后攻选择 | 随机数量 | 牌库总数 |\\n|------|---------|---------|---------|---------|---------|---------|---------|\\n| 标准/狂暴 | 5 | 3 | 2 | 1 | 1 | 1 | 3+1 |\\n| 主神 | 5 | 3 | 2 | 2 | 1 | 1 | 4+1 |\\n| 双头龙 | 5 | 3 | 2 | 1 | 1 | 2 | 4+1 |\", \"notes\": \"Page number 15 visible at bottom. Table header row reads 天灾选择方式 / 各模式. Footer contains 服务号 · CYNIC GAMES. Some decorative diamond symbols (◆) precede section headers in original layout.\"}",
+        "notes": "Page number 15 visible at bottom. Table header row reads 天灾选择方式 / 各模式. Footer contains 服务号 · CYNIC GAMES. Some decorative diamond symbols (◆) precede section headers in original layout."
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-016",
+      "title": "阵营简介·天廷",
+      "text": "以华夏文明为灵感设计的天廷阵营，阵营标志概念来自于炎黄子孙的图腾龙与源远流长的阴阳鱼太极图样。\n龙是华夏民族精神象征，在我们的神话当中，龙是保佑一方水水土的神兽，寓意奋勇向前、吉祥美好。阴阳则是简朴而博大的中国古代哲学，一阴一阳之谓道，世间万物内彼此互藏，相感替换，不可执一而定象。在《十二軍团》中，我们希望以自己浅薄的理解在天廷阵营当中体现此两种意象的神韵。\n“天廷”亦称为天庭、天宫圣境，是中国神话当中神明居所。齐天大圣称此地“金光万道滚红霓，瑞气千条喷紫雾。”天帝这里四时朝臣，统领诸天万神仙。\n【阵营特色】\n卓越的士气增长能力，同时拥有“爆费”机制可以使用超越回合数的强劲效果。\n忘川奈何地府之神\n孟婆\nMASTER CARD 10\n孟婆\n忘川奈何 地府之神\n我方 回合1次选择以下一项。\n·返还1士气：选择对方1张军团，本回合失去「阵亡时」效果。若我方手牌不高于5张，可抽取1张牌。\n·若我方士气少于对方，弃置1张手牌：从士气牌库追加1张休整的士气。\n主宰者\n天廷",
+      "chapter_tags": [
+        "faction",
+        "tianting"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 16
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:44:43+00:00",
+        "raw_response": "{\"title\":\"阵营简介·天廷\",\"text\":\"以华夏文明为灵感设计的天廷阵营，阵营标志概念来自于炎黄子孙的图腾龙与源远流长的阴阳鱼太极图样。\\n龙是华夏民族精神象征，在我们的神话当中，龙是保佑一方水水土的神兽，寓意奋勇向前、吉祥美好。阴阳则是简朴而博大的中国古代哲学，一阴一阳之谓道，世间万物内彼此互藏，相感替换，不可执一而定象。在《十二軍团》中，我们希望以自己浅薄的理解在天廷阵营当中体现此两种意象的神韵。\\n“天廷”亦称为天庭、天宫圣境，是中国神话当中神明居所。齐天大圣称此地“金光万道滚红霓，瑞气千条喷紫雾。”天帝这里四时朝臣，统领诸天万神仙。\\n【阵营特色】\\n卓越的士气增长能力，同时拥有“爆费”机制可以使用超越回合数的强劲效果。\\n忘川奈何地府之神\\n孟婆\\nMASTER CARD 10\\n孟婆\\n忘川奈何 地府之神\\n我方 回合1次选择以下一项。\\n·返还1士气：选择对方1张军团，本回合失去「阵亡时」效果。若我方手牌不高于5张，可抽取1张牌。\\n·若我方士气少于对方，弃置1张手牌：从士气牌库追加1张休整的士气。\\n主宰者\\n天廷\",\"notes\":\"卡牌上的小字部分因分辨率限制，部分文字可能不够清晰，已尽力辨认。页面底部有页码16和公众号信息“服务号·CYNIC GAMES”。\"}",
+        "notes": "卡牌上的小字部分因分辨率限制，部分文字可能不够清晰，已尽力辨认。页面底部有页码16和公众号信息“服务号·CYNIC GAMES”。"
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-017",
+      "title": "阵营简介·高天原",
+      "text": "以东瀛文化为灵感设计的高天原阵营，阵营标志概念来自于神道教当中两域分界之所——鸟居。\n大和民族自古存在对先祖和自然万物的崇敬，泛神而祭称八百万神。全域伫立超八万座神社，鸟居则象征着神域与世俗界的入口。神社参拜由鸟居而入、沿正道行、净盆洗漱，方可面见神祇与先祖。\n“高天原”是传说中日本神话的众神所居领域，凌驾于地上人类居住的苇原中国与亡者栖息的黄泉国。三贵子之一的天照大御神在此统治世间万物。每每有天变地异的重大事件发生时，众神将在高天原的天之高市与天之安河召开神集，以议对策。\n\n天照大神\n大日女尊 光明神\n\n【阵营特色】\n兼具速攻冲锋与场面破坏的阵营，战术而灵活多变。",
+      "chapter_tags": [
+        "faction",
+        "takamagahara"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 17
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:44:54+00:00",
+        "raw_response": "{\"title\":\"阵营简介·高天原\",\"text\":\"以东瀛文化为灵感设计的高天原阵营，阵营标志概念来自于神道教当中两域分界之所——鸟居。\\n大和民族自古存在对先祖和自然万物的崇敬，泛神而祭称八百万神。全域伫立超八万座神社，鸟居则象征着神域与世俗界的入口。神社参拜由鸟居而入、沿正道行、净盆洗漱，方可面见神祇与先祖。\\n“高天原”是传说中日本神话的众神所居领域，凌驾于地上人类居住的苇原中国与亡者栖息的黄泉国。三贵子之一的天照大御神在此统治世间万物。每每有天变地异的重大事件发生时，众神将在高天原的天之高市与天之安河召开神集，以议对策。\\n\\n天照大神\\n大日女尊 光明神\\n\\n【阵营特色】\\n兼具速攻冲锋与场面破坏的阵营，战术而灵活多变。\",\"notes\":\"卡牌上的具体技能文字因分辨率限制无法完全辨认，标注为[不清晰]。页码显示为17。右下角有\\\"服务号·CYNIC GAMES\\\"标识。\"}",
+        "notes": "卡牌上的具体技能文字因分辨率限制无法完全辨认，标注为[不清晰]。页码显示为17。右下角有\"服务号·CYNIC GAMES\"标识。"
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-018",
+      "title": "阵营简介·阿斯加德",
+      "text": "以北欧日耳曼部族传说为灵感设计的阿斯加德阵营，阵营标志概念来自于北欧神话中连接九大世界的世界树，其名为尤克特拉希尔。\n世界树在天地未开之际由众神所杀的巨人之祖残躯所化，是宇宙的支撑、也是知识、命运与生命之源，更是北欧日耳曼部族的精神象征。\n在这个极寒之地诞生的文明眼中，时间是一条必定奔向终末的长河，诸神黄昏必然降临，众神也必然失败。统御这片向死而生土地的众神之王唤作奥丁，其神域名叫“阿斯加德”。奥丁欣赏世间的勇者，英勇牺牲的壮士将在死后被召唤进入英灵殿。\n\n【阵营特色】\n生命与卡牌的不断牺牲会让这个阵营越战越勇，阵亡的勇者也会再临战场。\n\n瓦尔基里\n指引亡者的女武神\n\n主宰者\n阿斯加德",
+      "chapter_tags": [
+        "faction",
+        "asgard"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 18
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:45:03+00:00",
+        "raw_response": "{\"title\":\"阵营简介·阿斯加德\",\"text\":\"以北欧日耳曼部族传说为灵感设计的阿斯加德阵营，阵营标志概念来自于北欧神话中连接九大世界的世界树，其名为尤克特拉希尔。\\n世界树在天地未开之际由众神所杀的巨人之祖残躯所化，是宇宙的支撑、也是知识、命运与生命之源，更是北欧日耳曼部族的精神象征。\\n在这个极寒之地诞生的文明眼中，时间是一条必定奔向终末的长河，诸神黄昏必然降临，众神也必然失败。统御这片向死而生土地的众神之王唤作奥丁，其神域名叫“阿斯加德”。奥丁欣赏世间的勇者，英勇牺牲的壮士将在死后被召唤进入英灵殿。\\n\\n【阵营特色】\\n生命与卡牌的不断牺牲会让这个阵营越战越勇，阵亡的勇者也会再临战场。\\n\\n瓦尔基里\\n指引亡者的女武神\\n\\n主宰者\\n阿斯加德\",\"notes\":\"卡牌上的规则文字过小，无法清晰辨认，故未录入。页码为18，底部有服务号·CYNIC GAMES标识。\"}",
+        "notes": "卡牌上的规则文字过小，无法清晰辨认，故未录入。页码为18，底部有服务号·CYNIC GAMES标识。"
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-019",
+      "title": "阵营简介·太阳城",
+      "text": "以古埃及人信仰与宗教为灵感的太阳城阵营，阵营标志概念来源于拉之日盘、圣甲虫、荷鲁斯之眼与法老陵寝金字塔的形状。\n金字塔的外形来自于覆盖世界原初之水努恩退去露出的第一块土地——原初之丘，而金字塔凝聚了古埃及人对自然、法老以及亡灵的崇拜。\n“太阳城”又名赫里奥波里斯，是古埃及神话当中的众神之乡，在这里最受崇拜的九位神祇便是九柱主神。在古埃及人的世界观中，身体是灵魂的容器，睡眠与死亡都只是灵魂离体而去。人死后将受到奥西里斯的审判，因此位高权重的上位者死后将尸身制成木乃伊，给回归的灵魂一处居所。\n\n伊西斯\n九柱神 生命女神\n\n【阵营特色】\n太阳城仅有6点士气上限，但穿梭于亡者之国与现世的陵墓守卫可以为你带来额外的力量。",
+      "chapter_tags": [
+        "faction",
+        "sun_city"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 19
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:45:16+00:00",
+        "raw_response": "{\"title\":\"阵营简介·太阳城\",\"text\":\"以古埃及人信仰与宗教为灵感的太阳城阵营，阵营标志概念来源于拉之日盘、圣甲虫、荷鲁斯之眼与法老陵寝金字塔的形状。\\n金字塔的外形来自于覆盖世界原初之水努恩退去露出的第一块土地——原初之丘，而金字塔凝聚了古埃及人对自然、法老以及亡灵的崇拜。\\n“太阳城”又名赫里奥波里斯，是古埃及神话当中的众神之乡，在这里最受崇拜的九位神祇便是九柱主神。在古埃及人的世界观中，身体是灵魂的容器，睡眠与死亡都只是灵魂离体而去。人死后将受到奥西里斯的审判，因此位高权重的上位者死后将尸身制成木乃伊，给回归的灵魂一处居所。\\n\\n伊西斯\\n九柱神 生命女神\\n\\n【阵营特色】\\n太阳城仅有6点士气上限，但穿梭于亡者之国与现世的陵墓守卫可以为你带来额外的力量。\",\"notes\":\"卡牌上的游戏性文字因分辨率过低无法辨认，以[不清晰]略过。页码19。底部有\\\"服务号·CYNIC GAMES\\\"水印。\"}",
+        "notes": "卡牌上的游戏性文字因分辨率过低无法辨认，以[不清晰]略过。页码19。底部有\"服务号·CYNIC GAMES\"水印。"
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-020",
+      "title": "致谢",
+      "text": "亲爱的朋友：\n\n感谢购买《十二軍团》。这是一部由爱而诞生的作品——从最初的概念萌芽到如今的成品呈现，每一步都凝聚了梦想与热爱（还有肝和头发），制作过程得到了许多朋友的帮助,无数个日日夜夜，经历了大大小小数百次的测试与调整……所有一切的开心与痛苦、瓶颈与突破，回过头再看，都成为了一份独一无二的美好回忆。\n\n第一款游戏就确定要做卡牌构筑对战，对于我而言也是一次不小的挑战，不管是卡池数量、游戏平衡、玩法机制……一旦没有做好，《十二軍团》就将成为灾难，并且整个游戏还存在许多非对称的设计，使得游戏平衡调整一度成为整个游戏制作途中最大的难点。\n\n在经历几次线下展会现场测试和大范围测试后，我们坚信《十二軍团》的品质是扛得住这一切的。每张卡牌都根据各个文明中的诸多神话与历史进行了设计，使得这些技能都足够考究，符合原本的故事背景设定。同时《十二軍团》也在同类型卡牌对战游戏中添加了一些趣味性的机制玩法。为了方便广大玩家，我们还开发了《十二軍团》专用的辅助APP。后续我们也将通过公众号形式，进行更多详细QA和更新。\n\n再一次，感谢支持。\n\n凯多老师",
+      "chapter_tags": [
+        "credits"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 20
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:45:58+00:00",
+        "raw_response": "{\"title\":\"致谢\",\"text\":\"亲爱的朋友：\\n\\n感谢购买《十二軍团》。这是一部由爱而诞生的作品——从最初的概念萌芽到如今的成品呈现，每一步都凝聚了梦想与热爱（还有肝和头发），制作过程得到了许多朋友的帮助,无数个日日夜夜，经历了大大小小数百次的测试与调整……所有一切的开心与痛苦、瓶颈与突破，回过头再看，都成为了一份独一无二的美好回忆。\\n\\n第一款游戏就确定要做卡牌构筑对战，对于我而言也是一次不小的挑战，不管是卡池数量、游戏平衡、玩法机制……一旦没有做好，《十二軍团》就将成为灾难，并且整个游戏还存在许多非对称的设计，使得游戏平衡调整一度成为整个游戏制作途中最大的难点。\\n\\n在经历几次线下展会现场测试和大范围测试后，我们坚信《十二軍团》的品质是扛得住这一切的。每张卡牌都根据各个文明中的诸多神话与历史进行了设计，使得这些技能都足够考究，符合原本的故事背景设定。同时《十二軍团》也在同类型卡牌对战游戏中添加了一些趣味性的机制玩法。为了方便广大玩家，我们还开发了《十二軍团》专用的辅助APP。后续我们也将通过公众号形式，进行更多详细QA和更新。\\n\\n再一次，感谢支持。\\n\\n凯多老师\",\"notes\":\"Page 20/22. Decorative header/footer elements include '规则手册' at top, 'LEGION 12' logo, '服务号 · CYNIC GAMES', and page number '20' at bottom. Date '2026/8/16 23:20' appears in screenshot overlay, not part of printed page.\"}",
+        "notes": "Page 20/22. Decorative header/footer elements include '规则手册' at top, 'LEGION 12' logo, '服务号 · CYNIC GAMES', and page number '20' at bottom. Date '2026/8/16 23:20' appears in screenshot overlay, not part of printed page."
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-021",
+      "title": "回合流程速览",
+      "text": "1. 触发天灾\n天灾值高于8时触发天灾。\n2. 重置阶段\n重置我方战场卡牌。\n3. 抽牌阶段\n抽1张牌。\n4. 士气阶段\n追加2张活跃士气。\n5. 主要阶段\n· 打出卡牌　　· 发动效果\n· 覆盖战术　　· 发动进攻\n· 付费移动　　· 阵营效果\n6. 结束阶段\n回复军团损耗兵力并增加1点天灾值。\n\n更多规则细节、卡组构筑\n关注《十二軍团》官方公众号\n服务号 · CYNIC GAMES",
+      "chapter_tags": [
+        "turn_flow",
+        "quick_reference"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 21
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:46:07+00:00",
+        "raw_response": "{\"title\":\"回合流程速览\",\"text\":\"1. 触发天灾\\n天灾值高于8时触发天灾。\\n2. 重置阶段\\n重置我方战场卡牌。\\n3. 抽牌阶段\\n抽1张牌。\\n4. 士气阶段\\n追加2张活跃士气。\\n5. 主要阶段\\n· 打出卡牌　　· 发动效果\\n· 覆盖战术　　· 发动进攻\\n· 付费移动　　· 阵营效果\\n6. 结束阶段\\n回复军团损耗兵力并增加1点天灾值。\\n\\n更多规则细节、卡组构筑\\n关注《十二軍团》官方公众号\\n服务号 · CYNIC GAMES\",\"notes\":\"Page header: 规则手册. Page footer: 2026/8/16 23:20, URL https://mp.weixin.qq.com/s/b5Yw_c-S-S8OjXtrgp5PSg, page number 21/22.\"}",
+        "notes": "Page header: 规则手册. Page footer: 2026/8/16 23:20, URL https://mp.weixin.qq.com/s/b5Yw_c-S-S8OjXtrgp5PSg, page number 21/22."
+      }
+    },
+    {
+      "rule_id": "handbook-v1-2025-04-26-page-022",
+      "title": "规则手册",
+      "text": "2026/8/16 23:20\n规则手册\n\nhttps://mp.weixin.qq.com/s/b5Yw_c-S-S8OjXtrgp5PSg\n\n22/22",
+      "chapter_tags": [
+        "back_cover"
+      ],
+      "implementation_status": "not_started",
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Kimi vision transcription of historical handbook; verify against the original screenshot."
+      },
+      "source": {
+        "asset_path": "规则与卡池/规则手册.pdf",
+        "asset_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "kind": "pdf_page",
+        "pdf_path": "规则与卡池/规则手册.pdf",
+        "pdf_sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1",
+        "page": 22
+      },
+      "llm": {
+        "provider": "kimi",
+        "model": "kimi-k2.6",
+        "processed_at": "2026-08-17T02:46:11+00:00",
+        "raw_response": "{\"title\":\"规则手册\",\"text\":\"2026/8/16 23:20\\n规则手册\\n\\nhttps://mp.weixin.qq.com/s/b5Yw_c-S-S8OjXtrgp5PSg\\n\\n22/22\",\"notes\":\"This page appears to be a blank final page of the rulebook containing only header/footer metadata. No game rules, headings, paragraphs, or list items are present on this page.\"}",
+        "notes": "This page appears to be a blank final page of the rulebook containing only header/footer metadata. No game rules, headings, paragraphs, or list items are present on this page."
+      }
+    }
+  ]
+}

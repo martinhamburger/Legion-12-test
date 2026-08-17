@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "ruleset_id": "standard-2.0-s01",
+  "display_name": "标准规则 2.0 · S1 首测",
+  "game_version": "S1",
+  "status": "needs_review",
+  "source_priority": [
+    {
+      "source_id": "rules-2.0-source-pdf",
+      "role": "primary"
+    },
+    {
+      "source_id": "official_card_faces",
+      "role": "card_text_overrides_rules"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "rules-2.0-source-pdf",
+      "asset_path": "规则与卡池/规则手册2.0.pdf",
+      "asset_sha256": "90c767920666fa461730fecf175199b0d6a3f969109b537446dec7a412fdc25d",
+      "kind": "pdf_page",
+      "pdf_path": "规则与卡池/规则手册2.0.pdf",
+      "pdf_sha256": "90c767920666fa461730fecf175199b0d6a3f969109b537446dec7a412fdc25d",
+      "page": null
+    }
+  ],
+  "deck_rules": {
+    "min_main_deck_size": 40,
+    "max_main_deck_size": 50,
+    "max_copies_per_official_id": 3,
+    "limit_one_max_copies": 1,
+    "allowed_factions": [
+      "ruler_faction",
+      "common"
+    ]
+  },
+  "setup": {
+    "starting_hand_size": 6,
+    "mulligan_count": 1,
+    "first_player_skips_first_draw": true,
+    "first_player_first_morale": 1,
+    "normal_morale_per_turn": 2
+  },
+  "morale": {
+    "deck_size": 8,
+    "pay": {
+      "from": "active",
+      "to": "rested"
+    },
+    "return": {
+      "allowed_states": [
+        "active",
+        "rested"
+      ],
+      "destination": "morale_deck",
+      "card_text_overrides": true
+    }
+  },
+  "disaster_draft": {
+    "set_id": "s01-disaster-catalogue",
+    "final_disaster_id": "S01-DS10",
+    "bans": [
+      "first_player",
+      "second_player",
+      "first_player"
+    ],
+    "public_random_draw": 1,
+    "first_player_draws": 3,
+    "first_player_selects": 1,
+    "second_player_draws": 2,
+    "second_player_selects": 1,
+    "deck_order": "shuffle_selected_then_place_above_final"
+  },
+  "training_gate": {
+    "requires_ruleset_status": "verified",
+    "requires_all_referenced_content_implemented": true
+  }
+}

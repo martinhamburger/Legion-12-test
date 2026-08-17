@@ -102,6 +102,22 @@ python tools/enrich_card_catalog_kimi.py
 该工具只初填候选字段，并始终保留 `needs_review`；它不会上传 key、不会提交
 `.env.kimi`，也不会把模型输出直接视为可训练规则。
 
+## S1 近似对局学习实验室
+
+实验室固定使用杨戬天廷与须佐之男高天原的两套 40 张参考构筑，输出可复现的
+Q-learning 对规则基线结果、卡牌近似覆盖和逐回合回放：
+
+```bash
+python tools/run_s1_approx_lab.py
+# 或使用已安装的命令行入口
+legion12 lab --seed 20260817 --episodes 20000 --games 1000
+python tools/build_review_site.py
+```
+
+结果位于 `data/labs/s1-approx-v0/`，Pages 的“学习实验室”页会读取最新结果。
+它明确是**近似规则实验**：不模拟天灾、反击响应链、前后排、复杂目标选择及未实现
+卡文，不能作为正式对局胜率或严格训练入口。
+
 ## 版权与数据
 
 仓库默认只保存结构化卡牌字段、统计结果和用户有权使用的素材。公开部署前需要单独确认卡图、完整卡文和视频内容的使用权限。

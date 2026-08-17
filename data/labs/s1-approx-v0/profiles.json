@@ -1,0 +1,1520 @@
+{
+  "schema_version": "1.0",
+  "lab_id": "s1-approx-v0",
+  "disclaimer": "近似规则实验：仅用于学习节奏、资源交换与出牌逻辑，不代表正式规则胜率。",
+  "coverage": {
+    "main_cards": 29,
+    "leaders": 2,
+    "resources": 2,
+    "unmodeled": [
+      "天灾",
+      "反击响应链",
+      "前后排",
+      "复杂目标选择",
+      "未实现卡文",
+      "隐藏信息博弈"
+    ]
+  },
+  "profiles": [
+    {
+      "profile_id": "S01-0002",
+      "name": "佣兵部队",
+      "kind": "unit",
+      "cost": 4,
+      "troops": 5000,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 1,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.5,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 1.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "防御"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "我方回合1次：可进行1次位移。\n对方进攻我方军团时，可从手牌中弃置此军团：抵挡本次进攻。",
+      "review_status": "needs_review",
+      "numbers_seen": [
+        1,
+        1
+      ],
+      "tags": [
+        "通用",
+        "骑兵"
+      ]
+    },
+    {
+      "profile_id": "S01-0012",
+      "name": "全军出击",
+      "kind": "tactic_active",
+      "cost": 1,
+      "troops": 0,
+      "health": 0,
+      "charge": true,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.12,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 1.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "冲锋"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "本回合从手牌中打出的下1张费用不高于6的军团获得冲锋。（可在登场回合进攻）",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        6
+      ],
+      "tags": [
+        "主动",
+        "战术",
+        "通用"
+      ]
+    },
+    {
+      "profile_id": "S01-0015",
+      "name": "议和谈判",
+      "kind": "tactic_active",
+      "cost": 0,
+      "troops": 0,
+      "health": 0,
+      "charge": false,
+      "draw": 1,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.0,
+        "card_advantage": 1.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "过牌或检索"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "抽取1张牌。随后询问对方是否议和谈判。\n·若对方同意，则双方各抽取1张牌。\n·若对方不同意，则双方不抽牌。",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        1
+      ],
+      "tags": [
+        "主动",
+        "战术",
+        "通用"
+      ]
+    },
+    {
+      "profile_id": "S01-0016",
+      "name": "绝对防御",
+      "kind": "tactic_counter",
+      "cost": 2,
+      "troops": 0,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 1,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.25,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 1.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "防御"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "对方进攻或发动效果时，弃置1张手牌：抵挡本次进攻或无效该效果。",
+      "review_status": "verified",
+      "numbers_seen": [
+        1
+      ],
+      "tags": [
+        "反击",
+        "战术",
+        "通用"
+      ]
+    },
+    {
+      "profile_id": "S01-0018",
+      "name": "落穴陷阱",
+      "kind": "tactic_counter",
+      "cost": 2,
+      "troops": 0,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.25,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "基础费用与兵力"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "对方军团登场时：使此军团登场效果无效。",
+      "review_status": "verified",
+      "numbers_seen": [],
+      "tags": [
+        "反击",
+        "战术",
+        "通用"
+      ]
+    },
+    {
+      "profile_id": "S01-0101",
+      "name": "吕布",
+      "kind": "unit",
+      "cost": 8,
+      "troops": 9000,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 1,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 1,
+      "features": {
+        "tempo": 1.0,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 1.5,
+        "face_pressure": 0.0,
+        "defense": 1.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "解场",
+        "防御",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "进攻无损，无法被远程进攻。此军团进攻后，可返还4士气，将此军团转为活跃。登场时 可返还2士气：击杀对方1张天灾等级1或2的军团。",
+      "review_status": "verified",
+      "numbers_seen": [
+        4,
+        2,
+        1,
+        1,
+        2
+      ],
+      "tags": [
+        "天廷",
+        "斗士"
+      ]
+    },
+    {
+      "profile_id": "S01-0102",
+      "name": "武则天",
+      "kind": "unit",
+      "cost": 7,
+      "troops": 7000,
+      "health": 0,
+      "charge": false,
+      "draw": 1,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 1,
+      "features": {
+        "tempo": 0.88,
+        "card_advantage": 1.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "过牌或检索",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "登场时 可返还1士气：选择对方最多2张休整的军团，在下个对方重置阶段无法转为活跃。阵亡时 抽取1张牌，我方主宰增加1点血量。",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "tags": [
+        "天廷",
+        "领军"
+      ]
+    },
+    {
+      "profile_id": "S01-0103",
+      "name": "李靖",
+      "kind": "unit",
+      "cost": 6,
+      "troops": 6000,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 1,
+      "features": {
+        "tempo": 0.75,
+        "card_advantage": 0.0,
+        "morale_acceleration": 1.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "追加士气或加速登场",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "登场时 可展示牌库顶部1张牌。随后，选择将其放回牌库顶部或底部。若展示卡牌为费用不高于5的【天廷】军团，可返还1士气，将其活跃登场作为代替。",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        5,
+        1
+      ],
+      "tags": [
+        "天廷",
+        "领军"
+      ]
+    },
+    {
+      "profile_id": "S01-0104",
+      "name": "韩信",
+      "kind": "unit",
+      "cost": 5,
+      "troops": 5000,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 1000,
+      "defense": 0,
+      "return_morale": 1,
+      "features": {
+        "tempo": 0.62,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.75,
+        "defense": 0.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "兵力增益或强攻",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "若我方士气少于对方，此军团登场费用-1。进攻时可返还1士气：此军团本回合兵力+1000，并获得强攻。（进攻对主宰造成额外1点伤害）",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        1,
+        1000,
+        1
+      ],
+      "tags": [
+        "天廷",
+        "武者"
+      ]
+    },
+    {
+      "profile_id": "S01-0105",
+      "name": "刘备",
+      "kind": "unit",
+      "cost": 5,
+      "troops": 3000,
+      "health": 0,
+      "charge": false,
+      "draw": 1,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 1,
+      "features": {
+        "tempo": 0.62,
+        "card_advantage": 1.0,
+        "morale_acceleration": 1.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "过牌或检索",
+        "追加士气或加速登场",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "登场时 可返还1士气：选择将手牌中1张《关羽》或《张飞》活跃登场。\n主动休整 可返还1士气：查看我方牌库，选择1张《关羽》或《张飞》展示并加入手牌。随后，重洗牌库。",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tags": [
+        "天廷",
+        "领军"
+      ]
+    },
+    {
+      "profile_id": "S01-0106",
+      "name": "关羽",
+      "kind": "unit",
+      "cost": 5,
+      "troops": 5000,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 1000,
+      "defense": 1,
+      "return_morale": 1,
+      "features": {
+        "tempo": 0.62,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.75,
+        "defense": 1.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "兵力增益或强攻",
+        "防御",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "我方 回合1次 可进行1次位移。\n进攻时 可返还1士气：此军团本回合兵力+1000，并获得必中。\n（进攻无法被抵挡/支援）",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        1,
+        1,
+        1000
+      ],
+      "tags": [
+        "天廷",
+        "骑兵"
+      ]
+    },
+    {
+      "profile_id": "S01-0107",
+      "name": "张飞",
+      "kind": "unit",
+      "cost": 5,
+      "troops": 4000,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 1000,
+      "defense": 1,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.62,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.75,
+        "defense": 1.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "兵力增益或强攻",
+        "防御"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "若我方士气少于对方，此军团登场费用-1。「位于前排」获得挑衅，且在对方回合此军团兵力+1000。（对方只可进攻带有此效果的军团）",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        1000
+      ],
+      "tags": [
+        "天廷",
+        "武者"
+      ]
+    },
+    {
+      "profile_id": "S01-0108",
+      "name": "花木兰",
+      "kind": "unit",
+      "cost": 4,
+      "troops": 4000,
+      "health": 0,
+      "charge": true,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 1,
+      "features": {
+        "tempo": 0.5,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 1.0,
+        "defense": 0.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "冲锋",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "登场时 可返还1士气：获得冲锋。（可在登场回合进攻）\n对方回合 阵亡时 选择对方场上1张休整的士气，在下个对方重置阶段无法转为活跃。",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        1
+      ],
+      "tags": [
+        "天廷",
+        "武者"
+      ]
+    },
+    {
+      "profile_id": "S01-0109",
+      "name": "白起",
+      "kind": "unit",
+      "cost": 3,
+      "troops": 3000,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 1,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.38,
+        "card_advantage": 0.0,
+        "morale_acceleration": 1.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "追加士气或加速登场"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "登场时 从士气牌库追加3张休整的士气。主动休整 从士气牌库追加1张休整的士气。",
+      "review_status": "verified",
+      "numbers_seen": [
+        3,
+        1
+      ],
+      "tags": [
+        "天廷",
+        "斗士"
+      ]
+    },
+    {
+      "profile_id": "S01-0117",
+      "name": "山河社稷图",
+      "kind": "artifact",
+      "cost": 3,
+      "troops": 0,
+      "health": 0,
+      "charge": false,
+      "draw": 1,
+      "morale_gain": 1,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 1,
+      "features": {
+        "tempo": 0.38,
+        "card_advantage": 1.0,
+        "morale_acceleration": 1.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "过牌或检索",
+        "追加士气或加速登场",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "登场时 从士气牌库追加1张活跃的士气。\n主动休整 选择以下一项。\n·返还1活跃士气：抽取1张牌。\n·弃置1张手牌：查看牌库顶部3张牌，选择其中1张【天廷】卡牌，展示并加入手牌，其余卡牌自选顺序返回牌库顶部或底部。",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        1,
+        1,
+        1,
+        3,
+        1
+      ],
+      "tags": [
+        "圣物",
+        "天廷"
+      ]
+    },
+    {
+      "profile_id": "S01-0118",
+      "name": "神妙行军",
+      "kind": "tactic_active",
+      "cost": 3,
+      "troops": 0,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 1,
+      "buff": 1000,
+      "defense": 0,
+      "return_morale": 1,
+      "features": {
+        "tempo": 0.38,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 1.5,
+        "face_pressure": 0.75,
+        "defense": 0.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "解场",
+        "兵力增益或强攻",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "选择我方前排1张军团，本回合兵力+2000。可返还2士气：击杀对方1张兵力不高于6000的军团。",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        2000,
+        2,
+        1,
+        6000
+      ],
+      "tags": [
+        "主动",
+        "天廷",
+        "战术"
+      ]
+    },
+    {
+      "profile_id": "S01-0119",
+      "name": "观星",
+      "kind": "tactic_active",
+      "cost": 1,
+      "troops": 0,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 1,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.12,
+        "card_advantage": 0.0,
+        "morale_acceleration": 1.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "追加士气或加速登场"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "查看牌库顶部5张牌，自选顺序放回牌库顶部或底部。随后，可从士气牌库追加1张活跃的士气。",
+      "review_status": "verified",
+      "numbers_seen": [
+        5,
+        1
+      ],
+      "tags": [
+        "主动",
+        "天廷",
+        "战术"
+      ]
+    },
+    {
+      "profile_id": "S01-0401",
+      "name": "本多忠胜",
+      "kind": "unit",
+      "cost": 8,
+      "troops": 8000,
+      "health": 0,
+      "charge": true,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 1,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 1.0,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 1.5,
+        "face_pressure": 1.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "冲锋",
+        "解场"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "登场时 获得 冲锋 。（可在登场回合进攻） 进攻时 对方所有军团本回合费用-1。随后击杀对方1张费用为0的军团。",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        1,
+        0
+      ],
+      "tags": [
+        "冲锋",
+        "武者",
+        "高天原"
+      ]
+    },
+    {
+      "profile_id": "S01-0404",
+      "name": "真田幸村",
+      "kind": "unit",
+      "cost": 5,
+      "troops": 4000,
+      "health": 0,
+      "charge": true,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.62,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 1.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "冲锋"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "登场时 获得 冲锋 。（可在登场回合进攻）",
+      "review_status": "verified",
+      "numbers_seen": [],
+      "tags": [
+        "武者",
+        "高天原"
+      ]
+    },
+    {
+      "profile_id": "S01-0405",
+      "name": "宫本武藏",
+      "kind": "unit",
+      "cost": 5,
+      "troops": 5000,
+      "health": 0,
+      "charge": true,
+      "draw": 1,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.62,
+        "card_advantage": 1.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 1.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "过牌或检索",
+        "冲锋"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "登场时 若我方前排没有其他军团，此军团获得 冲锋 。（可在登场回合进攻）\n进攻时 若我方手牌数量不高于对方，可抽取1张牌。",
+      "review_status": "verified",
+      "numbers_seen": [
+        1
+      ],
+      "tags": [
+        "冲锋",
+        "斗士",
+        "高天原"
+      ]
+    },
+    {
+      "profile_id": "S01-0409",
+      "name": "源义经",
+      "kind": "unit",
+      "cost": 4,
+      "troops": 4000,
+      "health": 0,
+      "charge": false,
+      "draw": 1,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.5,
+        "card_advantage": 1.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "过牌或检索"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "「位于后排」进攻时 此军团兵力视为2000，进攻距离+1，远程进攻无损。我方 回合1次 可进行1次位移。击杀时 可抽取1张牌。",
+      "review_status": "verified",
+      "numbers_seen": [
+        2000,
+        1,
+        1,
+        1,
+        1
+      ],
+      "tags": [
+        "骑兵"
+      ]
+    },
+    {
+      "profile_id": "S01-0410",
+      "name": "巴御前",
+      "kind": "unit",
+      "cost": 3,
+      "troops": 2000,
+      "health": 0,
+      "charge": true,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.38,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 1.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "冲锋"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "进攻距离+1，远程进攻无损。登场时获得冲锋。（可在登场回合进攻）",
+      "review_status": "verified",
+      "numbers_seen": [
+        1
+      ],
+      "tags": [
+        "弓手",
+        "高天原"
+      ]
+    },
+    {
+      "profile_id": "S01-0413",
+      "name": "源博雅",
+      "kind": "unit",
+      "cost": 3,
+      "troops": 2000,
+      "health": 0,
+      "charge": false,
+      "draw": 1,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.38,
+        "card_advantage": 1.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "过牌或检索"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "进攻距离+1，远程进攻无损。\n登场时 若我方手牌不高于5张，可抽取1张牌。\n进攻时 选择对方1张<反击战术>，本回合无法发动。",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        5,
+        1,
+        1
+      ],
+      "tags": [
+        "弓手",
+        "高天原"
+      ]
+    },
+    {
+      "profile_id": "S01-0414",
+      "name": "桂小五郎",
+      "kind": "unit",
+      "cost": 3,
+      "troops": 4000,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.38,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "基础费用与兵力"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "此军团进攻后，可返回牌库顶部。此军团返回牌库顶部时：将我方最多2张士气转为活跃。",
+      "review_status": "verified",
+      "numbers_seen": [
+        2
+      ],
+      "tags": [
+        "武者",
+        "高天原"
+      ]
+    },
+    {
+      "profile_id": "S01-0415",
+      "name": "服部半藏",
+      "kind": "unit",
+      "cost": 2,
+      "troops": 2000,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.25,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 1.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "防御"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "「位于前排」进攻距离+1，远程进攻无损。\n登场时 发动 隐匿。\n（翻转此牌，覆盖时无法被选为效果或攻击的目标，直至主动翻回正面。）",
+      "review_status": "verified",
+      "numbers_seen": [
+        1
+      ],
+      "tags": [
+        "刺客",
+        "高天原"
+      ]
+    },
+    {
+      "profile_id": "S01-0416",
+      "name": "稻姬本多小松",
+      "kind": "unit",
+      "cost": 1,
+      "troops": 1000,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 1000,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.12,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.75,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "兵力增益或强攻"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "进攻距离+1，远程进攻无损。\n登场时 进攻时 选择我方前排1张<稻姬本多小松>以外兵力不高于5000的【高天原】军团，本回合兵力+1000。",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        1,
+        5000,
+        1000
+      ],
+      "tags": [
+        "弓手",
+        "高天原"
+      ]
+    },
+    {
+      "profile_id": "S01-0417",
+      "name": "草薙剑",
+      "kind": "artifact",
+      "cost": 3,
+      "troops": 0,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 1,
+      "buff": 1000,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.38,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 1.5,
+        "face_pressure": 0.75,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "解场",
+        "兵力增益或强攻"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "登场时：击杀对方1张费用不高于2的军团。\n我方回合1次 可消耗1士气：选择以下一项。\n·选择对方1张军团，本回合费用-1。\n·选择我方1张【高天原】军团，本回合获得强攻。\n（进攻对主宰造成额外1点伤害）",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "tags": [
+        "圣物",
+        "天之丛云",
+        "降魔",
+        "高天原"
+      ]
+    },
+    {
+      "profile_id": "S01-0418",
+      "name": "天诛",
+      "kind": "tactic_active",
+      "cost": 4,
+      "troops": 0,
+      "health": 0,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 1,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.5,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 1.5,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "解场"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "击杀对方1张费用不高于7的军团。",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        7
+      ],
+      "tags": [
+        "主动",
+        "战术",
+        "高天原"
+      ]
+    },
+    {
+      "profile_id": "S01-0419",
+      "name": "花魁的馈赠",
+      "kind": "tactic_active",
+      "cost": 1,
+      "troops": 0,
+      "health": 0,
+      "charge": false,
+      "draw": 1,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.12,
+        "card_advantage": 1.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "过牌或检索"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "查看牌库顶部3张牌，选择其中1张<花魁的馈赠>以外的【高天原】卡牌，展示并加入手牌，其余卡牌自选顺序返回牌库底部。随后，将最多1张士气转为活跃。",
+      "review_status": "verified",
+      "numbers_seen": [
+        3,
+        1,
+        1
+      ],
+      "tags": [
+        "主动",
+        "战术",
+        "高天原"
+      ]
+    }
+  ],
+  "leaders": [
+    {
+      "profile_id": "S01-01M1",
+      "name": "杨戬",
+      "kind": "ruler",
+      "cost": 0,
+      "troops": 0,
+      "health": 10,
+      "charge": false,
+      "draw": 1,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 0,
+      "defense": 0,
+      "return_morale": 1,
+      "features": {
+        "tempo": 0.0,
+        "card_advantage": 1.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.0,
+        "defense": 0.0,
+        "risk": 0.5
+      },
+      "approximated": [
+        "过牌或检索",
+        "返还士气"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "【我方】回合1次 可消耗1士气：抽取1张牌。随后将1张手牌放回牌库顶部或底部。\n【我方】回合1次 可返还4士气：对对方主宰造成1点非致命伤害。",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1
+      ],
+      "tags": [
+        "主宰者",
+        "二郎神",
+        "天廷",
+        "显圣真君"
+      ]
+    },
+    {
+      "profile_id": "S01-04M2",
+      "name": "须佐之男",
+      "kind": "ruler",
+      "cost": 0,
+      "troops": 0,
+      "health": 9,
+      "charge": false,
+      "draw": 0,
+      "morale_gain": 0,
+      "removal": 0,
+      "buff": 1000,
+      "defense": 0,
+      "return_morale": 0,
+      "features": {
+        "tempo": 0.0,
+        "card_advantage": 0.0,
+        "morale_acceleration": 0.0,
+        "board_control": 0.0,
+        "face_pressure": 0.75,
+        "defense": 0.0,
+        "risk": 0.0
+      },
+      "approximated": [
+        "兵力增益或强攻"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "素盏鸣尊 破坏神\n我方 回合1次 可消耗1士气：选择我方1张【高天原】军团，本回合位于前排进攻时兵力+2000。\n消耗2士气：将我方<草薙剑>置入前排，视为1张兵力5000的【武者】军团。（草薙剑仍可发动其效果）\n<草薙剑>离场时：可选择将其放回牌库顶部。",
+      "review_status": "verified",
+      "numbers_seen": [
+        1,
+        1,
+        1,
+        2000,
+        2,
+        1,
+        5000
+      ],
+      "tags": [
+        "主宰者",
+        "高天原"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "profile_id": "resource:tianting",
+      "name": "天廷士气资源",
+      "kind": "faction_morale",
+      "approximated": [
+        "阵营资源的抽牌、追加士气或位移倾向"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "我方回合1次，可消耗2士气：从士气牌库追加1张活跃的士气。\n我方回合1次，我方士气为0张时，可从士气牌库追加2张休整的士气。",
+      "review_status": "needs_review"
+    },
+    {
+      "profile_id": "resource:takamagahara",
+      "name": "高天原士气资源",
+      "kind": "faction_morale",
+      "approximated": [
+        "阵营资源的抽牌、追加士气或位移倾向"
+      ],
+      "unmodeled": [
+        "天灾",
+        "反击响应链",
+        "前后排",
+        "复杂目标选择",
+        "未实现卡文",
+        "隐藏信息博弈"
+      ],
+      "source_text": "我方回合1次，可消耗2士气：抽取1张牌。随后可选择我方1张活跃的军团进行1格位移。",
+      "review_status": "needs_review"
+    }
+  ]
+}

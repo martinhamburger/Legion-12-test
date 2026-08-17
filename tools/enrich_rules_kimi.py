@@ -21,7 +21,10 @@ or add game-rule interpretations. If a small fragment is unreadable, use [不清
 
 
 def image_data_url(path: Path) -> str:
-    mime = "image/png" if path.suffix.lower() == ".png" else "image/webp"
+    suffix = path.suffix.lower()
+    mime = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".webp": "image/webp"}.get(suffix)
+    if mime is None:
+        raise KimiRequestError(f"unsupported rule image format: {path.suffix}")
     encoded = base64.b64encode(path.read_bytes()).decode("ascii")
     return f"data:{mime};base64,{encoded}"
 

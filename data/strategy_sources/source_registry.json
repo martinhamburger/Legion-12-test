@@ -38,5 +38,41 @@
     "url": "https://www.bilibili.com/video/BV11XfiBfE4e/",
     "status": "unextracted",
     "use": "建立卡牌清单；卡文必须由用户持有版本复核"
+  },
+  {
+    "source_id": "s1-tianting-yang-jian-guide",
+    "title": "S1 天廷阵营构筑见解之 杨戬",
+    "source_type": "official_deck_guide",
+    "local_path": "规则与卡池/S1天廷阵营构筑见解之 杨戬.pdf",
+    "status": "structured_reference_deck",
+    "use": "杨戬天廷参考构筑与策略先验，不作为胜率证据",
+    "sha256": "e8c911949f8c3702bc70a800ae6dd49254a936b17a45bc2839beeb0b14e35146"
+  },
+  {
+    "source_id": "s1-sun-city-mejed-guide",
+    "title": "S1 太阳城阵营构筑见解之 梅杰德",
+    "source_type": "official_deck_guide",
+    "local_path": "规则与卡池/S1太阳城阵营构筑见解之 梅杰德.pdf",
+    "status": "metadata_only",
+    "use": "保留为非首测策略来源，不进入 S1 天廷/高天原模拟",
+    "sha256": "1a9bed6f0b1b5dfa4e69b66b3a6225d73116005af16b01abe778b02746dea4c0"
+  },
+  {
+    "source_id": "handbook-v1-2025-04-26",
+    "title": "规则手册 Ver1.0",
+    "source_type": "historical_rulebook",
+    "local_path": "规则与卡池/规则手册.pdf",
+    "status": "historical_reference_only",
+    "use": "页面转录与版本差异追溯；不得覆盖规则手册 2.0",
+    "sha256": "8a8063f8982f47f7df5489d0c1c773d5dd9d2aeb215d795fda911d7c9275cae1"
+  },
+  {
+    "source_id": "rules-2.0-source-pdf",
+    "title": "规则手册 2.0",
+    "source_type": "official_rules",
+    "local_path": "规则与卡池/规则手册2.0.pdf",
+    "sha256": "90c767920666fa461730fecf175199b0d6a3f969109b537446dec7a412fdc25d",
+    "status": "structured_rule_truth",
+    "use": "standard-2.0-s01 的规则真值，与正式卡面共同优先"
   }
 ]

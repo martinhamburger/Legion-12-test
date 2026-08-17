@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "comparisons": [
+    {
+      "comparison_id": "handbook-v1-vs-standard-2.0",
+      "higher_priority_ruleset_id": "standard-2.0-s01",
+      "lower_priority_ruleset_id": "handbook-v1-2025-04-26",
+      "status": "review_queue",
+      "differences": [
+        {
+          "difference_id": "version-precedence",
+          "status": "verified",
+          "summary": "Ver1.0 is historical reference only and cannot override standard-2.0-s01."
+        },
+        {
+          "difference_id": "disaster-selection",
+          "status": "needs_review",
+          "historical_reference": "Ver1.0 p.09 and p.15 describe a five-card allocation flow.",
+          "standard_reference": "standard-2.0-s01 stores three bans, one public draw, then 3/2 selections."
+        },
+        {
+          "difference_id": "reference-decks",
+          "status": "needs_review",
+          "historical_reference": "Ver1.0 p.14 preconstructed lists are retained as historical text only.",
+          "standard_reference": "Two current first-match reference decks live in data/s1/reference_decks.json."
+        }
+      ],
+      "review_queue": [
+        {
+          "topic": "turn_and_combat_flow",
+          "status": "needs_comparison_review"
+        },
+        {
+          "topic": "deckbuilding_and_faction_rules",
+          "status": "needs_comparison_review"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "game_version": "S1",
+  "decks": [
+    {
+      "deck_id": "s01-tianting-yang-jian-reference",
+      "name": "天廷 颂威华夏（杨戬参考构筑）",
+      "game_version": "S1",
+      "ruleset_id": "standard-2.0-s01",
+      "faction_id": "tianting",
+      "ruler_official_card_id": "S01-01M1",
+      "cards": {
+        "S01-0101": 3,
+        "S01-0102": 3,
+        "S01-0103": 3,
+        "S01-0104": 2,
+        "S01-0105": 2,
+        "S01-0106": 3,
+        "S01-0107": 3,
+        "S01-0108": 2,
+        "S01-0109": 3,
+        "S01-0117": 3,
+        "S01-0118": 2,
+        "S01-0119": 2,
+        "S01-0002": 3,
+        "S01-0012": 2,
+        "S01-0016": 2,
+        "S01-0018": 2
+      },
+      "source_ids": [
+        "rules-2.0-source-pdf",
+        "s1-tianting-yang-jian-guide"
+      ],
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Reference deck preserved for validation; individual effects remain unimplemented."
+      }
+    },
+    {
+      "deck_id": "s01-takamagahara-susanoo-reference",
+      "name": "高天原 除魔物语（须佐之男参考构筑）",
+      "game_version": "S1",
+      "ruleset_id": "standard-2.0-s01",
+      "faction_id": "takamagahara",
+      "ruler_official_card_id": "S01-04M2",
+      "cards": {
+        "S01-0401": 3,
+        "S01-0404": 3,
+        "S01-0405": 3,
+        "S01-0409": 3,
+        "S01-0410": 3,
+        "S01-0413": 2,
+        "S01-0414": 3,
+        "S01-0415": 2,
+        "S01-0416": 1,
+        "S01-0417": 3,
+        "S01-0418": 3,
+        "S01-0419": 3,
+        "S01-0002": 3,
+        "S01-0015": 3,
+        "S01-0016": 2
+      },
+      "source_ids": [
+        "rules-2.0-source-pdf"
+      ],
+      "review": {
+        "status": "needs_review",
+        "reviewed_fields": [],
+        "notes": "Reference deck includes the human-audited correction: 2 copies of 源博雅."
+      }
+    }
+  ]
+}
